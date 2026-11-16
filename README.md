@@ -34,8 +34,9 @@ para o GitHub. O projeto pode ser executado da raiz sem instalação editable.
 
 ## Uso do motor de timeline
 
-A extração de metadados requer ffprobe previamente auditado/aprovado; ele não foi
-instalado ou executado nesta entrega. Use somente clipes de teste e uma pasta nova:
+A extração de metadados requer ffprobe previamente auditado/aprovado. Nesta máquina,
+FFmpeg/ffprobe 9.0.2 foi instalado com autorização e validado com MXFs reais;
+veja [o relatório](docs/REAL_MEDIA_VALIDATION.md). Use clipes de teste e pasta nova:
 
 ```sh
 .venv/bin/python -m ave.cli build /caminho/testes/clip.mov \

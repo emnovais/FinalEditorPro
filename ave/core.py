@@ -59,8 +59,10 @@ def metadata(path, probe):
     streams = probe.get('streams', [])
     videos = [s for s in streams if s.get('codec_type') == 'video']
     audios = [s for s in streams if s.get('codec_type') == 'audio']
-    if len(videos) != 1 or len(audios) > 1:
-        raise ValueError('MVP supports one video and at most one audio stream')
+    if len(videos) != 1:
+        raise ValueError('MVP supports exactly one video stream')
+    if len(audios) > 32:
+        raise ValueError('MVP supports at most 32 audio sources')
     v = videos[0]
     fps = Fraction(v['r_frame_rate'])
     if fps <= 0 or fps > 240 or Fraction(v['avg_frame_rate']) != fps:
@@ -86,14 +88,28 @@ def metadata(path, probe):
     if len(labels) > 1:
         raise ValueError('Conflicting source timecodes')
     start = timecode(next(iter(labels)), fps) if labels else Fraction(0)
-    a = audios[0] if audios else None
-    if a and (int(a['sample_rate']) != 48000 or int(a['channels']) not in (1, 2)):
-        raise ValueError('MVP audio requires 48 kHz mono/stereo')
-    if a and Fraction(a.get('start_time', '0')) != 0:
-        raise ValueError('Audio offset unsupported')
+    channels = {int(a['channels']) for a in audios}
+    if not channels <= {1, 2} or len(channels) > 1:
+        raise ValueError('Audio sources require uniform mono/stereo channel layouts')
+    for a in audios:
+        if int(a['sample_rate']) != 48000:
+            raise ValueError('MVP audio requires 48 kHz mono/stereo')
+        if Fraction(a.get('start_time', '0')) != 0:
+            raise ValueError('Audio offset unsupported')
+        if len(audios) > 1 and ('duration_ts' not in a or 'time_base' not in a):
+            raise ValueError('Multiple audio sources require exact source durations')
+        if 'duration_ts' in a and 'time_base' in a:
+            if int(a['duration_ts']) * Fraction(a['time_base']) != duration:
+                raise ValueError('Audio duration differs from video')
     return dict(path=str(p), sha256=sha256(p), size=p.stat().st_size,
                 fps=str(fps), duration=str(duration), start=str(start),
-                width=width, height=height, audio_channels=int(a['channels']) if a else 0,
+                width=width, height=height, audio_channels=next(iter(channels), 0),
+                audio_sources=len(audios),
+                audio_streams=[{k: a.get(k) for k in ('index', 'codec_name', 'channels',
+                                                      'sample_rate', 'duration_ts', 'time_base')}
+                               for a in audios],
+                ancillary_streams=[{k: s.get(k) for k in ('index', 'codec_type', 'codec_name')}
+                                   for s in streams if s.get('codec_type') not in ('video', 'audio')],
                 source_timecode=next(iter(labels)) if labels else None,
                 codec=v.get('codec_name'), pixel_format=v.get('pix_fmt'),
                 color={k: v.get(k) for k in ('color_space', 'color_transfer', 'color_primaries')})
@@ -138,26 +154,51 @@ def validate(project, integrity=True):
         raise ValueError('Effects are not implemented')
 
 
+def video_format_attributes(media):
+    """Exact source geometry/clock; only use documented Apple preset names."""
+    fps = Fraction(media['fps'])
+    attrs = dict(frameDuration=seconds(1 / fps), width=str(media['width']),
+                 height=str(media['height']))
+    rate = {Fraction(24000, 1001): '2398', Fraction(24): '24', Fraction(25): '25',
+            Fraction(30000, 1001): '2997', Fraction(30): '30', Fraction(50): '50',
+            Fraction(60000, 1001): '5994', Fraction(60): '60'}.get(fps)
+    size = {(3840, 2160): '3840x2160', (1920, 1080): '1080', (1280, 720): '720'}.get(
+        (media['width'], media['height']))
+    if rate and size:
+        attrs['name'] = f'FFVideoFormat{size}p{rate}'
+    return attrs
+
+
 def export_xml(project):
     validate(project)
     first = project['media'][0]
     fps = Fraction(first['fps'])
     root = ET.Element('fcpxml', version='1.10')
     resources = ET.SubElement(root, 'resources')
-    ET.SubElement(resources, 'format', id='r1', frameDuration=seconds(1 / fps),
-                  width=str(first['width']), height=str(first['height']))
+    attrs = video_format_attributes(first)
+    ET.SubElement(resources, 'format', id='r1', **attrs)
+    # Project output color is independent of camera color. Match the supplied
+    # FCP round-trip's Rec.709 sequence without assigning that profile to media.
+    output_color = project.get('sequence_color_space', '1-1-1 (Rec. 709)')
+    if output_color not in ('1-1-1 (Rec. 709)', '9-1-9 (Rec. 2020)',
+                            '9-16-9 (Rec. 2020 PQ)', '9-18-9 (Rec. 2020 HLG)'):
+        raise ValueError('Unsupported sequence output color space')
+    ET.SubElement(resources, 'format', id='r_sequence', colorSpace=output_color, **attrs)
     for i, m in enumerate(project['media']):
         attrs = dict(id=f'a{i}', name=Path(m['path']).name, format='r1',
                      start=seconds(m['start']), duration=seconds(m['duration']), hasVideo='1',
                      hasAudio=str(int(m['audio_channels'] > 0)))
         if m['audio_channels']:
-            attrs.update(audioSources='1', audioChannels=str(m['audio_channels']), audioRate='48000')
+            # FCPXML audioChannels is the number of channels PER source/track.
+            # Older JSON v1 has no audio_sources and represents a single source.
+            attrs.update(audioSources=str(m.get('audio_sources', 1)),
+                         audioChannels=str(m['audio_channels']), audioRate='48000')
         asset = ET.SubElement(resources, 'asset', attrs)
         ET.SubElement(asset, 'media-rep', kind='original-media', src=Path(m['path']).as_uri())
     event = ET.SubElement(root, 'event', name='AI Test Event')
     proj = ET.SubElement(event, 'project', name=project['name'])
     total = sum(c['duration_frames'] for c in project['clips']) / fps
-    seq = ET.SubElement(proj, 'sequence', format='r1', duration=seconds(total),
+    seq = ET.SubElement(proj, 'sequence', format='r_sequence', duration=seconds(total),
                         tcStart='0s', tcFormat='NDF', audioLayout='stereo', audioRate='48k')
     spine = ET.SubElement(seq, 'spine')
     offset = Fraction(0)

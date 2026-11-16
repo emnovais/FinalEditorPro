@@ -54,7 +54,8 @@ escolha manter mídia no local. Nenhuma biblioteca é aberta ou alterada pelo c�
 ## Limites práticos
 
 Montagem na ordem de entrada, mesmo fps/resolução/cor, vídeo progressivo com pixels
-quadrados, áudio opcional mono/estéreo 48 kHz. Arquivos ambíguos são recusados;
+quadrados, áudio opcional em até 32 fontes mono/estéreo uniformes a 48 kHz,
+com origem zero e durações compatíveis com vídeo. Arquivos ambíguos são recusados;
 isso inclui relógios com PTS não zero, rotação e certos metadados de câmera.
 Não há música separada, transcrição, IA, speed ramp, máscara, tracking, grading
 ou integração Motion implementados. FCPXML válido pela DTD precisa ainda de

@@ -83,7 +83,11 @@ Credencial é obtida do Keychain somente depois da autorização. Proíbe redire
 proxy herdado. Adapters reais não foram exercitados; testes verificam contratos com
 mocks, não comprovam qualidade do modelo nem compatibilidade de todo serviço.
 
-ffprobe permanece opcional e pendente de auditoria/aprovação. O servidor MCP externo
+ffprobe foi auditado quanto a proveniência/receitas e instalado com aprovação:
+Homebrew FFmpeg 9.0.2 revisão 1. A validação com seis MXFs reais e timeline de
+cinco clipes está em [docs/REAL_MEDIA_VALIDATION.md](docs/REAL_MEDIA_VALIDATION.md).
+O extrator suporta múltiplas fontes mono/estéreo uniformes de 48 kHz, com
+relógios/durações compatíveis, declaradas no JSON e no XML. O servidor MCP externo
 não é dependência. Seu snapshot foi apenas inspecionado; veja SECURITY_AUDIT.md.
 
 ## Preservação audiovisual e capacidades FCPXML
@@ -116,6 +120,8 @@ Testes offline bloqueiam sockets/DNS e usam providers simulados; o subprocesso d
 modelo e Keychain real não são executados. DTD valida estrutura; testes também
 verificam integridade, referências, limites de cortes e timecodes. Falta round-trip
 em biblioteca descartável do Final Cut, benchmark FX3/4K e validação de inferência real.
+Leitura de metadados e verificação de pacotes dos MXFs Canon fornecidos já foram
+executadas; isso não equivale a validar decodificação integral ou reprodução no editor.
 
 Providers locais são código confiável auditado, não plugins arbitrários: o protocolo
 sozinho não cria sandbox para Python de terceiros. O adapter real é quem exige
