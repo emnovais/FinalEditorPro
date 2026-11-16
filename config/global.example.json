@@ -1,0 +1,19 @@
+{
+  "mode": "LOCAL",
+  "allow_uploads": false,
+  "routes": {"planning": "local-planner"},
+  "providers": {
+    "local-planner": {
+      "kind": "local", "model": "approved-local-gguf", "enabled": false,
+      "capabilities": ["planning"],
+      "executable": null, "model_path": null,
+      "executable_sha256": null, "model_sha256": null
+    },
+    "remote-planner": {
+      "kind": "cloud", "model": "choose-a-model", "enabled": false,
+      "capabilities": ["planning", "visual_analysis"],
+      "endpoint": "https://api.openai.com/v1/chat/completions",
+      "keychain_account": "openai-main"
+    }
+  }
+}

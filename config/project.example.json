@@ -1,0 +1,5 @@
+{
+  "mode": "HYBRID",
+  "allow_uploads": false,
+  "routes": {"planning": "local-planner", "visual_analysis": "remote-planner"}
+}

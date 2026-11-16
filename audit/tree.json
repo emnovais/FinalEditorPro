@@ -1,0 +1,3431 @@
+{
+  "sha": "eece097cc77e2b5882be8b321c0df206f56f85f5",
+  "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/eece097cc77e2b5882be8b321c0df206f56f85f5",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e1ee1325c6813ce92ccc604d024ad40db671ec3",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/2e1ee1325c6813ce92ccc604d024ad40db671ec3"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e3b9c8b3bb4fba4ecbc832bc52d9cfb171adb78",
+      "size": 760,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0e3b9c8b3bb4fba4ecbc832bc52d9cfb171adb78"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ebcc61c02e4ce2f92dbbcbdfe27e2cfee38a4667",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/ebcc61c02e4ce2f92dbbcbdfe27e2cfee38a4667"
+    },
+    {
+      "path": ".github/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1e753e624b02f06a48ef0271cffe0bc387fd25c",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/c1e753e624b02f06a48ef0271cffe0bc387fd25c"
+    },
+    {
+      "path": ".github/scripts/registry_latest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f949317e7e071ed3c0c9a077fc693a0ab2aa74cf",
+      "size": 1064,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f949317e7e071ed3c0c9a077fc693a0ab2aa74cf"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "571d65adee39c4bbe864ad07b9e963001a6059c6",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/571d65adee39c4bbe864ad07b9e963001a6059c6"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "135315fa9717b1ff7ea61f98f2a9859b98bd6381",
+      "size": 11598,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/135315fa9717b1ff7ea61f98f2a9859b98bd6381"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a0624a910dfd9dadb2d43afd0feb806a54707c4",
+      "size": 12521,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4a0624a910dfd9dadb2d43afd0feb806a54707c4"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c43f4acfa28391d1a388d0780d7122fc8e7d0a38",
+      "size": 516,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c43f4acfa28391d1a388d0780d7122fc8e7d0a38"
+    },
+    {
+      "path": ".mcp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "709545f89d9423dafad540848e41258a9e0d161e",
+      "size": 102,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/709545f89d9423dafad540848e41258a9e0d161e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2443f96c3d77b0422b7518b05dc8f7782da4293e",
+      "size": 273683,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2443f96c3d77b0422b7518b05dc8f7782da4293e"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1255680802942fcbc414b5f65778563f8f856307",
+      "size": 50748,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1255680802942fcbc414b5f65778563f8f856307"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db07a1dc89c94243a5ca96cec636af407a80b710",
+      "size": 1067,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/db07a1dc89c94243a5ca96cec636af407a80b710"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06bc774d8a5601a47135ed95ec3cc8901e24c357",
+      "size": 91696,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/06bc774d8a5601a47135ed95ec3cc8901e24c357"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7859c83def604ebbb5e70f0f91c3096d6bd8722e",
+      "size": 1522,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7859c83def604ebbb5e70f0f91c3096d6bd8722e"
+    },
+    {
+      "path": "demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f13b9cf6c4a102ad93f48067695e7516c27f28a",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/2f13b9cf6c4a102ad93f48067695e7516c27f28a"
+    },
+    {
+      "path": "demo/demo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "174b63486e52936b71d57e8b296fd45adc99c9b2",
+      "size": 3524,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/174b63486e52936b71d57e8b296fd45adc99c9b2"
+    },
+    {
+      "path": "demo/demo.tape",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bec2687682754646b34acaf3c69f549d4da4b9e7",
+      "size": 406,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bec2687682754646b34acaf3c69f549d4da4b9e7"
+    },
+    {
+      "path": "demo/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fc80a61e3b5f12fcae2e84e47f0f50a90c53a1c",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/1fc80a61e3b5f12fcae2e84e47f0f50a90c53a1c"
+    },
+    {
+      "path": "demo/fixtures/gym_session.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c7e28ac7c22c0b896726ecfc4e14d3aa46e1c7",
+      "size": 9169,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/29c7e28ac7c22c0b896726ecfc4e14d3aa46e1c7"
+    },
+    {
+      "path": "demo/fixtures/interview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5321d800ec81a75699fdb29a72635db393adfada",
+      "size": 11068,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5321d800ec81a75699fdb29a72635db393adfada"
+    },
+    {
+      "path": "demo/hero",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b90f3351a233b779941a7582e3904c29e1be857c",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/b90f3351a233b779941a7582e3904c29e1be857c"
+    },
+    {
+      "path": "demo/hero/build.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a047b9fedb767376f28c2d2f9006efea87bfdd9d",
+      "size": 30858,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a047b9fedb767376f28c2d2f9006efea87bfdd9d"
+    },
+    {
+      "path": "demo/hero/footage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98b8b0109d3fc54415e96b11d199dfba9a4ee553",
+      "size": 3506,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/98b8b0109d3fc54415e96b11d199dfba9a4ee553"
+    },
+    {
+      "path": "demo/hero/footage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5756bf0ef6a29c35e73490df7beb0037344e2f5",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/f5756bf0ef6a29c35e73490df7beb0037344e2f5"
+    },
+    {
+      "path": "demo/hero/footage/bench.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c93a90df57202e3db21f8020494f96bb7d5db5d7",
+      "size": 123321,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c93a90df57202e3db21f8020494f96bb7d5db5d7"
+    },
+    {
+      "path": "demo/hero/footage/finish.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e832965f56f26eb3cb15e4a22afcda001ef0e0f1",
+      "size": 150424,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e832965f56f26eb3cb15e4a22afcda001ef0e0f1"
+    },
+    {
+      "path": "demo/hero/footage/press.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e88ad36a87f2cd8c43ac181b608b987232ec222",
+      "size": 117204,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0e88ad36a87f2cd8c43ac181b608b987232ec222"
+    },
+    {
+      "path": "demo/hero/footage/squat.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62a3ecc74ab91f4e71799972d878ff3c8092332a",
+      "size": 340697,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/62a3ecc74ab91f4e71799972d878ff3c8092332a"
+    },
+    {
+      "path": "demo/hero/record.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "778d93943fba101da9fc4fee32dc7b0ed84f8c83",
+      "size": 40172,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/778d93943fba101da9fc4fee32dc7b0ed84f8c83"
+    },
+    {
+      "path": "demo/hero/record_client.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "197771ee79f868d38bdb88e872fcadd98b3f387c",
+      "size": 13996,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/197771ee79f868d38bdb88e872fcadd98b3f387c"
+    },
+    {
+      "path": "demo/session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "bf271b1186755511039ae9cf820cc47f62a96bf7",
+      "size": 6274,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bf271b1186755511039ae9cf820cc47f62a96bf7"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb190d9446668a0cd108055614d911ac3803fa0e",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/fb190d9446668a0cd108055614d911ac3803fa0e"
+    },
+    {
+      "path": "docs/CAPABILITY-AUDIT-2026-06.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e980a900877eab03c4298b940ed42aab6ef4c06d",
+      "size": 15019,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e980a900877eab03c4298b940ed42aab6ef4c06d"
+    },
+    {
+      "path": "docs/MCP_ECOSYSTEM.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "076b2955b402a04b2f9f5d0f9f5688adb2665ce6",
+      "size": 4255,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/076b2955b402a04b2f9f5d0f9f5688adb2665ce6"
+    },
+    {
+      "path": "docs/ROADMAP-2026-10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e68c6e9fe92df58b45038dd6e9995744e2e8a151",
+      "size": 8008,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e68c6e9fe92df58b45038dd6e9995744e2e8a151"
+    },
+    {
+      "path": "docs/WORKFLOWS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce1edb72a73e087929b23f25dd5f66fc1d3d9bfb",
+      "size": 6398,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ce1edb72a73e087929b23f25dd5f66fc1d3d9bfb"
+    },
+    {
+      "path": "docs/animation-curves-validation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "822c8fc1b0266305300d70ceef2a664a10cb954c",
+      "size": 8475,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/822c8fc1b0266305300d70ceef2a664a10cb954c"
+    },
+    {
+      "path": "docs/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb89b9e8ed55b3bf29c9c483cc2df50fb83b0db9",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/eb89b9e8ed55b3bf29c9c483cc2df50fb83b0db9"
+    },
+    {
+      "path": "docs/assets/card-frame.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21d95f1c1ef7148c45565f462b159578701d49d5",
+      "size": 326240,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/21d95f1c1ef7148c45565f462b159578701d49d5"
+    },
+    {
+      "path": "docs/assets/demo-live-fcp.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b3521b8227959397a89ade7f43589b20f87fc89",
+      "size": 1291316,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0b3521b8227959397a89ade7f43589b20f87fc89"
+    },
+    {
+      "path": "docs/assets/demo.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14d14693f31913787831e4957ab21b8b44899e43",
+      "size": 754610,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/14d14693f31913787831e4957ab21b8b44899e43"
+    },
+    {
+      "path": "docs/assets/hero-layout.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1295f757b26f698f6089ea94fee3f4fecccc6956",
+      "size": 609,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1295f757b26f698f6089ea94fee3f4fecccc6956"
+    },
+    {
+      "path": "docs/assets/hero-run.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d088125632b03a1a3232c3c5131f7b73a1145ffa",
+      "size": 6435,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d088125632b03a1a3232c3c5131f7b73a1145ffa"
+    },
+    {
+      "path": "docs/assets/hero-still.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6290b442983c46f7aa948917408349d76e15911d",
+      "size": 270945,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6290b442983c46f7aa948917408349d76e15911d"
+    },
+    {
+      "path": "docs/assets/hero-unedited-recording.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5aa26247cda7627c7cc4c6d5d706b0f6491498a",
+      "size": 480843,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a5aa26247cda7627c7cc4c6d5d706b0f6491498a"
+    },
+    {
+      "path": "docs/assets/hero-watch-claude-cut.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc863a0537b4991ccbe9926b8b9c1b56882b0303",
+      "size": 4566395,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/cc863a0537b4991ccbe9926b8b9c1b56882b0303"
+    },
+    {
+      "path": "docs/assets/hero-watch-claude-cut.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b4b2446a1c32759138aa3eeaa14b445e65284f3",
+      "size": 1426980,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0b4b2446a1c32759138aa3eeaa14b445e65284f3"
+    },
+    {
+      "path": "docs/assets/logo-400.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "129a73e8acbe860a3a4a9707f46c1865a8ce2d55",
+      "size": 11030,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/129a73e8acbe860a3a4a9707f46c1865a8ce2d55"
+    },
+    {
+      "path": "docs/assets/logo-small-400.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d717d50ef93e6867fff8b64ccfe700638e7e6f0",
+      "size": 9536,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7d717d50ef93e6867fff8b64ccfe700638e7e6f0"
+    },
+    {
+      "path": "docs/assets/logo-small.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a6ad7e16fd4283b144acc1bb7dd569252095294",
+      "size": 741,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4a6ad7e16fd4283b144acc1bb7dd569252095294"
+    },
+    {
+      "path": "docs/assets/logo.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cc0af36fb47c84494ffad84d13499a670ff5f96",
+      "size": 1207,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7cc0af36fb47c84494ffad84d13499a670ff5f96"
+    },
+    {
+      "path": "docs/assets/social-card.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecee9e437e426773165149efc02602559828204e",
+      "size": 243042,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ecee9e437e426773165149efc02602559828204e"
+    },
+    {
+      "path": "docs/assets/timeline-preview.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec58736b366bc980e77e01385b8a35e5733b4b92",
+      "size": 173126,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ec58736b366bc980e77e01385b8a35e5733b4b92"
+    },
+    {
+      "path": "docs/keyframes-validation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1829fd09f66253d31050708f297466f0694ebf9f",
+      "size": 4554,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1829fd09f66253d31050708f297466f0694ebf9f"
+    },
+    {
+      "path": "docs/keyframes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bb44087e7aa267c13f95a91a08e8e1609427702",
+      "size": 11456,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4bb44087e7aa267c13f95a91a08e8e1609427702"
+    },
+    {
+      "path": "docs/retiming-validation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cbe9a0d8e157f962fa494bb86581890a3d5396c",
+      "size": 6842,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7cbe9a0d8e157f962fa494bb86581890a3d5396c"
+    },
+    {
+      "path": "docs/retiming.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35c2eb2638697d9f1454417f60eb7443eef3b59b",
+      "size": 6686,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/35c2eb2638697d9f1454417f60eb7443eef3b59b"
+    },
+    {
+      "path": "docs/screenshots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aaa890de38fb3cb378cdb834e667e1f36eaaf6ec",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/aaa890de38fb3cb378cdb834e667e1f36eaaf6ec"
+    },
+    {
+      "path": "docs/screenshots/2026-10-09_readme-first-screen-1280.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72820cdaba65773096c4eca70b34b006d9d1d92b",
+      "size": 320156,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/72820cdaba65773096c4eca70b34b006d9d1d92b"
+    },
+    {
+      "path": "docs/screenshots/2026-10-09_readme-first-screen-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fbe75a6d87a0c9e754782044600086374f7f9d2",
+      "size": 251155,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0fbe75a6d87a0c9e754782044600086374f7f9d2"
+    },
+    {
+      "path": "docs/screenshots/2026-10-09_timeline-app-1280-selected.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6790a56f8bfc9921b917f9c585657c65575a874c",
+      "size": 100992,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6790a56f8bfc9921b917f9c585657c65575a874c"
+    },
+    {
+      "path": "docs/screenshots/2026-10-09_timeline-app-1280.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d60bfdca7d0d5bfa81f9c10b0cb544a5f2f92fb",
+      "size": 63645,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5d60bfdca7d0d5bfa81f9c10b0cb544a5f2f92fb"
+    },
+    {
+      "path": "docs/screenshots/2026-10-09_timeline-app-390-selected.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cb898337d2623ef82a85accc60ce618ed6a8d26",
+      "size": 72312,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3cb898337d2623ef82a85accc60ce618ed6a8d26"
+    },
+    {
+      "path": "docs/screenshots/2026-10-09_timeline-app-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd98f9cc93694cb5bbf936b9bcf8aeddf3d3ae4c",
+      "size": 40322,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/cd98f9cc93694cb5bbf936b9bcf8aeddf3d3ae4c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-02_preview-lanes-before-after.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aba724908ecf84c51921be9f02f6e51968cb5fe",
+      "size": 86212,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7aba724908ecf84c51921be9f02f6e51968cb5fe"
+    },
+    {
+      "path": "docs/screenshots/2026-11-02_preview-shapes-still-timecode.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86125525a3ef111567b7f2af10453a47bfa27c53",
+      "size": 61510,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/86125525a3ef111567b7f2af10453a47bfa27c53"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_hero-gif-first-frame.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "762104ae3e835021cd3d343021b3770e079838e5",
+      "size": 456282,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/762104ae3e835021cd3d343021b3770e079838e5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_hero-mp4-first-frame-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "440ba2b931664fd8a8821a248e2bf48a0695a191",
+      "size": 64095,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/440ba2b931664fd8a8821a248e2bf48a0695a191"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_hero-mp4-first-frame.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b359dd956f6e20156557a06555887ddeff77971",
+      "size": 556061,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0b359dd956f6e20156557a06555887ddeff77971"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_hero-mp4-poster.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d020f210a70f78b3121e6f74877ea9d835416b57",
+      "size": 688299,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d020f210a70f78b3121e6f74877ea9d835416b57"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_legacy-preview-1440-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "382db843d28e9f19de2c0d2d315bb3f58333498c",
+      "size": 31408,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/382db843d28e9f19de2c0d2d315bb3f58333498c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_legacy-preview-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f2a77d76f77fbaf00ca723d5d2807f62de92a83",
+      "size": 25874,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4f2a77d76f77fbaf00ca723d5d2807f62de92a83"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_legacy-preview-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "193cdb627e46e057fe3baa278af2929001e10bc8",
+      "size": 24623,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/193cdb627e46e057fe3baa278af2929001e10bc8"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_legacy-preview-390-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b200ca19ea076b711ddb42e7c2ae2c6504baf1e",
+      "size": 37873,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3b200ca19ea076b711ddb42e7c2ae2c6504baf1e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_legacy-preview-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "151fc47ccb38ec9e1763125d01b462fc679f14aa",
+      "size": 34010,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/151fc47ccb38ec9e1763125d01b462fc679f14aa"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_logo-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dad5b4eb3539c377298f7dd8cd0eb76e117e7aeb",
+      "size": 54802,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/dad5b4eb3539c377298f7dd8cd0eb76e117e7aeb"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_logo-on-black.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e12e2e26d9dd4d869b0dc2e782cbaba5babcfb67",
+      "size": 7056,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e12e2e26d9dd4d869b0dc2e782cbaba5babcfb67"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_logo-on-white.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fd961110c9125495fc3fb49b13e8fdc482403f9",
+      "size": 7676,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2fd961110c9125495fc3fb49b13e8fdc482403f9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_logo-small-sizes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cb8deb3a43d31cac8940166ec92783fcaf70cfa",
+      "size": 35657,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8cb8deb3a43d31cac8940166ec92783fcaf70cfa"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_pypi-page-1440-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7c8d98cabe60eb72036fe4865139aa4ccea636",
+      "size": 521561,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ee7c8d98cabe60eb72036fe4865139aa4ccea636"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_pypi-page-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5dc63c48715efcde6c25c9807da0bf5741ada82",
+      "size": 413599,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e5dc63c48715efcde6c25c9807da0bf5741ada82"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_pypi-page-390-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a0a0f3b41cc15c833e4fd1fede4912c0d0ffa05",
+      "size": 282903,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2a0a0f3b41cc15c833e4fd1fede4912c0d0ffa05"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_pypi-page-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38ad4d66266f9e2ed0fc62cdb5d926b67fad7581",
+      "size": 286974,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/38ad4d66266f9e2ed0fc62cdb5d926b67fad7581"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_readme-first-screen-1440-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44366f410b24839a238308088333a8817ae703d8",
+      "size": 546314,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/44366f410b24839a238308088333a8817ae703d8"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_readme-first-screen-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd7300fbd71f9d1960c2c8ea0cca868f2e45a867",
+      "size": 417502,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bd7300fbd71f9d1960c2c8ea0cca868f2e45a867"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_readme-first-screen-390-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b811779d73f791eec382e1327e486cd2c90bc7b",
+      "size": 245716,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4b811779d73f791eec382e1327e486cd2c90bc7b"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_readme-first-screen-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfa4fcb906404adde9f08ccd3e164bd5a9b3e041",
+      "size": 266414,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bfa4fcb906404adde9f08ccd3e164bd5a9b3e041"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_social-card-390-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1e52ba416a354a6dad85ad2c349a16e965835c1",
+      "size": 28265,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e1e52ba416a354a6dad85ad2c349a16e965835c1"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_social-card-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0303ce2266f924b6bd368825d70854ac61209c9",
+      "size": 41219,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d0303ce2266f924b6bd368825d70854ac61209c9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_social-card-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd7bfead71021bf9d4b0dca895b8f55e2689eec9",
+      "size": 164745,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bd7bfead71021bf9d4b0dca895b8f55e2689eec9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_social-card.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6606663e37892a81d10426be52590cd16771521a",
+      "size": 162017,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6606663e37892a81d10426be52590cd16771521a"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-1440-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc60852296af7d712daeada2080530da3fc9851",
+      "size": 117438,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9fc60852296af7d712daeada2080530da3fc9851"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb32a304f6fcd08fab5d3d2881540791ed28e788",
+      "size": 114912,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/fb32a304f6fcd08fab5d3d2881540791ed28e788"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-1440-selected-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d4132f3d66be09efbcdf298845eeeb517eb137",
+      "size": 144482,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/51d4132f3d66be09efbcdf298845eeeb517eb137"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-1440-selected.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4e494ecb19999019fa9d5a654bd0dc9d3f94988",
+      "size": 136189,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b4e494ecb19999019fa9d5a654bd0dc9d3f94988"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3be8d4f9c08444d353f1c5b5c71aa72d7cb1edf3",
+      "size": 110967,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3be8d4f9c08444d353f1c5b5c71aa72d7cb1edf3"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-390-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66cd60cb66ed830a4a8263dcb12cfdf2ab1369a1",
+      "size": 119438,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/66cd60cb66ed830a4a8263dcb12cfdf2ab1369a1"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-390-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8351c14c94ad669168b85782dffd9c9f569a7e82",
+      "size": 118034,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8351c14c94ad669168b85782dffd9c9f569a7e82"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a79008fb4705177f97c1460332079aab08a89fed",
+      "size": 114146,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a79008fb4705177f97c1460332079aab08a89fed"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-multilane-1440-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4af9dc271249a3df88bc4738770dd6e603288232",
+      "size": 78748,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4af9dc271249a3df88bc4738770dd6e603288232"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-multilane-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d3ac89ebbd6b195238805e258b28e66855f97ea",
+      "size": 72851,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2d3ac89ebbd6b195238805e258b28e66855f97ea"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-multilane-390-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6621b629b9101dd310df75b80d3f1a6cd9e5876a",
+      "size": 89972,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6621b629b9101dd310df75b80d3f1a6cd9e5876a"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_timeline-app-multilane-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f7e2ba0b6ea0728bec8a0a38d19374fdabd13e0",
+      "size": 83935,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8f7e2ba0b6ea0728bec8a0a38d19374fdabd13e0"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_waveform-check-before.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be948b4ef39b393075cb2f20a6126c220aa59ed",
+      "size": 3666,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9be948b4ef39b393075cb2f20a6126c220aa59ed"
+    },
+    {
+      "path": "docs/screenshots/2026-11-12_waveform-check.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47c0b12d90c612700a01975a04af1004101a2735",
+      "size": 3669,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/47c0b12d90c612700a01975a04af1004101a2735"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-direction-a-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc9d41ec8a36d06744b6b89a22c6ca33e024d95a",
+      "size": 91983,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/dc9d41ec8a36d06744b6b89a22c6ca33e024d95a"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-direction-a-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17ef16eb3e87d533877082598900d48483c42a5a",
+      "size": 89367,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/17ef16eb3e87d533877082598900d48483c42a5a"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-direction-a-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91546b9cc4a5bce791e8ebe7c0b47e93aafe0535",
+      "size": 189303,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/91546b9cc4a5bce791e8ebe7c0b47e93aafe0535"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-direction-b-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f9df996c97b71509d1cbb61ab5de254aadea67d",
+      "size": 105009,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4f9df996c97b71509d1cbb61ab5de254aadea67d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-direction-b-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "befdfc47a982e649853b706c06ff31a697b51741",
+      "size": 102686,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/befdfc47a982e649853b706c06ff31a697b51741"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-direction-b-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd2f6c4882eb872b00238cbeb6fdeace5e14841c",
+      "size": 200409,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/fd2f6c4882eb872b00238cbeb6fdeace5e14841c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-gym-a-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5071b0854e838575b4a4683ec2c331c9c27ad641",
+      "size": 98559,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5071b0854e838575b4a4683ec2c331c9c27ad641"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-gym-a-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11a70597b2395370021cc90c80a0d7b8d624a77c",
+      "size": 96345,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/11a70597b2395370021cc90c80a0d7b8d624a77c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-gym-a-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fe18476fc168ffeaaa29e104729a4268b820e6f",
+      "size": 186417,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0fe18476fc168ffeaaa29e104729a4268b820e6f"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-gym-b-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ef1250c9d47d3ae301e4860e5ccb442754cf733",
+      "size": 174637,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2ef1250c9d47d3ae301e4860e5ccb442754cf733"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-gym-b-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba081adec9dbde17d464fb2b177ccefe5e238422",
+      "size": 172713,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ba081adec9dbde17d464fb2b177ccefe5e238422"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_033-gym-b-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5094f0bc8dc8e6c77d23ab695252f211dedb03",
+      "size": 172940,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/df5094f0bc8dc8e6c77d23ab695252f211dedb03"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_before-after-check-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b45b9206f06a0906ac5b4a88acbd9542a6d2e13e",
+      "size": 608487,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b45b9206f06a0906ac5b4a88acbd9542a6d2e13e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_before-after-frame-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be610e4d2e7c30b08a81bdd19e87d186e917e62f",
+      "size": 500400,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/be610e4d2e7c30b08a81bdd19e87d186e917e62f"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_before-after-proxy-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d9d21b932c7c5814690ee11f059f471254de23d",
+      "size": 366858,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9d9d21b932c7c5814690ee11f059f471254de23d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_before-after-scenes-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "556b00df27553c8130f32f4b5dbfa290835595d9",
+      "size": 317068,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/556b00df27553c8130f32f4b5dbfa290835595d9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_before-after-sheet-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23f76cb0d8b4af4148582715cd985f1672ae9da",
+      "size": 662941,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c23f76cb0d8b4af4148582715cd985f1672ae9da"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_check-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd4ba7aa2f75e4b1d92e083849221159d9eacdc",
+      "size": 439343,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/efd4ba7aa2f75e4b1d92e083849221159d9eacdc"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_frame-burned-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0ca2bfd6d3744db8626ede78e2e5a3ff44b9d85",
+      "size": 240938,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e0ca2bfd6d3744db8626ede78e2e5a3ff44b9d85"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-frame-0-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebf09e2299d2b4b3eca70aa079e8cfffaea842c6",
+      "size": 268120,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ebf09e2299d2b4b3eca70aa079e8cfffaea842c6"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-frame-0-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6290b442983c46f7aa948917408349d76e15911d",
+      "size": 270945,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6290b442983c46f7aa948917408349d76e15911d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-1-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "077e8e3ae8f00eaeae47800efcc39399d96ccc52",
+      "size": 810626,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/077e8e3ae8f00eaeae47800efcc39399d96ccc52"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-1-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf985520a793967a984113744d9de4ce24d130c",
+      "size": 708357,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/caf985520a793967a984113744d9de4ce24d130c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-2-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb64bb5388956fb345192413a74220f46e66c3ef",
+      "size": 1064630,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/fb64bb5388956fb345192413a74220f46e66c3ef"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-2-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ffd8088c2cb43efb36967b83e4edade821647b5",
+      "size": 676970,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9ffd8088c2cb43efb36967b83e4edade821647b5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-3-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c05db73ceafbdcf8f938b865cafee008c89927d7",
+      "size": 1054086,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c05db73ceafbdcf8f938b865cafee008c89927d7"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-3-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1d4603d664ece614dccc230fbf854dc5e6af461",
+      "size": 1227949,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e1d4603d664ece614dccc230fbf854dc5e6af461"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-4-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657a0fe920efeed8a498ffc76bf6378dba70e060",
+      "size": 913316,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/657a0fe920efeed8a498ffc76bf6378dba70e060"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-5-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005f62db35115320069300c0c203b1f79cb3d76e",
+      "size": 651420,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/005f62db35115320069300c0c203b1f79cb3d76e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-358-every-frame-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7562ae1eaf2b086a6f20aba87f0abb9f34dfb209",
+      "size": 618377,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7562ae1eaf2b086a6f20aba87f0abb9f34dfb209"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-first-frame-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e400411d5975cfb36ed8dc66193008fb1e7ad1",
+      "size": 154443,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/37e400411d5975cfb36ed8dc66193008fb1e7ad1"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-gif-first-frame-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3f38dabad161ed22bba7c5ad354843958dddc89",
+      "size": 184845,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f3f38dabad161ed22bba7c5ad354843958dddc89"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-broll-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e6dbd1f8486fc710bfb9d664fec14d949bbe0c5",
+      "size": 1078403,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4e6dbd1f8486fc710bfb9d664fec14d949bbe0c5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-changes-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "975ed8b265d360356587294969e54c447f3e3c98",
+      "size": 1101613,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/975ed8b265d360356587294969e54c447f3e3c98"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-edit-split-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d19fcb12a1be9a261dca7a512694fdf98cb62af",
+      "size": 1056361,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4d19fcb12a1be9a261dca7a512694fdf98cb62af"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-every-edit-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddcf1be0881d3375de29d691c216c845b7eaf69c",
+      "size": 1380208,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ddcf1be0881d3375de29d691c216c845b7eaf69c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-first-frame-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6629ac76d4772d99ed5d0b7426b2c8d8e7e5d665",
+      "size": 199381,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6629ac76d4772d99ed5d0b7426b2c8d8e7e5d665"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-first-frame-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "288148a8f864da957f9999027bf523d4c1debafa",
+      "size": 221512,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/288148a8f864da957f9999027bf523d4c1debafa"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-mark-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c244723139640b3cffd96549b9768bfe7c2c9fa8",
+      "size": 981252,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c244723139640b3cffd96549b9768bfe7c2c9fa8"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-rewind-and-empty-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abf7a1ad255db4a6a136faf1409d269c1d1aff56",
+      "size": 606944,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/abf7a1ad255db4a6a136faf1409d269c1d1aff56"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-seam-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7d387287da03f6c19b55833b09e7ad97b96f02",
+      "size": 595704,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1e7d387287da03f6c19b55833b09e7ad97b96f02"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_hero-mp4-view-draws-in-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618dc9bd045eb2f54680a1ca68de9dcb97f3ff55",
+      "size": 277686,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/618dc9bd045eb2f54680a1ca68de9dcb97f3ff55"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_logo-16-32-64-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9339019798f41f3b1759b55bba9eb8c5760e3e01",
+      "size": 43924,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9339019798f41f3b1759b55bba9eb8c5760e3e01"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_proxy-frame-burned-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff61f33f3be77c41e296f52e8f8af48ee110d14c",
+      "size": 178444,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ff61f33f3be77c41e296f52e8f8af48ee110d14c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-1440-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "314b771a86fcc53c51ddb00ef4bc31c5ab386c2b",
+      "size": 404222,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/314b771a86fcc53c51ddb00ef4bc31c5ab386c2b"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-1440-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea16520f6072d63b3fa4c35e6c83f7f1bafef57e",
+      "size": 441200,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ea16520f6072d63b3fa4c35e6c83f7f1bafef57e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-1440-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65205a0bba824bc877e70fa352798c901f3d4cd1",
+      "size": 283152,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/65205a0bba824bc877e70fa352798c901f3d4cd1"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-1440-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e99b56b02cb45c95222626470f23c72811caa72c",
+      "size": 323585,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e99b56b02cb45c95222626470f23c72811caa72c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-390-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd1708118ce924e1f93e98a04eda21a92c5701b5",
+      "size": 273037,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/dd1708118ce924e1f93e98a04eda21a92c5701b5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-390-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb8284fa25d828babe2a021e95553f9505c9149c",
+      "size": 278403,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/eb8284fa25d828babe2a021e95553f9505c9149c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-390-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "096f701582a689766088fc02f689417a1af1cf3e",
+      "size": 220825,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/096f701582a689766088fc02f689417a1af1cf3e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_pypi-page-390-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d2b3dd3f9f4dc77a757c2a4fade5850d3bacf34",
+      "size": 256610,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2d2b3dd3f9f4dc77a757c2a4fade5850d3bacf34"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-1440-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbaf853b2d380bf41d1357f317340f8dff75670d",
+      "size": 402550,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/fbaf853b2d380bf41d1357f317340f8dff75670d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-1440-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c49e46a5a3282fedc4dd5e71c07c312d4c3c0a0e",
+      "size": 486695,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c49e46a5a3282fedc4dd5e71c07c312d4c3c0a0e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-1440-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff77035a951bda988df7d89849ccc9d5cb37490d",
+      "size": 372365,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ff77035a951bda988df7d89849ccc9d5cb37490d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-1440-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6767e0b7691767adfb37df33765337642f5c989e",
+      "size": 410175,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6767e0b7691767adfb37df33765337642f5c989e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-390-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29553efd275777d3ae857ce74cea3c59401c83cb",
+      "size": 222218,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/29553efd275777d3ae857ce74cea3c59401c83cb"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-390-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdd64f2f402acbb66b135600843b883cc285c314",
+      "size": 234369,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/cdd64f2f402acbb66b135600843b883cc285c314"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-390-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94a866aeee2f76f70622e031e4db7c2c9991efd3",
+      "size": 224381,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/94a866aeee2f76f70622e031e4db7c2c9991efd3"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_readme-first-screen-390-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d2a37ae4df5229e10c91e0e0f4a343b2fdcf61",
+      "size": 235782,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c8d2a37ae4df5229e10c91e0e0f4a343b2fdcf61"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_scenes-strip-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4a02755a86ae537fb18c8b60f82621bdfacde07",
+      "size": 311909,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e4a02755a86ae537fb18c8b60f82621bdfacde07"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_sheet-desktop-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a8e5371c6fbb56faabd5debc9e4e4a5da7ec670",
+      "size": 462168,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6a8e5371c6fbb56faabd5debc9e4e4a5da7ec670"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_sheet-phone-390-032.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8857fca058e41c4aaf6c8d86c7105ee6f24746c",
+      "size": 120210,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d8857fca058e41c4aaf6c8d86c7105ee6f24746c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-1280-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14d1eed28bc8b310506ba7d04a1ae1df7c753e1c",
+      "size": 230541,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/14d1eed28bc8b310506ba7d04a1ae1df7c753e1c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-1280-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43c5de563074cefbe0f4b6e74511c636c098137e",
+      "size": 237757,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/43c5de563074cefbe0f4b6e74511c636c098137e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-390-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64e11e0758671c8d05e3bf159471d7561f861dbf",
+      "size": 125220,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/64e11e0758671c8d05e3bf159471d7561f861dbf"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-390-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d9384bc0e7484989d685e8f9af09919ee1b63b0",
+      "size": 142277,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2d9384bc0e7484989d685e8f9af09919ee1b63b0"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-390-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b84826e6075991f8f4d26f8e6b3cbdae7f31f63e",
+      "size": 151588,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b84826e6075991f8f4d26f8e6b3cbdae7f31f63e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-390-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c649953265a02d61fc6d6e39fabde4cc87b29959",
+      "size": 153990,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c649953265a02d61fc6d6e39fabde4cc87b29959"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e666410c0c17690e1d207ad2b902df306b52cf5",
+      "size": 180463,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3e666410c0c17690e1d207ad2b902df306b52cf5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_social-card-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b75e2515af649937e5545071eea54a0c2f771d40",
+      "size": 204500,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b75e2515af649937e5545071eea54a0c2f771d40"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-light-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d37ecda5785fff34afe730133668b9f9f73920b",
+      "size": 116300,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7d37ecda5785fff34afe730133668b9f9f73920b"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-light-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eea454425c6239b25169baca2c53dac49da69dc0",
+      "size": 135527,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/eea454425c6239b25169baca2c53dac49da69dc0"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-light-selected-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0a458d57b918e4f43bf86554b4b8d888c6577f",
+      "size": 141549,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ce0a458d57b918e4f43bf86554b4b8d888c6577f"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-light-selected-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c93f16c1443b0b76060fbe5f88563c986bf4eb8",
+      "size": 159893,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1c93f16c1443b0b76060fbe5f88563c986bf4eb8"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff57bbfc0fc6048beddc619d3216a9347d2392e6",
+      "size": 106746,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ff57bbfc0fc6048beddc619d3216a9347d2392e6"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a38e990b59055291aed428e8749b06051bbc6bc5",
+      "size": 112688,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a38e990b59055291aed428e8749b06051bbc6bc5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30753f42f39c9f62861b1ace8d723e4c560827c9",
+      "size": 129998,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/30753f42f39c9f62861b1ace8d723e4c560827c9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-selected-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44a4dc937e9c7e0d3b40151e4d8965a10f9ef803",
+      "size": 137663,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/44a4dc937e9c7e0d3b40151e4d8965a10f9ef803"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-1440-selected-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e918a5043a0f35c6c9d4195ada37e73467184d2",
+      "size": 155313,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3e918a5043a0f35c6c9d4195ada37e73467184d2"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-light-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e61630e958d67793a3f18c157283a8b106071ef1",
+      "size": 119377,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e61630e958d67793a3f18c157283a8b106071ef1"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-light-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a173d26adc7a1a774d29fdea4ee224294bc3cf58",
+      "size": 118547,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a173d26adc7a1a774d29fdea4ee224294bc3cf58"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-light-selected-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83914ddd429b656ffa4bc681b190595fa98d2672",
+      "size": 149513,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/83914ddd429b656ffa4bc681b190595fa98d2672"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-light-selected-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "035ca8d0cb0782e6eefc14bc50ce2b2cc04b663d",
+      "size": 147853,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/035ca8d0cb0782e6eefc14bc50ce2b2cc04b663d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-light-selected-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ef0e04e01871e9748e2597651f88fe172a156d7",
+      "size": 147924,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5ef0e04e01871e9748e2597651f88fe172a156d7"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aae3e270ea3d341d66b100f9862b6d98e85c269d",
+      "size": 107372,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/aae3e270ea3d341d66b100f9862b6d98e85c269d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e562d8cd1118bd8dd0905517c2cedb9c48d6f205",
+      "size": 115676,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e562d8cd1118bd8dd0905517c2cedb9c48d6f205"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dcd9ac8abd57f5c497a1a3b90bc97644c28a7ea",
+      "size": 114962,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4dcd9ac8abd57f5c497a1a3b90bc97644c28a7ea"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-selected-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3326f2463f9360107dd1a99badfdb6372fca7715",
+      "size": 145992,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3326f2463f9360107dd1a99badfdb6372fca7715"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-selected-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d3f1a35a20574c190d8a6678616b7bdce433c40",
+      "size": 144534,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5d3f1a35a20574c190d8a6678616b7bdce433c40"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-cut-390-selected-round7.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "386b8dd8c33763032f6907915fa3860c4cc11951",
+      "size": 144560,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/386b8dd8c33763032f6907915fa3860c4cc11951"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-1440-light-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "595c282a6e87303825cb97dd4155e7e2356306e8",
+      "size": 75687,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/595c282a6e87303825cb97dd4155e7e2356306e8"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-1440-light-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4ce2bcb0b643de01257477aeb649ea3de287bc8",
+      "size": 78762,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b4ce2bcb0b643de01257477aeb649ea3de287bc8"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-1440-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b834a52aa9a5ac0c3ca408844cd91e01b93e54e",
+      "size": 73294,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9b834a52aa9a5ac0c3ca408844cd91e01b93e54e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-1440-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b834a52aa9a5ac0c3ca408844cd91e01b93e54e",
+      "size": 73294,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9b834a52aa9a5ac0c3ca408844cd91e01b93e54e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-1440-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f062751211ec46af3472681fa01da8eff686b07c",
+      "size": 75777,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f062751211ec46af3472681fa01da8eff686b07c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-390-light-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf72d9e12b1dae48cac5ae657bf28a90ef782a1c",
+      "size": 86282,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bf72d9e12b1dae48cac5ae657bf28a90ef782a1c"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-390-light-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2dd21915127b29836d8ac1888b9b3055760fc71",
+      "size": 86813,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b2dd21915127b29836d8ac1888b9b3055760fc71"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-390-round4.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d7d4dd8fad5eff78eae354b24b22be6df7ba795",
+      "size": 84345,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3d7d4dd8fad5eff78eae354b24b22be6df7ba795"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-390-round5.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b5cc375796399e82854ef94f48f95d235c77d05",
+      "size": 84336,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7b5cc375796399e82854ef94f48f95d235c77d05"
+    },
+    {
+      "path": "docs/screenshots/2026-11-13_timeline-app-multilane-390-round6.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "487b71cf65fd4e48f8da1f411ecbb3dd82dc490e",
+      "size": 84861,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/487b71cf65fd4e48f8da1f411ecbb3dd82dc490e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-gym-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d2005a8f6a2803ab364b2312f4cdfd1ace89735",
+      "size": 175589,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5d2005a8f6a2803ab364b2312f4cdfd1ace89735"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-gym-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec58736b366bc980e77e01385b8a35e5733b4b92",
+      "size": 173126,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ec58736b366bc980e77e01385b8a35e5733b4b92"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-gym-390-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f138fb68780bd6418cd0faf8662b54340f818702",
+      "size": 169508,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f138fb68780bd6418cd0faf8662b54340f818702"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-gym-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72ef5afe75bd5d06d29522ef194e651dde0bf4e3",
+      "size": 166118,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/72ef5afe75bd5d06d29522ef194e651dde0bf4e3"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-gym-430.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b27479b1c292a14c15ebaff6bf61ffb6996c6b5d",
+      "size": 169608,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b27479b1c292a14c15ebaff6bf61ffb6996c6b5d"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-interview-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fbbbf1e3fa3c44073ee94bf6c9b2014e696ebe9",
+      "size": 125682,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0fbbbf1e3fa3c44073ee94bf6c9b2014e696ebe9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-interview-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc15fc1e975235f7f7fbded40223726b51b0e594",
+      "size": 122620,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/dc15fc1e975235f7f7fbded40223726b51b0e594"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-interview-390-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5bcabca66854cd9892dd6d037f13477857cb3bb",
+      "size": 158708,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d5bcabca66854cd9892dd6d037f13477857cb3bb"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-interview-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc11d8006fa607a33404c70d315035b8cd2ae6e5",
+      "size": 155013,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/fc11d8006fa607a33404c70d315035b8cd2ae6e5"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-interview-430.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "102cee9ca57c4c796e5e1f1960b7c88678329cbb",
+      "size": 153981,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/102cee9ca57c4c796e5e1f1960b7c88678329cbb"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-music-video-1440-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6f2f8bffb508d0ef890c3543618fb848e4535b9",
+      "size": 225461,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e6f2f8bffb508d0ef890c3543618fb848e4535b9"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-music-video-1440.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c0847d9d840eca39e835377eb32b827c311f474",
+      "size": 222845,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5c0847d9d840eca39e835377eb32b827c311f474"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-music-video-390-light.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14eec45c32580c00c9dd2adb9c34dc33002576a",
+      "size": 206639,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a14eec45c32580c00c9dd2adb9c34dc33002576a"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-music-video-390-tap.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adcd06ea9fe9ec398583a4151f5ca79ac146102e",
+      "size": 226695,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/adcd06ea9fe9ec398583a4151f5ca79ac146102e"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-music-video-390.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00df68af7e2f4a0af88a34d02590367efb6462be",
+      "size": 203155,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/00df68af7e2f4a0af88a34d02590367efb6462be"
+    },
+    {
+      "path": "docs/screenshots/2026-11-15_034-music-video-430.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ebfad38b4d10a79e91fe2238064b36829ae1ed6",
+      "size": 214461,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2ebfad38b4d10a79e91fe2238064b36829ae1ed6"
+    },
+    {
+      "path": "docs/specs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88c86a317a37518f2ff223b8e78a9e722a7fa721",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/88c86a317a37518f2ff223b8e78a9e722a7fa721"
+    },
+    {
+      "path": "docs/specs/01_TOOL_SCHEMAS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "752386584395fc9d512e54421e055897c31a8e97",
+      "size": 16630,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/752386584395fc9d512e54421e055897c31a8e97"
+    },
+    {
+      "path": "docs/specs/02_FCPXML_STRUCTURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a584112d57615fd25d5ebf73600824a62494a900",
+      "size": 9932,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a584112d57615fd25d5ebf73600824a62494a900"
+    },
+    {
+      "path": "docs/specs/03_WRITER_PSEUDOCODE.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71dc83a00fa499ae9757ba7912225b0a76f2f734",
+      "size": 32159,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/71dc83a00fa499ae9757ba7912225b0a76f2f734"
+    },
+    {
+      "path": "docs/specs/04_AUTO_ROUGH_CUT_ALGORITHM.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "297833fce1f2c5b43ac0ea0eb225e5acaa956283",
+      "size": 19008,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/297833fce1f2c5b43ac0ea0eb225e5acaa956283"
+    },
+    {
+      "path": "docs/specs/05_SERVER_IMPLEMENTATION.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4173e8d3299413115b07832753f606aa24907ccb",
+      "size": 28536,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4173e8d3299413115b07832753f606aa24907ccb"
+    },
+    {
+      "path": "docs/specs/06_IMPLEMENTATION_ROADMAP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a289656a4a89ed6e997fbf905d2f5764ab942944",
+      "size": 9175,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a289656a4a89ed6e997fbf905d2f5764ab942944"
+    },
+    {
+      "path": "docs/specs/07_MODELS.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41a3a3d4868e5f9a537a2dbbb93a4710acc592ac",
+      "size": 18335,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/41a3a3d4868e5f9a537a2dbbb93a4710acc592ac"
+    },
+    {
+      "path": "docs/superpowers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ad314312f41da43e1ceb2997417686d9924e4d5",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/0ad314312f41da43e1ceb2997417686d9924e4d5"
+    },
+    {
+      "path": "docs/superpowers/plans",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc9077c84d2daa643baa64d18ed0a80255b7bf7f",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/dc9077c84d2daa643baa64d18ed0a80255b7bf7f"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-08-04-phase-a-sharpen-the-wedge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a2eb1999e1944beeec48a432d6dda50f3fe10fb",
+      "size": 43819,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1a2eb1999e1944beeec48a432d6dda50f3fe10fb"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-01-v0.17.0-the-loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "054ade18720b26abf3cc7f134f5d23ac86280247",
+      "size": 92267,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/054ade18720b26abf3cc7f134f5d23ac86280247"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-01-v0.18.0-speed-and-sight.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "250be939f638bc39e0c086bb2f5988b9ae98ebce",
+      "size": 12855,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/250be939f638bc39e0c086bb2f5988b9ae98ebce"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-02-v0.19.0-moat-and-ledger.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8045a1a1a6c13c02953d1462bbb3818b937de615",
+      "size": 77531,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8045a1a1a6c13c02953d1462bbb3818b937de615"
+    },
+    {
+      "path": "docs/superpowers/specs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8b984d614188ba36582183b1e8828a528594479",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/e8b984d614188ba36582183b1e8828a528594479"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-01-cutting-room-design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "855b80a2f2ea48e46495885a8226abb8a76d0110",
+      "size": 28745,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/855b80a2f2ea48e46495885a8226abb8a76d0110"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "461a1bc684489b017236d198230b38374ab71bad",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/461a1bc684489b017236d198230b38374ab71bad"
+    },
+    {
+      "path": "examples/music-video.fcpxml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cb12fa0425473df96526fea237dc8bc9ecfaf3a",
+      "size": 5157,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1cb12fa0425473df96526fea237dc8bc9ecfaf3a"
+    },
+    {
+      "path": "examples/sample.fcpxml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8f0caac5c88395f121ecb82252a3b0b8e3530ea",
+      "size": 3434,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e8f0caac5c88395f121ecb82252a3b0b8e3530ea"
+    },
+    {
+      "path": "fcpxml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7b4b9e4a55247031b8ebad440a21a5875b9175f",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/c7b4b9e4a55247031b8ebad440a21a5875b9175f"
+    },
+    {
+      "path": "fcpxml/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "351cfeb4e1fbea86b51f24b0cdedadb264ef7ee7",
+      "size": 2655,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/351cfeb4e1fbea86b51f24b0cdedadb264ef7ee7"
+    },
+    {
+      "path": "fcpxml/animation_curves.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c416180a4c9c388e45e21b37d05ad891e8aa0c6",
+      "size": 11915,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9c416180a4c9c388e45e21b37d05ad891e8aa0c6"
+    },
+    {
+      "path": "fcpxml/bridges.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30762588a688f4a2735433a2ee8240849d42cc66",
+      "size": 2453,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/30762588a688f4a2735433a2ee8240849d42cc66"
+    },
+    {
+      "path": "fcpxml/diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81053e895ca6632b466da4f77452a858f2cc898c",
+      "size": 11602,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/81053e895ca6632b466da4f77452a858f2cc898c"
+    },
+    {
+      "path": "fcpxml/diversity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "730622eb6b6a0c34d7071e739ccb514eef0ffb1a",
+      "size": 2535,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/730622eb6b6a0c34d7071e739ccb514eef0ffb1a"
+    },
+    {
+      "path": "fcpxml/dtd.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1419955629d23ef0c81016ab2e97d9188478ae9b",
+      "size": 4201,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1419955629d23ef0c81016ab2e97d9188478ae9b"
+    },
+    {
+      "path": "fcpxml/edl.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1e8586f14f822818c1c466e490bbea2bb30f782",
+      "size": 8968,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e1e8586f14f822818c1c466e490bbea2bb30f782"
+    },
+    {
+      "path": "fcpxml/export.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfec7a30a992ef4af5933cc45009bf34036ce958",
+      "size": 10912,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/cfec7a30a992ef4af5933cc45009bf34036ce958"
+    },
+    {
+      "path": "fcpxml/filtergraph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cde460a5de28059ef46a3da93183d9a39bd1429",
+      "size": 40451,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4cde460a5de28059ef46a3da93183d9a39bd1429"
+    },
+    {
+      "path": "fcpxml/find.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9895530fd3fffc44a30b4c7b3fc802eff4a4f600",
+      "size": 4840,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9895530fd3fffc44a30b4c7b3fc802eff4a4f600"
+    },
+    {
+      "path": "fcpxml/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76e19bde59bee2a6183a3cf773f58d2f24b03c31",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/76e19bde59bee2a6183a3cf773f58d2f24b03c31"
+    },
+    {
+      "path": "fcpxml/fonts/LICENSE-spleen.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4387948e8467edcb25711690706aea9c3ec0aba4",
+      "size": 1313,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4387948e8467edcb25711690706aea9c3ec0aba4"
+    },
+    {
+      "path": "fcpxml/fonts/spleen-12x24.bdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32f3a7887c119e97df9b1acabf73a49f783b3740",
+      "size": 44193,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/32f3a7887c119e97df9b1acabf73a49f783b3740"
+    },
+    {
+      "path": "fcpxml/fonts/spleen-16x32.bdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005ad01536ef738fa5ddf6f294541ec4f12cb8f4",
+      "size": 52033,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/005ad01536ef738fa5ddf6f294541ec4f12cb8f4"
+    },
+    {
+      "path": "fcpxml/gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8907537a135ad3cdece910948a60b65433612b1d",
+      "size": 30475,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8907537a135ad3cdece910948a60b65433612b1d"
+    },
+    {
+      "path": "fcpxml/index.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9c61de20d06bbf23a5859a785f8932c03da233c",
+      "size": 13028,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d9c61de20d06bbf23a5859a785f8932c03da233c"
+    },
+    {
+      "path": "fcpxml/journal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dc132316785b173dd87400eeb6c85aa87acaa5b",
+      "size": 7736,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6dc132316785b173dd87400eeb6c85aa87acaa5b"
+    },
+    {
+      "path": "fcpxml/keyframes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2655e2ca894083fe2ffd72bc2503c8e2a800eaf",
+      "size": 28142,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f2655e2ca894083fe2ffd72bc2503c8e2a800eaf"
+    },
+    {
+      "path": "fcpxml/live.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11f7c7c070c6fd7f100b8d3349dc47d8526cb7f7",
+      "size": 21384,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/11f7c7c070c6fd7f100b8d3349dc47d8526cb7f7"
+    },
+    {
+      "path": "fcpxml/mcp_compat.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8aa28a75fca19f98b39680170ae4fa71ffe64a7",
+      "size": 13603,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c8aa28a75fca19f98b39680170ae4fa71ffe64a7"
+    },
+    {
+      "path": "fcpxml/media_clock.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "706bf446803098313aa264a0be66276a35d503af",
+      "size": 14197,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/706bf446803098313aa264a0be66276a35d503af"
+    },
+    {
+      "path": "fcpxml/media_intel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76f675325e78ef68ab81de1a94bb26efbb05d745",
+      "size": 13388,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/76f675325e78ef68ab81de1a94bb26efbb05d745"
+    },
+    {
+      "path": "fcpxml/models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f61106ecc6e3b08beb76701f9bef87f87656c717",
+      "size": 47771,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f61106ecc6e3b08beb76701f9bef87f87656c717"
+    },
+    {
+      "path": "fcpxml/palette.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "186fedd3579d128f199708fad2d3c064e105d7e0",
+      "size": 10296,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/186fedd3579d128f199708fad2d3c064e105d7e0"
+    },
+    {
+      "path": "fcpxml/parser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f33578d5b0f3640896f7cf292496172fed5996ba",
+      "size": 36161,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f33578d5b0f3640896f7cf292496172fed5996ba"
+    },
+    {
+      "path": "fcpxml/progress.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cde6395fc1b6dfe75e361b0d6c06abb20a5d289",
+      "size": 2636,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2cde6395fc1b6dfe75e361b0d6c06abb20a5d289"
+    },
+    {
+      "path": "fcpxml/proofs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49c4ba4aab023abc000791761957a9d61b1c3ebb",
+      "size": 74160,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/49c4ba4aab023abc000791761957a9d61b1c3ebb"
+    },
+    {
+      "path": "fcpxml/raster.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12ef643624789eb30949a0fb6e34839b324189a9",
+      "size": 18598,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/12ef643624789eb30949a0fb6e34839b324189a9"
+    },
+    {
+      "path": "fcpxml/rational.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d94f6972ba8e572856a31766fa97660fa2381d4c",
+      "size": 9584,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d94f6972ba8e572856a31766fa97660fa2381d4c"
+    },
+    {
+      "path": "fcpxml/render.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11ed5eb792bbaf5803f741f7682feedb427cd41d",
+      "size": 20842,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/11ed5eb792bbaf5803f741f7682feedb427cd41d"
+    },
+    {
+      "path": "fcpxml/retime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2d9d848a33cb2c90e2403782892f73c0db1faff",
+      "size": 25608,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c2d9d848a33cb2c90e2403782892f73c0db1faff"
+    },
+    {
+      "path": "fcpxml/rough_cut.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88213d85c3a6ad185c298ad8a82dc4f5f612701c",
+      "size": 30777,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/88213d85c3a6ad185c298ad8a82dc4f5f612701c"
+    },
+    {
+      "path": "fcpxml/safe_xml.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d390ccb3feddb506947ae08e1c3ed960d4334c4b",
+      "size": 4210,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d390ccb3feddb506947ae08e1c3ed960d4334c4b"
+    },
+    {
+      "path": "fcpxml/scenes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c62969f7cffc6a8ce319d54330cad6c95264a895",
+      "size": 7491,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c62969f7cffc6a8ce319d54330cad6c95264a895"
+    },
+    {
+      "path": "fcpxml/templates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e120c5bcdf34ecd32f146225bd2e3b13a13ed2b3",
+      "size": 15038,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e120c5bcdf34ecd32f146225bd2e3b13a13ed2b3"
+    },
+    {
+      "path": "fcpxml/timeline_app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38fcaca8382062c4526cf02c2a5c3cf5eda01201",
+      "size": 108882,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/38fcaca8382062c4526cf02c2a5c3cf5eda01201"
+    },
+    {
+      "path": "fcpxml/transcribe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7927767a75f9950ff01a0241af597a7a8b3ca8bb",
+      "size": 13968,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7927767a75f9950ff01a0241af597a7a8b3ca8bb"
+    },
+    {
+      "path": "fcpxml/transcript_pack.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e14e7991472e68fde2191e985fc0bfa46ee0422",
+      "size": 3144,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7e14e7991472e68fde2191e985fc0bfa46ee0422"
+    },
+    {
+      "path": "fcpxml/vlm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b915b0f1512efec9b9358b5f729be70955dce9cc",
+      "size": 4549,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b915b0f1512efec9b9358b5f729be70955dce9cc"
+    },
+    {
+      "path": "fcpxml/watchfolder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73c777e444e8e02b5cfd2c8f4e21abb74e2cf7b5",
+      "size": 4923,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/73c777e444e8e02b5cfd2c8f4e21abb74e2cf7b5"
+    },
+    {
+      "path": "fcpxml/words.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91d58c79316541bb52a2761c1aabea670e71c558",
+      "size": 669,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/91d58c79316541bb52a2761c1aabea670e71c558"
+    },
+    {
+      "path": "fcpxml/writer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7b4754b40a7a211f9b327db290944aca3ce409",
+      "size": 174264,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2b7b4754b40a7a211f9b327db290944aca3ce409"
+    },
+    {
+      "path": "glama.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48581a59e018d258acd41104a9a268c0eb6c12bb",
+      "size": 93,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/48581a59e018d258acd41104a9a268c0eb6c12bb"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77927f4c0ac0e9a3271c544332caa41cea2cc22c",
+      "size": 5051,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/77927f4c0ac0e9a3271c544332caa41cea2cc22c"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "326cdd428757556ff7675aebbd155240b5b530f2",
+      "size": 663,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/326cdd428757556ff7675aebbd155240b5b530f2"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e0b9dfd818d5429430a7522caedb90994b06ce8",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/2e0b9dfd818d5429430a7522caedb90994b06ce8"
+    },
+    {
+      "path": "scripts/capture-claude-desktop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9b03dfb1f73b0ffcae4d6f0572f0454d858cfda",
+      "size": 4536,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a9b03dfb1f73b0ffcae4d6f0572f0454d858cfda"
+    },
+    {
+      "path": "scripts/check_social_preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96dd44c6289fe5e1c48d89975b37a9c4f2142792",
+      "size": 2247,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/96dd44c6289fe5e1c48d89975b37a9c4f2142792"
+    },
+    {
+      "path": "scripts/fcp_role_colours.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb44d28b98d8bf463cbce38671adb40330af66e1",
+      "size": 3166,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/cb44d28b98d8bf463cbce38671adb40330af66e1"
+    },
+    {
+      "path": "scripts/image_text.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0fd1edb87e82bdacb2f066dd162394467c4c7b0",
+      "size": 1731,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b0fd1edb87e82bdacb2f066dd162394467c4c7b0"
+    },
+    {
+      "path": "scripts/logo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba0ec5336ac7f68f06d209233660d8d1a7f26f8e",
+      "size": 3789,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ba0ec5336ac7f68f06d209233660d8d1a7f26f8e"
+    },
+    {
+      "path": "scripts/pypi_readme.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a12c064b990788d08058f9008f92296cb9077869",
+      "size": 7801,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a12c064b990788d08058f9008f92296cb9077869"
+    },
+    {
+      "path": "scripts/readme_timeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cf436c7e1b619d273d0b92c21254cf784e65443",
+      "size": 6105,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2cf436c7e1b619d273d0b92c21254cf784e65443"
+    },
+    {
+      "path": "scripts/social_card.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a465c20452df30724e147a1295bfbc64595ea7b",
+      "size": 7739,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7a465c20452df30724e147a1295bfbc64595ea7b"
+    },
+    {
+      "path": "scripts/test-ffmpeg6.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "258ca6b12fb6b2d8ac991f25cf19eada171d0f23",
+      "size": 629,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/258ca6b12fb6b2d8ac991f25cf19eada171d0f23"
+    },
+    {
+      "path": "server.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7fc4269e7c6d7492d9e7160dca6e6a4c23eaa85",
+      "size": 815,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d7fc4269e7c6d7492d9e7160dca6e6a4c23eaa85"
+    },
+    {
+      "path": "server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65bb29d769a7fe858debb89c0e06cb4fad5b1831",
+      "size": 216722,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/65bb29d769a7fe858debb89c0e06cb4fad5b1831"
+    },
+    {
+      "path": "skill",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb7dd53d211906473ffc21376af82773e757cb79",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/fb7dd53d211906473ffc21376af82773e757cb79"
+    },
+    {
+      "path": "skill/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "696c773abc93abf8c6f7213719ba0257380b6245",
+      "size": 409,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/696c773abc93abf8c6f7213719ba0257380b6245"
+    },
+    {
+      "path": "skill/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12556008173062c891f1b3ecef3f5ff39af22bbd",
+      "size": 9212,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/12556008173062c891f1b3ecef3f5ff39af22bbd"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11e3f0e83d8903a01e76c860943c5af6b16e24d7",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/11e3f0e83d8903a01e76c860943c5af6b16e24d7"
+    },
+    {
+      "path": "skills/fcpxml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e50b19701b9f145efb3a7996273cf16ade871654",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/e50b19701b9f145efb3a7996273cf16ade871654"
+    },
+    {
+      "path": "skills/fcpxml/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef536aff8504d40fdfeee5107c45e4cea40cc0e4",
+      "size": 6832,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ef536aff8504d40fdfeee5107c45e4cea40cc0e4"
+    },
+    {
+      "path": "smithery.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6123f2637a86fa3aaa3b287e117c7eaf9384270",
+      "size": 390,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c6123f2637a86fa3aaa3b287e117c7eaf9384270"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e28374d9243c086929a230e63b1de447d7f01c03",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/e28374d9243c086929a230e63b1de447d7f01c03"
+    },
+    {
+      "path": "tests/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fcfd08598276942dbdb339df35133b9dcb2f09f",
+      "size": 32,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7fcfd08598276942dbdb339df35133b9dcb2f09f"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78aa14fdfaa49c1755d0a7973cf0740fa63adc80",
+      "size": 1629,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/78aa14fdfaa49c1755d0a7973cf0740fa63adc80"
+    },
+    {
+      "path": "tests/test_animation_curve_tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eef3fc65966b3c001b4105f9a44e3113f93a8b2f",
+      "size": 13330,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/eef3fc65966b3c001b4105f9a44e3113f93a8b2f"
+    },
+    {
+      "path": "tests/test_animation_curves.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27918aca24c9a45d502c0cea01fa6f01e944c4db",
+      "size": 15215,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/27918aca24c9a45d502c0cea01fa6f01e944c4db"
+    },
+    {
+      "path": "tests/test_app_glance.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e177e5ef94756d2a3820a781eb3997a6da9850d7",
+      "size": 115816,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e177e5ef94756d2a3820a781eb3997a6da9850d7"
+    },
+    {
+      "path": "tests/test_app_labels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "873be146b32efef998bf293d2ef9a36da0c11608",
+      "size": 25472,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/873be146b32efef998bf293d2ef9a36da0c11608"
+    },
+    {
+      "path": "tests/test_app_motion.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1acab315c5bac9386daab37d82e20372572d5fb3",
+      "size": 28309,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1acab315c5bac9386daab37d82e20372572d5fb3"
+    },
+    {
+      "path": "tests/test_asset_clock.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89c51c9e7bcee86faf4712303c066f011c52f9a7",
+      "size": 12621,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/89c51c9e7bcee86faf4712303c066f011c52f9a7"
+    },
+    {
+      "path": "tests/test_autopush.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86fcfeeb3c78fbd5e9bdd65f688de7aa6ad64e42",
+      "size": 6153,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/86fcfeeb3c78fbd5e9bdd65f688de7aa6ad64e42"
+    },
+    {
+      "path": "tests/test_bridges.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce87c1d37ce679692852173e9c574b03cbdc20c1",
+      "size": 3184,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ce87c1d37ce679692852173e9c574b03cbdc20c1"
+    },
+    {
+      "path": "tests/test_broadcast_rates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91e08c6a090da3a3486e683f9a038d21efc8d2e2",
+      "size": 16902,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/91e08c6a090da3a3486e683f9a038d21efc8d2e2"
+    },
+    {
+      "path": "tests/test_bundles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04ef9964d2e4c57b362703a24756c822b34ee772",
+      "size": 6466,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/04ef9964d2e4c57b362703a24756c822b34ee772"
+    },
+    {
+      "path": "tests/test_connected_edits.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e1735ece1b341b9ba3186abc9fe413b874a3bb5",
+      "size": 23523,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5e1735ece1b341b9ba3186abc9fe413b874a3bb5"
+    },
+    {
+      "path": "tests/test_connected_storylines.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77324d3c97b03f752b74391bb5d1b610f0da829b",
+      "size": 17683,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/77324d3c97b03f752b74391bb5d1b610f0da829b"
+    },
+    {
+      "path": "tests/test_diagnose_order.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d18dcc5280510ae0ae88d1a5cfba3e0a9183826",
+      "size": 4487,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1d18dcc5280510ae0ae88d1a5cfba3e0a9183826"
+    },
+    {
+      "path": "tests/test_diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d44751cb3190341e1d40551fd3aa8e6960227914",
+      "size": 10601,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d44751cb3190341e1d40551fd3aa8e6960227914"
+    },
+    {
+      "path": "tests/test_disabled_clips.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d99c6bdb8527d8d9277ebaa44d0e54ae60e315be",
+      "size": 14929,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d99c6bdb8527d8d9277ebaa44d0e54ae60e315be"
+    },
+    {
+      "path": "tests/test_diversity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a6f6e85a3d4da4a7473c826ea344dc91711cff",
+      "size": 12306,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c5a6f6e85a3d4da4a7473c826ea344dc91711cff"
+    },
+    {
+      "path": "tests/test_diversity_constraint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc3302f3f6489bfab9c07689add86716a1aad076",
+      "size": 1315,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/dc3302f3f6489bfab9c07689add86716a1aad076"
+    },
+    {
+      "path": "tests/test_dtd_validation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e312cbda39c84dbc3cd911233d606787ef78c7",
+      "size": 3707,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f3e312cbda39c84dbc3cd911233d606787ef78c7"
+    },
+    {
+      "path": "tests/test_edge_cases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d2b4231ccded4c1581be982593512246160e429",
+      "size": 26746,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7d2b4231ccded4c1581be982593512246160e429"
+    },
+    {
+      "path": "tests/test_edit_handlers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75c0407b62bd74aae0af5d3355f492a88d3afe60",
+      "size": 5731,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/75c0407b62bd74aae0af5d3355f492a88d3afe60"
+    },
+    {
+      "path": "tests/test_edl_import.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab419bd5de2e750cf8a8e507d00915ce53b5941c",
+      "size": 10719,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ab419bd5de2e750cf8a8e507d00915ce53b5941c"
+    },
+    {
+      "path": "tests/test_effect_registry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1838e4b26011572911bca267e1ba35f18a3fb192",
+      "size": 6974,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1838e4b26011572911bca267e1ba35f18a3fb192"
+    },
+    {
+      "path": "tests/test_export.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e5fb410f4579e317f5d703a56aef6792896bd76",
+      "size": 11233,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3e5fb410f4579e317f5d703a56aef6792896bd76"
+    },
+    {
+      "path": "tests/test_fcp_import_refusals.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "468441dc7a5ba20b89e6f50d01e03b6fc5fb812f",
+      "size": 16342,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/468441dc7a5ba20b89e6f50d01e03b6fc5fb812f"
+    },
+    {
+      "path": "tests/test_fcpxml_writer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea644f583a92639497a008e7379021e52c1560e1",
+      "size": 21123,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ea644f583a92639497a008e7379021e52c1560e1"
+    },
+    {
+      "path": "tests/test_features_v05.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4397f584839c86f76b557fd3a5ec7f71a63bf00d",
+      "size": 33322,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4397f584839c86f76b557fd3a5ec7f71a63bf00d"
+    },
+    {
+      "path": "tests/test_features_v06.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b8f1aa536596ea0d3ba6a928adb7910021d6fc6",
+      "size": 41113,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8b8f1aa536596ea0d3ba6a928adb7910021d6fc6"
+    },
+    {
+      "path": "tests/test_filtergraph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6acd46ea7834edb65f5f63614e00261cb71c4c15",
+      "size": 20876,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6acd46ea7834edb65f5f63614e00261cb71c4c15"
+    },
+    {
+      "path": "tests/test_find.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13961d32e1335d4fb337ef114d90eb7fb7ee78ae",
+      "size": 2238,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/13961d32e1335d4fb337ef114d90eb7fb7ee78ae"
+    },
+    {
+      "path": "tests/test_find_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "646e874e870138d9ca879e16bfbacec5e9c06040",
+      "size": 8981,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/646e874e870138d9ca879e16bfbacec5e9c06040"
+    },
+    {
+      "path": "tests/test_front_door.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "894c704342a6bac322743008a8aa3af3822200e4",
+      "size": 16285,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/894c704342a6bac322743008a8aa3af3822200e4"
+    },
+    {
+      "path": "tests/test_gap_markers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0859a7297d5e5df5ba5369aae911d79462c2df2e",
+      "size": 5335,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0859a7297d5e5df5ba5369aae911d79462c2df2e"
+    },
+    {
+      "path": "tests/test_gap_multicam.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6789f79562a546d49d9268acf5dab0f40abaa54e",
+      "size": 9101,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6789f79562a546d49d9268acf5dab0f40abaa54e"
+    },
+    {
+      "path": "tests/test_gap_reporting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d03f7f9d8f2c87f5751bfb5904cf6189539568a8",
+      "size": 8865,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d03f7f9d8f2c87f5751bfb5904cf6189539568a8"
+    },
+    {
+      "path": "tests/test_gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1237601647b8eb762082c8bc238f34da673f4e00",
+      "size": 23948,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1237601647b8eb762082c8bc238f34da673f4e00"
+    },
+    {
+      "path": "tests/test_gen_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23b55f52ec9e5a7d00646e3af67607e4cf07cbd5",
+      "size": 10689,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/23b55f52ec9e5a7d00646e3af67607e4cf07cbd5"
+    },
+    {
+      "path": "tests/test_hero_assets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e1a38b657b1217bdae197bcefbae201d3db2691",
+      "size": 19113,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9e1a38b657b1217bdae197bcefbae201d3db2691"
+    },
+    {
+      "path": "tests/test_index.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c1eab4042964d23d6bb06518b2076b8259196a6",
+      "size": 7526,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3c1eab4042964d23d6bb06518b2076b8259196a6"
+    },
+    {
+      "path": "tests/test_index_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e256e63bf82944d60755f10082292bc9831981e",
+      "size": 3656,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1e256e63bf82944d60755f10082292bc9831981e"
+    },
+    {
+      "path": "tests/test_index_wiring.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62ff29799ce8cae9fe3cc307685c799ed2711614",
+      "size": 6694,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/62ff29799ce8cae9fe3cc307685c799ed2711614"
+    },
+    {
+      "path": "tests/test_journal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c94f673574d7509f420b7d702a6f727bbf5bc914",
+      "size": 5264,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c94f673574d7509f420b7d702a6f727bbf5bc914"
+    },
+    {
+      "path": "tests/test_journal_wiring.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f8a65d3c06d6c2400750532fb40659c3e635f7",
+      "size": 2790,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/50f8a65d3c06d6c2400750532fb40659c3e635f7"
+    },
+    {
+      "path": "tests/test_keyframe_tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e310503a85a719b04013c460d65e6bdce704c0c4",
+      "size": 19897,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/e310503a85a719b04013c460d65e6bdce704c0c4"
+    },
+    {
+      "path": "tests/test_keyframes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1db22d9430f11596bcb97575dc7456343d36b701",
+      "size": 44086,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1db22d9430f11596bcb97575dc7456343d36b701"
+    },
+    {
+      "path": "tests/test_live.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a2e351e17f86423decb0fb73d27de8bd008f14d",
+      "size": 8564,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9a2e351e17f86423decb0fb73d27de8bd008f14d"
+    },
+    {
+      "path": "tests/test_live_bundle_push.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8cf9fb0e869cce61e7bdbebff5791b0f88b8a13",
+      "size": 5902,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b8cf9fb0e869cce61e7bdbebff5791b0f88b8a13"
+    },
+    {
+      "path": "tests/test_live_target.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de01f7a947aa8294f99e22e26a0c16c6a8ce0833",
+      "size": 7722,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/de01f7a947aa8294f99e22e26a0c16c6a8ce0833"
+    },
+    {
+      "path": "tests/test_marker_dtd_order_regression.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "327607512db247f641de0ea4e6f8469e41a6699b",
+      "size": 9102,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/327607512db247f641de0ea4e6f8469e41a6699b"
+    },
+    {
+      "path": "tests/test_marker_pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de49d09a4a34c782d9964fec35ed541c39168d06",
+      "size": 10903,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/de49d09a4a34c782d9964fec35ed541c39168d06"
+    },
+    {
+      "path": "tests/test_marker_time_frame.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d98c5de1c53f0a7b29b4a9c9083ca827820839a3",
+      "size": 3659,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d98c5de1c53f0a7b29b4a9c9083ca827820839a3"
+    },
+    {
+      "path": "tests/test_mcp_compat.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7599b5fb2442ed4ac4709ae2b77f79c9789cb516",
+      "size": 6450,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7599b5fb2442ed4ac4709ae2b77f79c9789cb516"
+    },
+    {
+      "path": "tests/test_media_clock.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03dddf1723a80b8385eb946d93fc5b17ee44f162",
+      "size": 37455,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/03dddf1723a80b8385eb946d93fc5b17ee44f162"
+    },
+    {
+      "path": "tests/test_media_intel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b0cdb40310f79495fd589bf6e1553afb62bdfe1",
+      "size": 25676,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0b0cdb40310f79495fd589bf6e1553afb62bdfe1"
+    },
+    {
+      "path": "tests/test_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87520c69c82536a3286e95dadc5bf3b91f674196",
+      "size": 34437,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/87520c69c82536a3286e95dadc5bf3b91f674196"
+    },
+    {
+      "path": "tests/test_nle_handlers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dd63f9db7962c5e6c0801567086eb549abbcf19",
+      "size": 5986,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3dd63f9db7962c5e6c0801567086eb549abbcf19"
+    },
+    {
+      "path": "tests/test_organize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "173b57c11d5831595494ebad4d18942b2713aac2",
+      "size": 2881,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/173b57c11d5831595494ebad4d18942b2713aac2"
+    },
+    {
+      "path": "tests/test_organize_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91139ba930d565a199dd4ac89c0a80357736766d",
+      "size": 5999,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/91139ba930d565a199dd4ac89c0a80357736766d"
+    },
+    {
+      "path": "tests/test_packaging.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b0cfee26085b7e57fa810921fdb68edc8bf772",
+      "size": 6397,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/60b0cfee26085b7e57fa810921fdb68edc8bf772"
+    },
+    {
+      "path": "tests/test_palette.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d437becd1e969ec61811ba8b8fc7cb03e5e179b9",
+      "size": 21544,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d437becd1e969ec61811ba8b8fc7cb03e5e179b9"
+    },
+    {
+      "path": "tests/test_parser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80114ca2afe86224ab38bd56becc6098d6297d3a",
+      "size": 19533,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/80114ca2afe86224ab38bd56becc6098d6297d3a"
+    },
+    {
+      "path": "tests/test_plurals.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8be376d3026049af0d74d4fdca7bbe052d0daac7",
+      "size": 4959,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8be376d3026049af0d74d4fdca7bbe052d0daac7"
+    },
+    {
+      "path": "tests/test_preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb016ec2024d67ff166e7c1b0f5a25f7f2f9faee",
+      "size": 8751,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/eb016ec2024d67ff166e7c1b0f5a25f7f2f9faee"
+    },
+    {
+      "path": "tests/test_preview_audio.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c62f14fcb4f33788f86d892fd31e5aabc21b30e5",
+      "size": 6781,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c62f14fcb4f33788f86d892fd31e5aabc21b30e5"
+    },
+    {
+      "path": "tests/test_preview_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b262068edd294e7c88e7c82a08ebc1437f5f9603",
+      "size": 6839,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b262068edd294e7c88e7c82a08ebc1437f5f9603"
+    },
+    {
+      "path": "tests/test_preview_truth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bce2a48d67b1fd47a2031104d9b2f9b868a457b",
+      "size": 23414,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/5bce2a48d67b1fd47a2031104d9b2f9b868a457b"
+    },
+    {
+      "path": "tests/test_progress.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a84327ff2a7cc62b76e77d337b4b5c2a8c045a3",
+      "size": 3671,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/0a84327ff2a7cc62b76e77d337b4b5c2a8c045a3"
+    },
+    {
+      "path": "tests/test_project_guard.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cd6adc2c1bbeafab86f2f7828fb211f17008f7a",
+      "size": 5485,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6cd6adc2c1bbeafab86f2f7828fb211f17008f7a"
+    },
+    {
+      "path": "tests/test_proofs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ca0da15c94c9ef87a82ea76102b095e302de3cf",
+      "size": 89481,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/2ca0da15c94c9ef87a82ea76102b095e302de3cf"
+    },
+    {
+      "path": "tests/test_pypi_readme.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dd8522d4b1d2dc13051afe6c309e556394de687",
+      "size": 5849,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8dd8522d4b1d2dc13051afe6c309e556394de687"
+    },
+    {
+      "path": "tests/test_rational_exact.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f60edca0823823192d90599accb006ee178e89fb",
+      "size": 1442,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f60edca0823823192d90599accb006ee178e89fb"
+    },
+    {
+      "path": "tests/test_readme_picture.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fec8d2af69e30c7edfe1a28d0df157c85b650244",
+      "size": 4468,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/fec8d2af69e30c7edfe1a28d0df157c85b650244"
+    },
+    {
+      "path": "tests/test_refactored_helpers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9580048804bc3098371bda3f99ba48113fc0675",
+      "size": 17248,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c9580048804bc3098371bda3f99ba48113fc0675"
+    },
+    {
+      "path": "tests/test_registry_latest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad3e04729286af247c3b2de897f5099cb3897d21",
+      "size": 1492,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ad3e04729286af247c3b2de897f5099cb3897d21"
+    },
+    {
+      "path": "tests/test_relink.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab20e429841f2cac1a8d64ba62ebc00705488f8b",
+      "size": 5133,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ab20e429841f2cac1a8d64ba62ebc00705488f8b"
+    },
+    {
+      "path": "tests/test_render.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce0de38a65dc78ce0c3e674b757d33863b65038",
+      "size": 13149,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/bce0de38a65dc78ce0c3e674b757d33863b65038"
+    },
+    {
+      "path": "tests/test_retime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d8ecf9b93a3c490c15dd9a26b0162bff898776",
+      "size": 18665,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/15d8ecf9b93a3c490c15dd9a26b0162bff898776"
+    },
+    {
+      "path": "tests/test_retime_tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acfc16b0ba4e126e89928b3c70cafc44e708b3c0",
+      "size": 7569,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/acfc16b0ba4e126e89928b3c70cafc44e708b3c0"
+    },
+    {
+      "path": "tests/test_review_gate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4647c4aa3f62bfb49f247a101de6959b26bfa14d",
+      "size": 3450,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4647c4aa3f62bfb49f247a101de6959b26bfa14d"
+    },
+    {
+      "path": "tests/test_roles_handlers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f71d31dd7a2642b0f2a3100d3b104264215d375",
+      "size": 3298,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8f71d31dd7a2642b0f2a3100d3b104264215d375"
+    },
+    {
+      "path": "tests/test_rough_cut.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "328ff66d6752a5ba0d5e4f3fc853ff1934598c06",
+      "size": 27940,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/328ff66d6752a5ba0d5e4f3fc853ff1934598c06"
+    },
+    {
+      "path": "tests/test_scenes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a334891cc8e443dc2d12e6301edcccd5d3e6a65e",
+      "size": 6161,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a334891cc8e443dc2d12e6301edcccd5d3e6a65e"
+    },
+    {
+      "path": "tests/test_scenes_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6c488a0b8c10009a0e45a6abaf51132496e37ba",
+      "size": 5363,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c6c488a0b8c10009a0e45a6abaf51132496e37ba"
+    },
+    {
+      "path": "tests/test_schema_budget.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a465e1d7efc36d779ffa6c93a3b25a30a11cdc73",
+      "size": 2991,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a465e1d7efc36d779ffa6c93a3b25a30a11cdc73"
+    },
+    {
+      "path": "tests/test_security.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "781c2490baa3b5deebaab1148aac0c7f0cbc013d",
+      "size": 75028,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/781c2490baa3b5deebaab1148aac0c7f0cbc013d"
+    },
+    {
+      "path": "tests/test_sequence_duration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55ba02ed2ab896a8edb84dfde1a22944a118e1fb",
+      "size": 3455,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/55ba02ed2ab896a8edb84dfde1a22944a118e1fb"
+    },
+    {
+      "path": "tests/test_server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5bedc824f867670fd60a6604906417d27186a16",
+      "size": 19776,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b5bedc824f867670fd60a6604906417d27186a16"
+    },
+    {
+      "path": "tests/test_skill.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67ca11779f1e3667c4e940abae8a037f890e0207",
+      "size": 2497,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/67ca11779f1e3667c4e940abae8a037f890e0207"
+    },
+    {
+      "path": "tests/test_speed_cutting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f3d6046170d0ce53e5327e26cb094f0a13507dc",
+      "size": 13284,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7f3d6046170d0ce53e5327e26cb094f0a13507dc"
+    },
+    {
+      "path": "tests/test_targeted_gaps.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afb3829ae88c95e3cbe544d8f45ce5125bf0eda9",
+      "size": 13765,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/afb3829ae88c95e3cbe544d8f45ce5125bf0eda9"
+    },
+    {
+      "path": "tests/test_timeline_app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff78d8682e0fbc196f17c8dc728be1c07d919d36",
+      "size": 13436,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ff78d8682e0fbc196f17c8dc728be1c07d919d36"
+    },
+    {
+      "path": "tests/test_tool_groups.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00b439eb65e964c27515ebf34e46b5c996298189",
+      "size": 15107,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/00b439eb65e964c27515ebf34e46b5c996298189"
+    },
+    {
+      "path": "tests/test_tool_seam.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6ab41bc27af02355b3f5f85a9ddfa2439379597",
+      "size": 8541,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d6ab41bc27af02355b3f5f85a9ddfa2439379597"
+    },
+    {
+      "path": "tests/test_transcribe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca72a5f1d6bfbd351bd474ff6c4e3af2e4908140",
+      "size": 13785,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/ca72a5f1d6bfbd351bd474ff6c4e3af2e4908140"
+    },
+    {
+      "path": "tests/test_transcribe_scribe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c03cddd75a8ca021b5607210f5b24bc241e5e82",
+      "size": 10870,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9c03cddd75a8ca021b5607210f5b24bc241e5e82"
+    },
+    {
+      "path": "tests/test_transcript_pack.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f19b73ca37cee4cd5cb8b6ea5d9e3574a1b126e1",
+      "size": 3198,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f19b73ca37cee4cd5cb8b6ea5d9e3574a1b126e1"
+    },
+    {
+      "path": "tests/test_transcript_pack_handler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b3a12594718fd2bc40c1ed4492f1624d7cbd084",
+      "size": 3798,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8b3a12594718fd2bc40c1ed4492f1624d7cbd084"
+    },
+    {
+      "path": "tests/test_uncovered_handlers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c8647d493b3b28ad7b303c4defab9b7105a5ca2",
+      "size": 9813,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/4c8647d493b3b28ad7b303c4defab9b7105a5ca2"
+    },
+    {
+      "path": "tests/test_validation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26fd049a151daa55f023894f7c3f7dabee283260",
+      "size": 13719,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/26fd049a151daa55f023894f7c3f7dabee283260"
+    },
+    {
+      "path": "tests/test_version.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d2bd5b5b9afeca3b2c7bcbc08163a6976e248cb",
+      "size": 3167,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7d2bd5b5b9afeca3b2c7bcbc08163a6976e248cb"
+    },
+    {
+      "path": "tests/test_view_budget.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8def6014478ec529b4686860cda270b1f7d27ffe",
+      "size": 10835,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/8def6014478ec529b4686860cda270b1f7d27ffe"
+    },
+    {
+      "path": "tests/test_view_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b46bafef208a4bb82caaa99f9552269a2630e32",
+      "size": 6572,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7b46bafef208a4bb82caaa99f9552269a2630e32"
+    },
+    {
+      "path": "tests/test_visual.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d3892b24572522fb849986057122d9dc10bdd99",
+      "size": 9030,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6d3892b24572522fb849986057122d9dc10bdd99"
+    },
+    {
+      "path": "tests/test_vlm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a440c0a3164e49510007f25b1e420c3de4dd2af7",
+      "size": 5126,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/a440c0a3164e49510007f25b1e420c3de4dd2af7"
+    },
+    {
+      "path": "tests/test_watch_group.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80cb6522efdb1d03e724348bde6cbbfcc5604e2c",
+      "size": 4272,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/80cb6522efdb1d03e724348bde6cbbfcc5604e2c"
+    },
+    {
+      "path": "tests/test_watchfolder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ed4974afcf014a62f0ec4306fd7edad7ade418",
+      "size": 4354,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/32ed4974afcf014a62f0ec4306fd7edad7ade418"
+    },
+    {
+      "path": "tests/test_writer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "483598f4992eb700ce9d2ff499b6f284db940c18",
+      "size": 71786,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/483598f4992eb700ce9d2ff499b6f284db940c18"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb4220fd6d05e48bf729e5c8621ccf1a44d75628",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/fb4220fd6d05e48bf729e5c8621ccf1a44d75628"
+    },
+    {
+      "path": "tools/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d54d751b4711543f0d27328a71bdb4adae5ffdf",
+      "size": 4880,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/7d54d751b4711543f0d27328a71bdb4adae5ffdf"
+    },
+    {
+      "path": "tools/_common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b1afd7ecddba4390a64f49d1ba1747616f21f33",
+      "size": 879,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/3b1afd7ecddba4390a64f49d1ba1747616f21f33"
+    },
+    {
+      "path": "tools/find.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "330eb8d912493adae703b65ef5b1fed691a1782a",
+      "size": 16642,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/330eb8d912493adae703b65ef5b1fed691a1782a"
+    },
+    {
+      "path": "tools/gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94287602a84e3dfefeefdbc2f55e16b3a7fdb25f",
+      "size": 12526,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/94287602a84e3dfefeefdbc2f55e16b3a7fdb25f"
+    },
+    {
+      "path": "tools/index.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b308d64cb3ddb8417743df138fdc55b19a41829f",
+      "size": 4652,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b308d64cb3ddb8417743df138fdc55b19a41829f"
+    },
+    {
+      "path": "tools/keyframes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4d803dfba82f344069f55943e619bebb10e0ecb",
+      "size": 18088,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/c4d803dfba82f344069f55943e619bebb10e0ecb"
+    },
+    {
+      "path": "tools/media.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9051865f7d64420ba10f1c7eb2af6cfbc151fbc4",
+      "size": 32223,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/9051865f7d64420ba10f1c7eb2af6cfbc151fbc4"
+    },
+    {
+      "path": "tools/nle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb874df5d63256827664df7bb64604cdd0fbe668",
+      "size": 8689,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/cb874df5d63256827664df7bb64604cdd0fbe668"
+    },
+    {
+      "path": "tools/organize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e2be44d7234cf6d87fccdd77121516bcb0bed06",
+      "size": 10503,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/1e2be44d7234cf6d87fccdd77121516bcb0bed06"
+    },
+    {
+      "path": "tools/preview.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6317c4e43ffb7ad9fa672e3de93e039e7d1e6138",
+      "size": 14430,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/6317c4e43ffb7ad9fa672e3de93e039e7d1e6138"
+    },
+    {
+      "path": "tools/retime.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b430f7664cb01aea019d4e2167dee0fbdd1f0359",
+      "size": 5745,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/b430f7664cb01aea019d4e2167dee0fbdd1f0359"
+    },
+    {
+      "path": "tools/scenes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6f379a174611059a06767a073e03b2706585a4a",
+      "size": 11292,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/f6f379a174611059a06767a073e03b2706585a4a"
+    },
+    {
+      "path": "tools/view.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25efa0a39d801739ea2667105b22f3ecb9ae6c6c",
+      "size": 13270,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/25efa0a39d801739ea2667105b22f3ecb9ae6c6c"
+    },
+    {
+      "path": "tools/watch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d221e0b082d579026ed29500bbd8373df7dad025",
+      "size": 3859,
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/blobs/d221e0b082d579026ed29500bbd8373df7dad025"
+    }
+  ],
+  "truncated": false
+}

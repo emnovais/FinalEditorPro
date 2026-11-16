@@ -1,0 +1,84 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.VolumeIcon.icns
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+# Models
+models/
+*.gguf
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+# Media and generated assets
+workspace/
+media/
+proxies/
+renders/
+exports/
+cache/
+temp/
+runs/
+*.fcpbundle/
+*.fcplibrary/
+*.fcpcache/
+*.fcprender/
+*.mov
+*.mp4
+*.mxf
+*.wav
+*.m4v
+*.avi
+*.mkv
+*.mp3
+*.aiff
+*.flac
+*.[mM][oO][vV]
+*.[mM][pP]4
+*.[mM][xX][fF]
+*.[wW][aA][vV]
+*.whl
+*.dmg
+*.pkg
+*.bin
+*.onnx
+*.tflite
+*.mlmodel
+*.mlpackage/
+*.mp4.part
+# Logs and external audit source/binaries
+*.log
+logs/
+audit/upstream/
+audit/wheels/

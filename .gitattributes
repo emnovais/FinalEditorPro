@@ -1,0 +1,3 @@
+# Preserve official audit evidence byte-for-byte, including upstream whitespace.
+audit/FCPXMLv1_10.dtd -whitespace
+audit/apple-dtd.md -whitespace

@@ -1,0 +1,178 @@
+{
+  "sha": "eece097cc77e2b5882be8b321c0df206f56f85f5",
+  "node_id": "C_kwDOQ8bdMdoAKGVlY2UwOTdjYzc3ZTJiNTg4MmJlOGIzMjFjMGRmMjA2ZjU2Zjg1ZjU",
+  "commit": {
+    "author": {
+      "name": "DareDev256",
+      "email": "93986675+DareDev256@users.noreply.github.com",
+      "date": "2026-11-15T23:41:50Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-11-15T23:41:50Z"
+    },
+    "message": "Merge PR #49: v0.34.1 — lead with \"AI tools for Final Cut Pro\" (metadata only)\n\nCI 9/9 on f4e7126.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Majkfyw52xXpeyZZPHZGD2",
+    "tree": {
+      "sha": "21cb9d7722ee835bea89782a656a4c787fdb0976",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/trees/21cb9d7722ee835bea89782a656a4c787fdb0976"
+    },
+    "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/git/commits/eece097cc77e2b5882be8b321c0df206f56f85f5",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq+kM+CRC1aQ7uu5UhlAAAGMEQAGYIMMSV3mOkMtIemrD1NNiW\ni1mNiQM1BaCzx8s/lJpI8ODcOuYUDbLZ6C69pc2FztNhEIz6B6tyE5Zlv/G6SF9+\npPs0Ko7+VcQit6+i6Qj1usiggRk3rRkM7HHHK36D+EISsHvtbQ8cyCODosk1xsrk\nfLD1UGnRM3xuuYQ35bEQat4tetTpIHcnCHrHQRk7AFDqRmZ9dGZ200h2ShHA3e+l\nBvow4AJSDTtc1eB05b43J5K6i3jcbqr0YnTx58mHCxJWIJ2RTdm7EBp/Wvr4E4pf\nSr1LCxhV7fOwcS+0SnuvGHZrrXcB1bnoqU0vi0RomCEJxANtUcBJcxogGm+J3kfD\nJRsfXMbHlvczsb5mBoyx7wQct8My3y3eXD5R37Nt7tH+NNVP9aR0NsHO5EfrDSR2\n380eDetdE8mXqexxqveLLpTvEuFwD2V3oqVtZqrCfHJlGWz5QCeZHTaIIGuHn0oq\nUthiGB11zfNY76LF6vBDfb5eSHnDg7dy2OO4uIngLVkOx2J+dF3w60fQswAtb4jQ\nZu+he+jnbAetl171m9EMHcQjHrZRGYMuI3mjzUSH9+fFBytVSDQX0V9LZvcJzNat\n1hv61Tcw/htVqpN9aYet6WlzWJ4K+JijF+pgFBbmLVAvtXsWzcPTYKMdXVjmv8c/\nfWtIz/GCqZFJtC6ujjyi\n=vtTh\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 21cb9d7722ee835bea89782a656a4c787fdb0976\nparent 05eee32345d761c96650a56c4d00bb658cb4eeba\nparent f4e7126f7baa084dd25546e7ae14bd5fb3baabe4\nauthor DareDev256 <93986675+DareDev256@users.noreply.github.com> 1794786110 -0500\ncommitter GitHub <noreply@github.com> 1794786110 -0500\n\nMerge PR #49: v0.34.1 — lead with \"AI tools for Final Cut Pro\" (metadata only)\n\nCI 9/9 on f4e7126.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Majkfyw52xXpeyZZPHZGD2",
+      "verified_at": "2026-11-15T23:41:51Z"
+    }
+  },
+  "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/commits/eece097cc77e2b5882be8b321c0df206f56f85f5",
+  "html_url": "https://github.com/DareDev256/fcp-mcp-server/commit/eece097cc77e2b5882be8b321c0df206f56f85f5",
+  "comments_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/commits/eece097cc77e2b5882be8b321c0df206f56f85f5/comments",
+  "author": {
+    "login": "DareDev256",
+    "id": 93986675,
+    "node_id": "U_kgDOBZofcw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/93986675?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DareDev256",
+    "html_url": "https://github.com/DareDev256",
+    "followers_url": "https://api.github.com/users/DareDev256/followers",
+    "following_url": "https://api.github.com/users/DareDev256/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DareDev256/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DareDev256/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DareDev256/subscriptions",
+    "organizations_url": "https://api.github.com/users/DareDev256/orgs",
+    "repos_url": "https://api.github.com/users/DareDev256/repos",
+    "events_url": "https://api.github.com/users/DareDev256/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DareDev256/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "05eee32345d761c96650a56c4d00bb658cb4eeba",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/commits/05eee32345d761c96650a56c4d00bb658cb4eeba",
+      "html_url": "https://github.com/DareDev256/fcp-mcp-server/commit/05eee32345d761c96650a56c4d00bb658cb4eeba"
+    },
+    {
+      "sha": "f4e7126f7baa084dd25546e7ae14bd5fb3baabe4",
+      "url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/commits/f4e7126f7baa084dd25546e7ae14bd5fb3baabe4",
+      "html_url": "https://github.com/DareDev256/fcp-mcp-server/commit/f4e7126f7baa084dd25546e7ae14bd5fb3baabe4"
+    }
+  ],
+  "stats": {
+    "total": 40,
+    "additions": 29,
+    "deletions": 11
+  },
+  "files": [
+    {
+      "sha": "0e3b9c8b3bb4fba4ecbc832bc52d9cfb171adb78",
+      "filename": ".claude-plugin/plugin.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/.claude-plugin%2Fplugin.json",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/.claude-plugin%2Fplugin.json",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/.claude-plugin%2Fplugin.json?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -1,8 +1,8 @@\n {\n   \"name\": \"fcpxml-mcp\",\n   \"displayName\": \"fcp-mcp-server\",\n-  \"version\": \"0.34.0\",\n-  \"description\": \"Drive Final Cut Pro from a conversation: read a timeline, run quality control, batch-edit, build rough cuts, manage markers, transcribe, and export to other NLEs. 15 grouped tools covering 102 operations over .fcpxml and .fcpxmld, with an operation journal and undo.\",\n+  \"version\": \"0.34.1\",\n+  \"description\": \"AI tools for Final Cut Pro. Drive Final Cut Pro from a conversation: read a timeline, run quality control, batch-edit, build rough cuts, manage markers, transcribe, and export to other NLEs. 15 grouped tools covering 102 operations over .fcpxml and .fcpxmld, with an operation journal and undo.\",\n   \"author\": {\n     \"name\": \"James Olusoga\",\n     \"url\": \"https://github.com/DareDev256\""
+    },
+    {
+      "sha": "2443f96c3d77b0422b7518b05dc8f7782da4293e",
+      "filename": "CHANGELOG.md",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/CHANGELOG.md",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/CHANGELOG.md",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/CHANGELOG.md?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -1,5 +1,18 @@\n # Changelog\n \n+## [0.34.1] - 2026-11-15\n+\n+Metadata only: nothing the server reads, writes or shows changed, so it is\n+safe to take at any point.\n+\n+### Changed\n+- The PyPI summary, the MCP registry entry (a new `title` and its\n+  description) and the README heading now open with \"AI tools for Final Cut\n+  Pro\", the words people type into search (Google autocomplete, checked\n+  2026-11-15: \"final cut pro ai tools\", \"final cut pro ai\", \"fcpxml\"). It is\n+  called an MCP server, never a plugin: it does not run inside Final Cut.\n+- PyPI keywords add `final-cut-pro-ai`, `fcpx` and `video-review`.\n+\n ## [0.34.0] - 2026-11-15\n \n A timeline that reads at a glance, in one look. James picked direction B"
+    },
+    {
+      "sha": "06bc774d8a5601a47135ed95ec3cc8901e24c357",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/README.md",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/README.md",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/README.md?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -1,6 +1,6 @@\n <img src=\"docs/assets/logo-small-400.png\" width=\"72\" height=\"72\" alt=\"\">\n \n-# fcp-mcp-server\n+# AI tools for Final Cut Pro: fcp-mcp-server\n \n **Edit Final Cut Pro by talking to Claude, and watch the cut change.**\n "
+    },
+    {
+      "sha": "77927f4c0ac0e9a3271c544332caa41cea2cc22c",
+      "filename": "pyproject.toml",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/pyproject.toml",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/pyproject.toml",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/pyproject.toml?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -7,15 +7,15 @@ name = \"fcp-mcp-server\"\n \n \n \n-version = \"0.34.0\"\n+version = \"0.34.1\"\n \n-description = \"MCP server for Final Cut Pro XML. 15 grouped tools (102 operations): timeline analysis, batch editing, QC, generation, multi-track, NLE export, media relink, .fcpxmld bundles, real media analysis (silence, beats, shot boundaries, local Whisper or ElevenLabs transcripts), a SQLite cache, ffmpeg proxy preview with source-media verification, export watch-folder round-trip, EDL import, an operation journal with undo, a review gate on delivery, bulk organize, tiered shot search with offline captions.\"\n+description = \"AI tools for Final Cut Pro (MCP server): read, edit and generate FCPXML timelines from Claude. 15 grouped tools (102 operations): timeline analysis, batch editing, QC, generation, multi-track, NLE export, media relink, .fcpxmld bundles, media analysis (silence, beats, shot boundaries, Whisper or ElevenLabs transcripts), a SQLite cache, proxy preview with source-media checks, an export watch folder, EDL import, an undo journal, a review gate on delivery, bulk organize, shot search with offline captions.\"\n readme = \"README.md\"\n license = {text = \"MIT\"}\n authors = [\n     {name = \"DareDev256\", email = \"dev@jamesdare.com\"}\n ]\n-keywords = [\"final-cut-pro\", \"mcp\", \"video-editing\", \"fcpxml\", \"ai\"]\n+keywords = [\"final-cut-pro\", \"final-cut-pro-ai\", \"fcpx\", \"fcpxml\", \"mcp\", \"video-editing\", \"video-review\", \"ai\"]\n classifiers = [\n     \"Development Status :: 3 - Alpha\",\n     \"Intended Audience :: Developers\","
+    },
+    {
+      "sha": "d7fc4269e7c6d7492d9e7160dca6e6a4c23eaa85",
+      "filename": "server.json",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/server.json",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/server.json",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/server.json?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -1,14 +1,15 @@\n {\n   \"$schema\": \"https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json\",\n   \"name\": \"io.github.DareDev256/fcpxml-mcp-server\",\n-  \"description\": \"Final Cut Pro automation: 15 grouped tools, 102 operations. FCPXML edit, QC, transcript, preview.\",\n-  \"version\": \"0.34.0\",\n+  \"title\": \"AI tools for Final Cut Pro (MCP server)\",\n+  \"description\": \"AI tools for Final Cut Pro (MCP server): 15 grouped tools, 102 operations on FCPXML timelines.\",\n+  \"version\": \"0.34.1\",\n   \"packages\": [\n     {\n       \"registryType\": \"pypi\",\n       \"registryBaseUrl\": \"https://pypi.org\",\n       \"identifier\": \"fcp-mcp-server\",\n-      \"version\": \"0.34.0\",\n+      \"version\": \"0.34.1\",\n       \"runtimeHint\": \"uvx\",\n       \"transport\": {\n         \"type\": \"stdio\""
+    },
+    {
+      "sha": "65bb29d769a7fe858debb89c0e06cb4fad5b1831",
+      "filename": "server.py",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/server.py",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/server.py",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/server.py?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -67,7 +67,7 @@\n from fcpxml.words import plural\n from fcpxml.writer import FCPXMLModifier\n \n-__version__ = \"0.34.0\"\n+__version__ = \"0.34.1\"\n \n server = Server(\"fcp-mcp-server\", version=__version__)\n "
+    },
+    {
+      "sha": "894c704342a6bac322743008a8aa3af3822200e4",
+      "filename": "tests/test_front_door.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 6,
+      "blob_url": "https://github.com/DareDev256/fcp-mcp-server/blob/eece097cc77e2b5882be8b321c0df206f56f85f5/tests%2Ftest_front_door.py",
+      "raw_url": "https://github.com/DareDev256/fcp-mcp-server/raw/eece097cc77e2b5882be8b321c0df206f56f85f5/tests%2Ftest_front_door.py",
+      "contents_url": "https://api.github.com/repos/DareDev256/fcp-mcp-server/contents/tests%2Ftest_front_door.py?ref=eece097cc77e2b5882be8b321c0df206f56f85f5",
+      "patch": "@@ -84,14 +84,18 @@ def test_the_sweep_actually_walks_the_repo():\n # ---------------------------------------------------------------------------\n \n NAME = \"fcp-mcp-server\"\n+# The searched phrase leads the heading, then the name (0.34.1, James's rule\n+# of 2026-11-15: public names and headings are what people type; Google\n+# autocomplete has \"final cut pro ai tools\", nothing for \"fcp mcp\").\n+PHRASE = \"AI tools for Final Cut Pro\"\n SUBTITLE = \"Reads and writes FCPXML, no plugin, no patch\"\n BENEFIT = \"Edit Final Cut Pro by talking to Claude, and watch the cut change.\"\n \n \n def test_readme_opens_with_the_name_then_the_benefit_then_the_subtitle():\n     lines = [line for line in (REPO / \"README.md\").read_text(encoding=\"utf-8\").splitlines() if line.strip()]\n     at = next(i for i, line in enumerate(lines) if line.startswith(\"# \"))\n-    assert lines[at] == f\"# {NAME}\"\n+    assert lines[at] == f\"# {PHRASE}: {NAME}\"\n     assert lines[at + 1] == f\"**{BENEFIT}**\"\n     # non-breaking spaces keep \"no plugin, no patch\" together on a phone\n     assert lines[at + 2].replace(\"&nbsp;\", \" \") == SUBTITLE"
+    }
+  ]
+}
