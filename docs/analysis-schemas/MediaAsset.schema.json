@@ -1,0 +1,88 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "asset_id": {
+      "title": "Asset Id",
+      "type": "string"
+    },
+    "original_path": {
+      "title": "Original Path",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Sha256",
+      "type": "string"
+    },
+    "size_bytes": {
+      "exclusiveMinimum": 0,
+      "title": "Size Bytes",
+      "type": "integer"
+    },
+    "fps": {
+      "title": "Fps",
+      "type": "string"
+    },
+    "duration": {
+      "title": "Duration",
+      "type": "string"
+    },
+    "source_start": {
+      "title": "Source Start",
+      "type": "string"
+    },
+    "total_frames": {
+      "exclusiveMinimum": 0,
+      "title": "Total Frames",
+      "type": "integer"
+    },
+    "width": {
+      "exclusiveMinimum": 0,
+      "title": "Width",
+      "type": "integer"
+    },
+    "height": {
+      "exclusiveMinimum": 0,
+      "title": "Height",
+      "type": "integer"
+    },
+    "codec": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Codec"
+    },
+    "orientation": {
+      "const": "unrotated",
+      "default": "unrotated",
+      "title": "Orientation",
+      "type": "string"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    }
+  },
+  "required": [
+    "asset_id",
+    "original_path",
+    "sha256",
+    "size_bytes",
+    "fps",
+    "duration",
+    "source_start",
+    "total_frames",
+    "width",
+    "height",
+    "codec",
+    "metadata"
+  ],
+  "title": "MediaAsset",
+  "type": "object"
+}

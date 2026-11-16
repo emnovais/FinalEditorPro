@@ -1,0 +1,6 @@
+{
+  "sample_fps": "2", "max_frames": 96, "proxy_width": 320,
+  "min_scene_seconds": "1", "histogram_threshold": 0.4,
+  "difference_threshold": 0.12, "max_semantic_frames": 4,
+  "semantic": false, "profile": "event"
+}

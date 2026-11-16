@@ -11,6 +11,7 @@ class Contract(BaseModel):
 
 class Task(StrEnum):
     VISUAL = 'visual_analysis'
+    TEMPORAL_VISUAL = 'temporal_visual_analysis'
     PLANNING = 'planning'
     SEGMENTATION = 'segmentation'
     EFFECTS = 'effect_generation'
@@ -100,6 +101,9 @@ CONTRACTS = {
     Task.EFFECTS: (EffectsInput, EffectsOutput),
 }
 
+from ..analysis.schemas import TemporalInput, VisualAnalysis
+CONTRACTS[Task.TEMPORAL_VISUAL] = (TemporalInput, VisualAnalysis)
+
 
 def validate_output(task, request, output):
     result = CONTRACTS[task][1].model_validate(output)
@@ -114,4 +118,13 @@ def validate_output(task, request, output):
         frames = {(f.asset_id, f.frame_index) for f in request.frames}
         if any((o.asset_id, o.frame_index) not in frames for o in result.observations):
             raise ValueError('Model referenced an unsubmitted frame')
+    if task == Task.TEMPORAL_VISUAL:
+        frames = {f.frame_index for f in request.frames}
+        evidence = result.evidence_frame_indices + [i for o in result.opportunities for i in o.evidence_frame_indices]
+        if not set(evidence) <= frames:
+            raise ValueError('Semantic evidence references unsubmitted frames')
+        if len(frames) < 2 and result.actions:
+            raise ValueError('Temporal action requires at least two submitted frames')
+        if result.actions and len(set(result.evidence_frame_indices)) < 2:
+            raise ValueError('Action claims require evidence from multiple frames')
     return result

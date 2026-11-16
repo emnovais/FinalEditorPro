@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "sampled_frames": {
+      "minimum": 1,
+      "title": "Sampled Frames",
+      "type": "integer"
+    },
+    "sharpness_laplacian_variance": {
+      "minimum": 0,
+      "title": "Sharpness Laplacian Variance",
+      "type": "number"
+    },
+    "mean_luma": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Mean Luma",
+      "type": "number"
+    },
+    "dark_fraction": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Dark Fraction",
+      "type": "number"
+    },
+    "bright_fraction": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Bright Fraction",
+      "type": "number"
+    },
+    "interframe_difference": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Interframe Difference",
+      "type": "number"
+    },
+    "instability_proxy": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Instability Proxy",
+      "type": "number"
+    },
+    "caveats": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Caveats",
+      "type": "array"
+    }
+  },
+  "required": [
+    "sampled_frames",
+    "sharpness_laplacian_variance",
+    "mean_luma",
+    "dark_fraction",
+    "bright_fraction",
+    "interframe_difference",
+    "instability_proxy",
+    "caveats"
+  ],
+  "title": "TechnicalMetrics",
+  "type": "object"
+}

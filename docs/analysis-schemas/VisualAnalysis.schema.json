@@ -1,0 +1,166 @@
+{
+  "$defs": {
+    "TransitionOpportunity": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "transition",
+            "mask",
+            "effect"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "suggestion": {
+          "title": "Suggestion",
+          "type": "string"
+        },
+        "evidence_frame_indices": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Evidence Frame Indices",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "implemented": {
+          "const": false,
+          "default": false,
+          "title": "Implemented",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "suggestion",
+        "evidence_frame_indices",
+        "confidence"
+      ],
+      "title": "TransitionOpportunity",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "maxLength": 4000,
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "people": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30,
+      "title": "People",
+      "type": "array"
+    },
+    "objects": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 50,
+      "title": "Objects",
+      "type": "array"
+    },
+    "environment": {
+      "title": "Environment",
+      "type": "string"
+    },
+    "actions": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30,
+      "title": "Actions",
+      "type": "array"
+    },
+    "framing": {
+      "title": "Framing",
+      "type": "string"
+    },
+    "apparent_movement": {
+      "title": "Apparent Movement",
+      "type": "string"
+    },
+    "atmosphere": {
+      "title": "Atmosphere",
+      "type": "string"
+    },
+    "opportunities": {
+      "items": {
+        "$ref": "#/$defs/TransitionOpportunity"
+      },
+      "maxItems": 10,
+      "title": "Opportunities",
+      "type": "array"
+    },
+    "evidence_frame_indices": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Evidence Frame Indices",
+      "type": "array"
+    },
+    "uncertainties": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Uncertainties",
+      "type": "array"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "assessments": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Assessments",
+      "type": "object"
+    },
+    "assessment_reasons": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Assessment Reasons",
+      "type": "object"
+    }
+  },
+  "required": [
+    "description",
+    "people",
+    "objects",
+    "environment",
+    "actions",
+    "framing",
+    "apparent_movement",
+    "atmosphere",
+    "opportunities",
+    "evidence_frame_indices",
+    "uncertainties",
+    "confidence"
+  ],
+  "title": "VisualAnalysis",
+  "type": "object"
+}

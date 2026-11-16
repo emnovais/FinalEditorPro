@@ -1,0 +1,451 @@
+{
+  "$defs": {
+    "FrameSample": {
+      "additionalProperties": false,
+      "properties": {
+        "frame_index": {
+          "minimum": 0,
+          "title": "Frame Index",
+          "type": "integer"
+        },
+        "timestamp": {
+          "title": "Timestamp",
+          "type": "string"
+        },
+        "image_path": {
+          "title": "Image Path",
+          "type": "string"
+        },
+        "image_sha256": {
+          "title": "Image Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "frame_index",
+        "timestamp",
+        "image_path",
+        "image_sha256"
+      ],
+      "title": "FrameSample",
+      "type": "object"
+    },
+    "ScoreComponent": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "weight": {
+          "minimum": 0,
+          "title": "Weight",
+          "type": "number"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "weight",
+        "reason"
+      ],
+      "title": "ScoreComponent",
+      "type": "object"
+    },
+    "ShotScore": {
+      "additionalProperties": false,
+      "properties": {
+        "profile": {
+          "title": "Profile",
+          "type": "string"
+        },
+        "components": {
+          "additionalProperties": {
+            "$ref": "#/$defs/ScoreComponent"
+          },
+          "title": "Components",
+          "type": "object"
+        },
+        "weighted_score": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weighted Score"
+        },
+        "available_weight_fraction": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Available Weight Fraction",
+          "type": "number"
+        },
+        "caveat": {
+          "default": "Heuristic triage only; never automatically discard a take.",
+          "title": "Caveat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "profile",
+        "components",
+        "available_weight_fraction"
+      ],
+      "title": "ShotScore",
+      "type": "object"
+    },
+    "TechnicalMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "sampled_frames": {
+          "minimum": 1,
+          "title": "Sampled Frames",
+          "type": "integer"
+        },
+        "sharpness_laplacian_variance": {
+          "minimum": 0,
+          "title": "Sharpness Laplacian Variance",
+          "type": "number"
+        },
+        "mean_luma": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Mean Luma",
+          "type": "number"
+        },
+        "dark_fraction": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Dark Fraction",
+          "type": "number"
+        },
+        "bright_fraction": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Bright Fraction",
+          "type": "number"
+        },
+        "interframe_difference": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Interframe Difference",
+          "type": "number"
+        },
+        "instability_proxy": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Instability Proxy",
+          "type": "number"
+        },
+        "caveats": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Caveats",
+          "type": "array"
+        }
+      },
+      "required": [
+        "sampled_frames",
+        "sharpness_laplacian_variance",
+        "mean_luma",
+        "dark_fraction",
+        "bright_fraction",
+        "interframe_difference",
+        "instability_proxy",
+        "caveats"
+      ],
+      "title": "TechnicalMetrics",
+      "type": "object"
+    },
+    "TransitionOpportunity": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "transition",
+            "mask",
+            "effect"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "suggestion": {
+          "title": "Suggestion",
+          "type": "string"
+        },
+        "evidence_frame_indices": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Evidence Frame Indices",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "implemented": {
+          "const": false,
+          "default": false,
+          "title": "Implemented",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "suggestion",
+        "evidence_frame_indices",
+        "confidence"
+      ],
+      "title": "TransitionOpportunity",
+      "type": "object"
+    },
+    "VisualAnalysis": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "people": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 30,
+          "title": "People",
+          "type": "array"
+        },
+        "objects": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 50,
+          "title": "Objects",
+          "type": "array"
+        },
+        "environment": {
+          "title": "Environment",
+          "type": "string"
+        },
+        "actions": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 30,
+          "title": "Actions",
+          "type": "array"
+        },
+        "framing": {
+          "title": "Framing",
+          "type": "string"
+        },
+        "apparent_movement": {
+          "title": "Apparent Movement",
+          "type": "string"
+        },
+        "atmosphere": {
+          "title": "Atmosphere",
+          "type": "string"
+        },
+        "opportunities": {
+          "items": {
+            "$ref": "#/$defs/TransitionOpportunity"
+          },
+          "maxItems": 10,
+          "title": "Opportunities",
+          "type": "array"
+        },
+        "evidence_frame_indices": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Evidence Frame Indices",
+          "type": "array"
+        },
+        "uncertainties": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Uncertainties",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "assessments": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Assessments",
+          "type": "object"
+        },
+        "assessment_reasons": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Assessment Reasons",
+          "type": "object"
+        }
+      },
+      "required": [
+        "description",
+        "people",
+        "objects",
+        "environment",
+        "actions",
+        "framing",
+        "apparent_movement",
+        "atmosphere",
+        "opportunities",
+        "evidence_frame_indices",
+        "uncertainties",
+        "confidence"
+      ],
+      "title": "VisualAnalysis",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "segment_id": {
+      "title": "Segment Id",
+      "type": "string"
+    },
+    "asset_id": {
+      "title": "Asset Id",
+      "type": "string"
+    },
+    "start_frame": {
+      "minimum": 0,
+      "title": "Start Frame",
+      "type": "integer"
+    },
+    "end_frame": {
+      "exclusiveMinimum": 0,
+      "title": "End Frame",
+      "type": "integer"
+    },
+    "start_time": {
+      "title": "Start Time",
+      "type": "string"
+    },
+    "end_time": {
+      "title": "End Time",
+      "type": "string"
+    },
+    "boundary_uncertainty_frames": {
+      "minimum": 0,
+      "title": "Boundary Uncertainty Frames",
+      "type": "integer"
+    },
+    "sampled_frames": {
+      "items": {
+        "$ref": "#/$defs/FrameSample"
+      },
+      "minItems": 1,
+      "title": "Sampled Frames",
+      "type": "array"
+    },
+    "technical": {
+      "$ref": "#/$defs/TechnicalMetrics"
+    },
+    "visual": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/VisualAnalysis"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "score": {
+      "$ref": "#/$defs/ShotScore"
+    },
+    "provider": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Provider"
+    },
+    "model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model"
+    },
+    "semantic_status": {
+      "default": "not_requested",
+      "enum": [
+        "not_requested",
+        "complete",
+        "failed"
+      ],
+      "title": "Semantic Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "segment_id",
+    "asset_id",
+    "start_frame",
+    "end_frame",
+    "start_time",
+    "end_time",
+    "boundary_uncertainty_frames",
+    "sampled_frames",
+    "technical",
+    "score"
+  ],
+  "title": "SceneSegment",
+  "type": "object"
+}

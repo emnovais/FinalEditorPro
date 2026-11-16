@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "enum": [
+        "transition",
+        "mask",
+        "effect"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "suggestion": {
+      "title": "Suggestion",
+      "type": "string"
+    },
+    "evidence_frame_indices": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Evidence Frame Indices",
+      "type": "array"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "implemented": {
+      "const": false,
+      "default": false,
+      "title": "Implemented",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "kind",
+    "suggestion",
+    "evidence_frame_indices",
+    "confidence"
+  ],
+  "title": "TransitionOpportunity",
+  "type": "object"
+}

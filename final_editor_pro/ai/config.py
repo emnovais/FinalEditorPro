@@ -27,10 +27,15 @@ class ProviderSettings(Contract):
     model_sha256: str | None = None
     input_usd_per_million: Decimal | None = Field(default=None, ge=0, allow_inf_nan=False)
     output_usd_per_million: Decimal | None = Field(default=None, ge=0, allow_inf_nan=False)
+    adapter: Literal['default', 'ollama', 'llama-server'] = 'default'
+    local_endpoint: str = 'http://127.0.0.1:11435'
+    model_digest: str | None = None
 
     @model_validator(mode='after')
     def supported(self):
-        allowed = {Task.PLANNING} if self.kind == 'local' else {Task.PLANNING, Task.VISUAL}
+        allowed = ({Task.TEMPORAL_VISUAL} if self.adapter in ('ollama', 'llama-server') else {Task.PLANNING}) if self.kind == 'local' else {Task.PLANNING, Task.VISUAL, Task.TEMPORAL_VISUAL}
+        if self.adapter in ('ollama', 'llama-server') and self.kind != 'local':
+            raise ValueError('Ollama adapter must be local')
         if not set(self.capabilities) <= allowed:
             raise ValueError('Optional adapters do not implement segmentation/VFX/media operations')
         if self.endpoint:

@@ -8,8 +8,15 @@ valida referências e tempos racionais e exporta FCPXML 1.10. A infraestrutura d
 oferece modos LOCAL, HYBRID e CLOUD, seleção por capacidade, schemas Pydantic,
 consentimento por upload e credenciais no macOS Keychain.
 
-**Estado:** testes offline aprovados. Adaptadores reais são opcionais, desativados
-por padrão e ainda não validados com modelo/API real. Não há VFX, segmentação,
+O MVP 0.2 acrescenta o [AI Video Analyzer](docs/ANALYZER.md): amostragem temporal,
+detecção de cenas aproximada, métricas técnicas, scoring explicável, cache e
+análise multimodal local. Uma execução real foi demonstrada com Qwen3-VL 4B;
+[resultados e benchmark](docs/ANALYZER_VALIDATION.md). Nenhuma decisão do Analyzer
+é aplicada automaticamente ao FCPXML.
+
+**Estado:** testes offline e análise multimodal local real aprovados nesta amostra.
+Providers são opcionais e desativados por padrão; APIs remotas não foram validadas
+em execução real. Não há VFX, segmentação de objetos,
 tracking, correção de cor ou importação automática no Final Cut implementados.
 
 ## Desenvolvimento com Codex

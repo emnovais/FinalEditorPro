@@ -1,0 +1,84 @@
+{
+  "$defs": {
+    "ScoreComponent": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "weight": {
+          "minimum": 0,
+          "title": "Weight",
+          "type": "number"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "weight",
+        "reason"
+      ],
+      "title": "ScoreComponent",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "profile": {
+      "title": "Profile",
+      "type": "string"
+    },
+    "components": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ScoreComponent"
+      },
+      "title": "Components",
+      "type": "object"
+    },
+    "weighted_score": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Weighted Score"
+    },
+    "available_weight_fraction": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Available Weight Fraction",
+      "type": "number"
+    },
+    "caveat": {
+      "default": "Heuristic triage only; never automatically discard a take.",
+      "title": "Caveat",
+      "type": "string"
+    }
+  },
+  "required": [
+    "profile",
+    "components",
+    "available_weight_fraction"
+  ],
+  "title": "ShotScore",
+  "type": "object"
+}

@@ -1,0 +1,272 @@
+{
+  "schema_version": "0.2.0",
+  "pipeline_version": "analyzer-2",
+  "asset": {
+    "asset_id": "6b3ac2ae738beb0d45a631f28f6dbcbb72533c15ea721d7a541aad5f86d4dedd",
+    "original_path": "workspace/test_media/A_0018C480A261031_164803HW_CANON.MXF",
+    "sha256": "6b3ac2ae738beb0d45a631f28f6dbcbb72533c15ea721d7a541aad5f86d4dedd",
+    "size_bytes": 122671152,
+    "fps": "50",
+    "duration": "96/25",
+    "source_start": "23244/25",
+    "total_frames": 192,
+    "width": 3840,
+    "height": 2160,
+    "codec": "h264",
+    "orientation": "unrotated",
+    "metadata": {
+      "path": "workspace/test_media/A_0018C480A261031_164803HW_CANON.MXF",
+      "sha256": "6b3ac2ae738beb0d45a631f28f6dbcbb72533c15ea721d7a541aad5f86d4dedd",
+      "size": 122671152,
+      "fps": "50",
+      "duration": "96/25",
+      "start": "23244/25",
+      "width": 3840,
+      "height": 2160,
+      "audio_channels": 1,
+      "audio_sources": 4,
+      "audio_streams": [
+        {
+          "index": 1,
+          "codec_name": "pcm_s24le",
+          "channels": 1,
+          "sample_rate": "48000",
+          "duration_ts": 184320,
+          "time_base": "1/48000"
+        },
+        {
+          "index": 2,
+          "codec_name": "pcm_s24le",
+          "channels": 1,
+          "sample_rate": "48000",
+          "duration_ts": 184320,
+          "time_base": "1/48000"
+        },
+        {
+          "index": 3,
+          "codec_name": "pcm_s24le",
+          "channels": 1,
+          "sample_rate": "48000",
+          "duration_ts": 184320,
+          "time_base": "1/48000"
+        },
+        {
+          "index": 4,
+          "codec_name": "pcm_s24le",
+          "channels": 1,
+          "sample_rate": "48000",
+          "duration_ts": 184320,
+          "time_base": "1/48000"
+        }
+      ],
+      "ancillary_streams": [
+        {
+          "index": 5,
+          "codec_type": "data",
+          "codec_name": "smpte_436m_anc"
+        }
+      ],
+      "source_timecode": "00:15:29:38",
+      "codec": "h264",
+      "pixel_format": "yuv422p10le",
+      "color": {
+        "color_space": "bt709",
+        "color_transfer": null,
+        "color_primaries": null
+      }
+    }
+  },
+  "segments": [
+    {
+      "segment_id": "6b3ac2ae738beb0d-0",
+      "asset_id": "6b3ac2ae738beb0d45a631f28f6dbcbb72533c15ea721d7a541aad5f86d4dedd",
+      "start_frame": 0,
+      "end_frame": 192,
+      "start_time": "0",
+      "end_time": "96/25",
+      "boundary_uncertainty_frames": 0,
+      "sampled_frames": [
+        {
+          "frame_index": 0,
+          "timestamp": "0",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000000.png",
+          "image_sha256": "a877bb956c1c8044db485167ec9e69557dc98784fc11e026f2bb277475965069"
+        },
+        {
+          "frame_index": 25,
+          "timestamp": "1/2",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000025.png",
+          "image_sha256": "9d056cef363ccbca90e272b56b1243e9914cf32ae938e22d265ebc24da5a3df5"
+        },
+        {
+          "frame_index": 50,
+          "timestamp": "1",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000050.png",
+          "image_sha256": "b3cc716074c989a9d314292757d63a59f8572aab0ecccd7ce4dc45cbbe05ff6a"
+        },
+        {
+          "frame_index": 75,
+          "timestamp": "3/2",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000075.png",
+          "image_sha256": "12282b5947ebb3a761aee9317608a94fb2d5ed67acfccc3edc8614fa851a37a3"
+        },
+        {
+          "frame_index": 100,
+          "timestamp": "2",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000100.png",
+          "image_sha256": "6db94e1ecca3d06b54992b6c15802b2b76c28525d2766e74a47c1255644cb44d"
+        },
+        {
+          "frame_index": 125,
+          "timestamp": "5/2",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000125.png",
+          "image_sha256": "84f01790ed0d0f5a8e94a09d1d275ca8b690b6c0b2f5de3674b613e05b1da49a"
+        },
+        {
+          "frame_index": 150,
+          "timestamp": "3",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000150.png",
+          "image_sha256": "0097d495bbb0312013c8e00c65334e36e447ac4edaaca89384d1a2772ec97677"
+        },
+        {
+          "frame_index": 175,
+          "timestamp": "7/2",
+          "image_path": "workspace/analyzer-benchmark-001/cache/fa39307e36af354ec422b2e09e3eb050f569d34d2317dd15df8340252fba6b04/frame-000000175.png",
+          "image_sha256": "88a66ea062ab699bbf7056c9f6f9cebc29ea0bc9e828d4aa0705034da549ae76"
+        }
+      ],
+      "technical": {
+        "sampled_frames": 8,
+        "sharpness_laplacian_variance": 75.754700101674,
+        "mean_luma": 0.26132366557734205,
+        "dark_fraction": 0.0,
+        "bright_fraction": 0.0,
+        "interframe_difference": 0.042475198412698416,
+        "instability_proxy": 0.003622946169208427,
+        "caveats": [
+          "Proxy-space metrics; no camera Log/HDR normalization.",
+          "Darkness, highlights and blur may be intentional; no automatic discard.",
+          "Interframe difference mixes camera/object motion and lighting; not optical flow.",
+          "Laplacian variance depends on proxy scale, noise and subject texture."
+        ]
+      },
+      "visual": {
+        "description": "A woman in a black top and a man in a dark shirt stand close, smiling at each other. Their hands are near shoulders.",
+        "people": [
+          "woman with long dark hair",
+          "man with short light hair"
+        ],
+        "objects": [
+          "black top",
+          "dark shirt"
+        ],
+        "environment": "outdoor urban setting with trees and buildings.",
+        "actions": [
+          "smiling at each other",
+          "hands near shoulders"
+        ],
+        "framing": "static shot, no motion detected between frames.",
+        "apparent_movement": "no discernible movement across frame_index 0 to 125.",
+        "atmosphere": "calm, intimate interaction.",
+        "opportunities": [],
+        "evidence_frame_indices": [
+          0,
+          125
+        ],
+        "uncertainties": [
+          "exact hand placement or gesture ambiguity"
+        ],
+        "confidence": 0.8,
+        "assessments": {
+          "visual_relevance": 0.9,
+          "action_presence": 0.7,
+          "narrative_potential": 0.6,
+          "transition_potential": 0.5
+        },
+        "assessment_reasons": {
+          "visual_relevance": "clear subjects and interaction",
+          "action_presence": "smiling and proximity indicate action",
+          "narrative_potential": "suggests emotional connection",
+          "transition_potential": "no motion implies static scene"
+        }
+      },
+      "score": {
+        "profile": "event",
+        "components": {
+          "technical_quality": {
+            "value": 0.5185844875870977,
+            "weight": 2.0,
+            "reason": "Equal proxy sharpness/exposure indicators; stylistic intent is unknown."
+          },
+          "visual_relevance": {
+            "value": 0.9,
+            "weight": 2.0,
+            "reason": "clear subjects and interaction"
+          },
+          "action_presence": {
+            "value": 0.7,
+            "weight": 3.0,
+            "reason": "smiling and proximity indicate action"
+          },
+          "narrative_potential": {
+            "value": 0.6,
+            "weight": 2.0,
+            "reason": "suggests emotional connection"
+          },
+          "transition_potential": {
+            "value": 0.5,
+            "weight": 1.0,
+            "reason": "no motion implies static scene"
+          },
+          "confidence": {
+            "value": 0.8,
+            "weight": 2.0,
+            "reason": "Model self-reported, uncalibrated confidence"
+          }
+        },
+        "weighted_score": 0.686430747931183,
+        "available_weight_fraction": 1.0,
+        "caveat": "Heuristic triage only; never automatically discard a take."
+      },
+      "provider": "local-vision",
+      "model": "qwen3-vl:4b-instruct@84f7ed8042fa7cdbd902f7dcb7d0370e032095047cc3244179f263b77b5bc318",
+      "semantic_status": "complete"
+    }
+  ],
+  "config": {
+    "sample_fps": "2",
+    "max_frames": 96,
+    "proxy_width": 320,
+    "min_scene_seconds": "1",
+    "histogram_threshold": 0.4,
+    "difference_threshold": 0.12,
+    "max_semantic_frames": 4,
+    "semantic": true,
+    "profile": "event",
+    "score_weights": null
+  },
+  "benchmark": {
+    "elapsed_seconds": 5.962759666999773,
+    "source_minutes": 0.064,
+    "seconds_per_video_minute": 93.16811979687145,
+    "process_peak_rss_bytes": 50118656,
+    "child_peak_rss_bytes": 951713792,
+    "memory_scope": "macOS process high-water RSS; GPU/unified allocations not measured",
+    "inference_seconds": 3.709758832999796,
+    "measured_inference_calls": 1,
+    "frames_extracted": 8,
+    "frames_available": 8,
+    "semantic_frames_submitted": 4,
+    "cache_hit": false,
+    "decode_cache_hit": false,
+    "cached_inference": false,
+    "status": "complete"
+  },
+  "limitations": [
+    "Scene detection is sampled and approximate, not frame-exact.",
+    "No audio transcription or acoustic analysis implemented; audio stream metadata only.",
+    "Motion metrics are proxies, not optical flow or tracking.",
+    "Semantic confidence/subjective scores are uncalibrated; review visual evidence.",
+    "Suggestions do not execute masks, effects or timeline edits."
+  ]
+}

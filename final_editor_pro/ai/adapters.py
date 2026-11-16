@@ -41,10 +41,10 @@ class LlamaCppPlanner:
 
 
 def openai_payload(task, request, model):
-    if task not in (Task.PLANNING, Task.VISUAL):
+    if task not in (Task.PLANNING, Task.VISUAL, Task.TEMPORAL_VISUAL):
         raise ValueError('This adapter implements planning and visual analysis only')
     content = [{'type': 'text', 'text': request.model_dump_json()}]
-    if task == Task.VISUAL:
+    if task in (Task.VISUAL, Task.TEMPORAL_VISUAL):
         # Metadata and actual image inputs, avoiding duplicate base64 in text.
         text = request.model_dump(mode='json')
         for frame in text['frames']:
@@ -99,6 +99,13 @@ def build_providers(config, policy, keychain=None):
         if not spec.enabled:
             continue
         if spec.kind == 'local':
+            if spec.adapter in ('ollama', 'llama-server'):
+                from ..analysis.ollama import OllamaTemporal, LlamaServerTemporal
+                adapter = OllamaTemporal if spec.adapter == 'ollama' else LlamaServerTemporal
+                runner = adapter(spec.model, spec.local_endpoint, spec.model_digest)
+                providers.append(LocalProvider(provider_id, spec.model + '@' + (spec.model_digest or ''),
+                                               {Task.TEMPORAL_VISUAL: runner}))
+                continue
             if not all((spec.executable, spec.model_path, spec.executable_sha256, spec.model_sha256)):
                 raise ValueError('Local adapter requires approved binary/model paths and hashes')
             runner = LlamaCppPlanner(spec.executable, spec.model_path,

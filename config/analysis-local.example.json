@@ -1,0 +1,13 @@
+{
+  "mode": "LOCAL", "allow_uploads": false,
+  "routes": {"temporal_visual_analysis": "local-vision"},
+  "providers": {
+    "local-vision": {
+      "kind": "local", "adapter": "llama-server", "enabled": false,
+      "model": "qwen3-vl:4b-instruct",
+      "capabilities": ["temporal_visual_analysis"],
+      "local_endpoint": "http://127.0.0.1:11435",
+      "model_digest": "84f7ed8042fa7cdbd902f7dcb7d0370e032095047cc3244179f263b77b5bc318"
+    }
+  }
+}

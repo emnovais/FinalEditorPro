@@ -1,5 +1,11 @@
 # Processamento de IA
 
+MVP 0.2: o task `temporal_visual_analysis` usa múltiplos frames e gera VisualAnalysis.
+Adapters locais opcionais `ollama` e `llama-server` são registrados no mesmo roteador,
+com `remote=False`; o segundo foi demonstrado com modelo real. Detalhes de preparação,
+cache, confidências e limites em [ANALYZER.md](ANALYZER.md). O CLI de análise continua
+recusando envio remoto até haver consentimento interativo por segmento.
+
 ## Política de modos
 
 | Modo | Seleção padrão sem rota explícita | Rede de IA |
@@ -88,7 +94,9 @@ Timeline Engine, FCPXML e testes. Probe é local após instalação aprovada de 
 Inferência llama.cpp exige binário/GGUF pré-provisionados: subprocesso com ambiente
 limpo, hashes verificados, flags offline e sandbox macOS negando rede e escrita.
 O sandbox é obrigatório e pode limitar caches/Metal; erro não permite execução
-sem sandbox. Nenhum modelo real foi carregado nesta etapa.
+sem sandbox. Esse caminho de planejamento ainda não foi validado com modelo real. A análise
+multimodal local do MVP 0.2 foi demonstrada pelo adapter llama-server, descrito
+em ANALYZER.md.
 
 Rede: provider HTTPS após consentimento; obtenção manual de dependências/modelos
 fora do processamento LOCAL exige aprovação própria. Testes Python bloqueiam

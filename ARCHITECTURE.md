@@ -1,5 +1,20 @@
 # Final Editor Pro — arquitetura
 
+## Incremento MVP 0.2 — AI Video Analyzer
+
+`final_editor_pro/analysis/` acrescenta ingestão reutilizada, extração proxy,
+detecção de cenas amostrada, métricas, semântica temporal e scores separados.
+Os relatórios não modificam a timeline. Configuração e políticas LOCAL/HYBRID/CLOUD
+reutilizam o roteador; `temporal_visual_analysis` é um novo contrato Pydantic.
+Runtime/modelo locais foram auditados quanto a proveniência e aprovados, com uma
+execução real e benchmark. O servidor é temporário e isolado por sandbox.
+Não houve instalação global ou novos pacotes Python. Exportador FCPXML intacto.
+Arquitetura operacional e schemas: [docs/ANALYZER.md](docs/ANALYZER.md).
+Evidências/limites: [docs/ANALYZER_VALIDATION.md](docs/ANALYZER_VALIDATION.md).
+
+O texto abaixo registra a base inicial e suas decisões; afirmações históricas de
+inferência ainda não executada foram superadas pelo relatório do incremento.
+
 Atualizado em 16/11/2026. Estado: MVP de timeline e infraestrutura de IA testados
 offline. Integrações reais opcionais implementadas como adapters, sem execução
 contra modelo/API nesta etapa. Nenhum processamento de VFX anunciado como pronto.

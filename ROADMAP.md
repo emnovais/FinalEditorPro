@@ -1,5 +1,23 @@
 # Final Editor Pro — roadmap
 
+## Base validada e próximo incremento
+
+MVP de timeline confirmado pelo usuário no Final Cut, incluindo a versão
+corrigida do formato de sequência. Base versionada: `a1e457e`.
+Preparação do MVP 0.2: [plano e critérios de aceite](docs/MVP_0_2_PLAN.md).
+A prioridade foi definida: AI Video Analyzer. Pipeline determinístico e uma
+análise multimodal local real foram demonstrados; detalhes e limites em
+[docs/ANALYZER_VALIDATION.md](docs/ANALYZER_VALIDATION.md). Sem commit/push automático.
+
+## MVP 0.3 — AI Creative Director (próximo)
+
+Consumir AnalysisReport como evidência, receber briefing/duração-alvo e gerar
+CreativePlan com justificativas que referenciem assets/segmentos. Validar limites
+de fonte e exigir revisão antes de compilar nova timeline. Priorizar avaliação de
+seleção/ritmo e comparação com montagem humana. Não tratar scores do Analyzer
+como verdades nem inferir diálogos a partir de frames. Batidas/transcrição e
+detecção de cortes mais precisa exigem validação própria antes de sincronização.
+
 ## Etapa 1 — concluída nesta inicialização
 
 - MVP determinístico preservado: metadados, JSON, timeline e exportador FCPXML.
