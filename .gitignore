@@ -82,3 +82,6 @@ runs/
 logs/
 audit/upstream/
 audit/wheels/
+
+# Local-only automated tests
+/tests/
