@@ -62,6 +62,20 @@
           "title": "Slow Motion Allowed",
           "type": "boolean"
         },
+        "max_shots_per_asset": {
+          "anyOf": [
+            {
+              "maximum": 20,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Shots Per Asset"
+        },
         "visual_style": {
           "maxLength": 1000,
           "minLength": 1,

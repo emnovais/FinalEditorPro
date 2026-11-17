@@ -132,3 +132,10 @@ Verificação de encerramento em 17/11/2026: 93 testes aprovados novamente;
 credencial ou arquivo temporário identificado entre os arquivos a versionar;
 nenhum arquivo ignorado já rastreado. `.gitignore`, `.github/` e `.editorconfig`
 continuam permitidos. Não foi necessária remoção de arquivos do índice.
+
+## Feedback editorial posterior
+
+O usuário avaliou a montagem de oito segmentos como mediana e apontou repetição
+de take. A aprovação funcional anterior (importação/cortes/slow motion/música)
+permanece distinta da avaliação estética. Auditoria e nova revisão:
+[FCPXML_AUDIO_AND_TAKE_REUSE_FIX.md](FCPXML_AUDIO_AND_TAKE_REUSE_FIX.md).

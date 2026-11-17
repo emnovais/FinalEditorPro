@@ -13,6 +13,7 @@ class CreativeBrief(Schema):
     output_width: int = Field(default=3840,gt=0)
     output_height: int = Field(default=2160,gt=0)
     slow_motion_allowed: bool = False
+    max_shots_per_asset: int | None = Field(default=None,ge=1,le=20)
     visual_style: str = Field(min_length=1,max_length=1000)
     pace: Literal['slow','balanced','energetic']
     narrative_preferences: list[str] = Field(default_factory=list)
@@ -131,6 +132,10 @@ class EditDecisionList(Schema):
             if d.source_out_frame>Fraction(m['duration'])*Fraction(m['fps']): raise ValueError('EDL outside media')
             if d.timeline_start_frame!=cursor: raise ValueError('EDL gap/overlap')
             cursor+=d.duration_frames
+        if self.brief.max_shots_per_asset is not None:
+            counts={}
+            for d in self.decisions:counts[d.asset_id]=counts.get(d.asset_id,0)+1
+            if any(n>self.brief.max_shots_per_asset for n in counts.values()):raise ValueError('EDL repeats a source beyond the brief limit')
         if cursor!=self.total_frames or cursor!=Fraction(self.brief.target_seconds)*Fraction(self.brief.fps): raise ValueError('Target duration mismatch')
         return self
 
@@ -139,6 +144,11 @@ def validate_direction(request,plan,check_duration=False):
     candidates={c.candidate_id:c for c in request.candidates}
     ids=[c.candidate_id for c in plan.choices]
     if len(set(ids))!=len(ids) or not set(ids)<=set(candidates): raise ValueError('Unknown/duplicate candidate')
+    if request.brief.max_shots_per_asset is not None:
+        counts={}
+        for candidate_id in ids:
+            asset=candidates[candidate_id].asset_id;counts[asset]=counts.get(asset,0)+1
+        if any(n>request.brief.max_shots_per_asset for n in counts.values()):raise ValueError('Narrative repeats source media beyond the brief limit')
     if not set(request.brief.required_candidate_ids)<=set(ids): raise ValueError('Required candidate omitted')
     if len(ids)>1 and (plan.choices[0].role!='opening' or plan.choices[-1].role!='ending'): raise ValueError('Missing opening/ending')
     if any(c.speed!='1' for c in plan.choices) and not request.brief.slow_motion_allowed: raise ValueError('Slow motion not permitted')
@@ -152,6 +162,9 @@ class MusicAnalysis(Schema):
     path: str
     sha256: str = Field(pattern=r'^[a-f0-9]{64}$')
     duration_seconds: str
+    source_start_seconds: str = '0'
+    source_clock_kind: Literal['zero','bwf_sample_reference'] = 'zero'
+    bwf_time_reference_samples: int | None = Field(default=None,ge=0)
     decoded_duration_seconds: str | None = None
     decoded_limit_seconds: int = Field(gt=0)
     estimated_bpm: float | None = Field(default=None,gt=0,allow_inf_nan=False)
@@ -167,6 +180,10 @@ class MusicAnalysis(Schema):
     def times(self):
         duration=Fraction(self.duration_seconds)
         if duration<=0:raise ValueError('Empty music')
+        if Fraction(self.source_start_seconds)<0:raise ValueError('Negative music source origin')
+        if self.source_clock_kind=='bwf_sample_reference':
+            if self.bwf_time_reference_samples is None or self.sample_rate is None or Fraction(self.source_start_seconds)!=Fraction(self.bwf_time_reference_samples,self.sample_rate):raise ValueError('Inconsistent BWF source clock')
+        elif Fraction(self.source_start_seconds)!=0 or self.bwf_time_reference_samples is not None:raise ValueError('Unexpected non-BWF origin')
         for field in (self.onsets_seconds,self.estimated_beats_seconds,self.intensity_peaks_seconds):
             if any(not 0<=Fraction(t)<duration for t in field):raise ValueError('Music event out of bounds')
         return self

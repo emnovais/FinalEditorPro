@@ -1,0 +1,121 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "frame_index": {
+      "minimum": 0,
+      "title": "Frame Index",
+      "type": "integer"
+    },
+    "luma": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Luma",
+      "type": "number"
+    },
+    "sharpness": {
+      "minimum": 0,
+      "title": "Sharpness",
+      "type": "number"
+    },
+    "histogram": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Histogram",
+      "type": "array"
+    },
+    "thumbnail": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Thumbnail",
+      "type": "array"
+    },
+    "motion": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Motion",
+      "type": "number"
+    },
+    "image_shift": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ],
+      "title": "Image Shift",
+      "type": "array"
+    },
+    "shift_confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Shift Confidence",
+      "type": "number"
+    },
+    "subject_position": {
+      "anyOf": [
+        {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subject Position"
+    },
+    "subject_area": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subject Area"
+    },
+    "subject_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subject Count"
+    }
+  },
+  "required": [
+    "frame_index",
+    "luma",
+    "sharpness",
+    "histogram",
+    "thumbnail",
+    "motion",
+    "image_shift",
+    "shift_confidence"
+  ],
+  "title": "FrameFeature",
+  "type": "object"
+}

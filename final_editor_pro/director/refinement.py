@@ -5,11 +5,14 @@ from ..analysis.metrics import measure
 from ..analysis.pipeline import within_project
 
 
-def refine(media,candidate,duration,folder,ffmpeg='/opt/homebrew/bin/ffmpeg'):
+def refine(media,candidate,duration,folder,ffmpeg='/opt/homebrew/bin/ffmpeg',alignment=1):
     if duration<=0 or duration>candidate.end_frame-candidate.start_frame: raise ValueError('Invalid refinement duration')
     fps=Fraction(media['fps']); center=(candidate.start_frame+candidate.end_frame-duration)//2
     radius=round(fps/5)
     starts=sorted({max(candidate.start_frame,min(candidate.end_frame-duration,center+delta)) for delta in (-radius,0,radius)})
+    phase=int(Fraction(media['start'])*fps)%alignment
+    starts=sorted({s+delta for s in starts for delta in range(-alignment,alignment+1) if candidate.start_frame<=s+delta<=candidate.end_frame-duration and (s+delta+phase)%alignment==0})
+    if not starts:raise ValueError('No timeline-aligned source cut')
     indices=sorted({i for start in starts for i in (start,start+duration-1)})
     expression='+'.join(f'eq(n\\,{i})' for i in indices)
     source=within_project(media['path']); width=160; height=max(2,round(media['height']*width/media['width']/2)*2); size=width*height*3
@@ -23,4 +26,4 @@ def refine(media,candidate,duration,folder,ffmpeg='/opt/homebrew/bin/ffmpeg'):
         return m['sharpness']/(1+m['sharpness'])-.25*(m['dark']+m['bright'])
     chosen=max(starts,key=lambda start:(value(start)+value(start+duration-1),-abs(start-center)))
     return chosen,dict(method='additional-boundary-frame-grid-v1',tested_start_frames=starts,inspected_frames=[dict(frame_index=i,metrics=metrics[i]) for i in indices],
-        chosen_start_frame=chosen,semantic_boundaries_used=False,caveat='Local heuristic boundary check; not a guarantee of complete action or aesthetic quality.')
+        chosen_start_frame=chosen,source_clock_alignment_frames=alignment,semantic_boundaries_used=False,caveat='Local heuristic boundary check; not a guarantee of complete action or aesthetic quality.')

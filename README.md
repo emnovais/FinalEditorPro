@@ -25,7 +25,15 @@ seleção, planejamento local, análise musical inicial, EDL e montagem editáve
 Por decisão do usuário, não haverá nova rodada de benchmark/revisão cega agora;
 Qwen3-VL 8B e Gemma 3 12B permanecem disponíveis sem vencedor declarado.
 
-**Estado:** MVP 0.3 aprovado manualmente no Final Cut Pro em 17/11/2026: cortes,
+O [MVP 0.4 — Intelligent Editing](docs/INTELLIGENT_EDITING.md) acrescenta:
+continuidade, reframing com evidência local, cortes por movimento, música e mixagem
+editável. [Nova montagem e comparação](docs/INTELLIGENT_EDITING_VALIDATION.md).
+A revisão de seis takes foi importada sem erros e considerada melhor pelo usuário.
+A correção BWF resolveu a espera ao reproduzir desde o início e foi incorporada.
+[Validação e correção](docs/FCPXML_STARTUP_INVESTIGATION.md).
+
+**Estado:** revisão MVP 0.4 validada no fluxo descrito acima; 133 testes locais
+aprovados. MVP 0.3 aprovado manualmente no Final Cut Pro em 17/11/2026: cortes,
 slow motion 50%, música, 20 segundos e 3840×2880/4:3/25 fps confirmados.
 Testes offline e análise multimodal local real aprovados nesta amostra.
 Providers são opcionais e desativados por padrão; APIs remotas não foram validadas
@@ -96,3 +104,7 @@ Chat Completions. O roteador não instala, baixa modelos nem aprova uploads sozi
 
 XML válido pela DTD não comprova importação correta. Não foi feito round-trip no
 Final Cut nem benchmark 4K. Leia os limites em ARCHITECTURE.md antes de usar mídia real.
+
+Os arquivos de testes permanecem somente no ambiente local, fora do versionamento
+por decisão do usuário (`/tests/` no `.gitignore`). Uma cópia nova do repositório
+não inclui essa suíte; os resultados registrados referem-se ao ambiente local.

@@ -1,0 +1,97 @@
+{
+  "$defs": {
+    "SubjectBox": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "X",
+          "type": "number"
+        },
+        "y": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Y",
+          "type": "number"
+        },
+        "width": {
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "Width",
+          "type": "number"
+        },
+        "height": {
+          "exclusiveMinimum": 0,
+          "maximum": 1,
+          "title": "Height",
+          "type": "number"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "confidence"
+      ],
+      "title": "SubjectBox",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "asset_sha256": {
+      "title": "Asset Sha256",
+      "type": "string"
+    },
+    "frame_index": {
+      "minimum": 0,
+      "title": "Frame Index",
+      "type": "integer"
+    },
+    "image_sha256": {
+      "title": "Image Sha256",
+      "type": "string"
+    },
+    "detector": {
+      "title": "Detector",
+      "type": "string"
+    },
+    "boxes": {
+      "items": {
+        "$ref": "#/$defs/SubjectBox"
+      },
+      "title": "Boxes",
+      "type": "array"
+    },
+    "rejected_box_count": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Rejected Box Count",
+      "type": "integer"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "asset_sha256",
+    "frame_index",
+    "image_sha256",
+    "detector",
+    "boxes"
+  ],
+  "title": "SubjectObservation",
+  "type": "object"
+}

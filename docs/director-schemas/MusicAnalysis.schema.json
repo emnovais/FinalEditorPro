@@ -25,6 +25,33 @@
       "title": "Duration Seconds",
       "type": "string"
     },
+    "source_start_seconds": {
+      "default": "0",
+      "title": "Source Start Seconds",
+      "type": "string"
+    },
+    "source_clock_kind": {
+      "default": "zero",
+      "enum": [
+        "zero",
+        "bwf_sample_reference"
+      ],
+      "title": "Source Clock Kind",
+      "type": "string"
+    },
+    "bwf_time_reference_samples": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bwf Time Reference Samples"
+    },
     "decoded_duration_seconds": {
       "anyOf": [
         {

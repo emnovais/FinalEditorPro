@@ -1,0 +1,16 @@
+{
+  "version": "0.4.0",
+  "continuity_weight": 0.7,
+  "allow_reorder": true,
+  "intentional_break_after": [],
+  "action_strategy": "preserve_complete_action",
+  "search_radius_seconds": "2/5",
+  "music_tolerance_seconds": "6/25",
+  "min_shot_seconds": "1",
+  "music_gain_db": -16.0,
+  "original_gain_db": -6.0,
+  "fade_seconds": "1/5",
+  "ducking": false,
+  "duck_db": -8.0,
+  "priority_ranges": []
+}

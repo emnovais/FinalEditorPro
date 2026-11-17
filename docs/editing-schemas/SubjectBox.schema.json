@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "x": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "X",
+      "type": "number"
+    },
+    "y": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Y",
+      "type": "number"
+    },
+    "width": {
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Width",
+      "type": "number"
+    },
+    "height": {
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Height",
+      "type": "number"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    }
+  },
+  "required": [
+    "x",
+    "y",
+    "width",
+    "height",
+    "confidence"
+  ],
+  "title": "SubjectBox",
+  "type": "object"
+}

@@ -58,3 +58,16 @@ def analyze_music(path,ffmpeg='/opt/homebrew/bin/ffmpeg'):
     if (sha256(p),p.stat().st_size,p.stat().st_mtime_ns)!=before: raise ValueError('Music changed')
     from .schemas import MusicAnalysis
     return MusicAnalysis.model_validate(result).model_dump(mode='json')
+
+
+def source_clock_metadata(probe_data):
+    """BWF time_reference is an absolute sample clock, not a playback delay."""
+    stream=next((s for s in probe_data.get('streams',[]) if s.get('codec_type')=='audio'),None)
+    if stream is None:raise ValueError('Audio source missing')
+    reference=probe_data.get('format',{}).get('tags',{}).get('time_reference')
+    if reference is None:return dict(source_start_seconds='0',source_clock_kind='zero',bwf_time_reference_samples=None)
+    text=str(reference)
+    if not text.isascii() or not text.isdecimal():raise ValueError('Invalid BWF sample reference')
+    rate=int(stream['sample_rate'])
+    if rate<=0:raise ValueError('Invalid BWF sample rate')
+    return dict(source_start_seconds=str(Fraction(int(text),rate)),source_clock_kind='bwf_sample_reference',bwf_time_reference_samples=int(text))

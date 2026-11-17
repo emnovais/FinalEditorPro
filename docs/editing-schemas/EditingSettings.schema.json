@@ -1,0 +1,113 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "0.4.0",
+      "default": "0.4.0",
+      "title": "Version",
+      "type": "string"
+    },
+    "project_name": {
+      "default": "Final Editor Pro — Intelligent Editing 0.4",
+      "maxLength": 256,
+      "minLength": 1,
+      "title": "Project Name",
+      "type": "string"
+    },
+    "continuity_weight": {
+      "default": 0.7,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Continuity Weight",
+      "type": "number"
+    },
+    "allow_reorder": {
+      "default": true,
+      "title": "Allow Reorder",
+      "type": "boolean"
+    },
+    "intentional_break_after": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Intentional Break After",
+      "type": "array"
+    },
+    "action_strategy": {
+      "default": "preserve_complete_action",
+      "enum": [
+        "cut_on_action",
+        "preserve_complete_action",
+        "cut_before_action",
+        "cut_after_action"
+      ],
+      "title": "Action Strategy",
+      "type": "string"
+    },
+    "search_radius_seconds": {
+      "default": "2/5",
+      "title": "Search Radius Seconds",
+      "type": "string"
+    },
+    "music_tolerance_seconds": {
+      "default": "6/25",
+      "title": "Music Tolerance Seconds",
+      "type": "string"
+    },
+    "min_shot_seconds": {
+      "default": "1",
+      "title": "Min Shot Seconds",
+      "type": "string"
+    },
+    "music_gain_db": {
+      "default": -16,
+      "maximum": 0,
+      "minimum": -60,
+      "title": "Music Gain Db",
+      "type": "number"
+    },
+    "original_gain_db": {
+      "default": -6,
+      "maximum": 0,
+      "minimum": -60,
+      "title": "Original Gain Db",
+      "type": "number"
+    },
+    "fade_seconds": {
+      "default": "1/5",
+      "title": "Fade Seconds",
+      "type": "string"
+    },
+    "ducking": {
+      "default": false,
+      "title": "Ducking",
+      "type": "boolean"
+    },
+    "duck_db": {
+      "default": -8,
+      "maximum": 0,
+      "minimum": -40,
+      "title": "Duck Db",
+      "type": "number"
+    },
+    "priority_ranges": {
+      "items": {
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "title": "Priority Ranges",
+      "type": "array"
+    }
+  },
+  "title": "EditingSettings",
+  "type": "object"
+}

@@ -1,0 +1,767 @@
+{
+  "$defs": {
+    "AudioEnvelope": {
+      "additionalProperties": false,
+      "properties": {
+        "points": {
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "AudioEnvelope",
+      "type": "object"
+    },
+    "CreativeBrief": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": "0.3.0",
+          "default": "0.3.0",
+          "title": "Version",
+          "type": "string"
+        },
+        "project_type": {
+          "enum": [
+            "wedding",
+            "restaurant",
+            "event",
+            "travel",
+            "social",
+            "couple"
+          ],
+          "title": "Project Type",
+          "type": "string"
+        },
+        "objective": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Objective",
+          "type": "string"
+        },
+        "target_seconds": {
+          "title": "Target Seconds",
+          "type": "string"
+        },
+        "aspect_ratio": {
+          "enum": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3"
+          ],
+          "title": "Aspect Ratio",
+          "type": "string"
+        },
+        "fps": {
+          "title": "Fps",
+          "type": "string"
+        },
+        "output_width": {
+          "default": 3840,
+          "exclusiveMinimum": 0,
+          "title": "Output Width",
+          "type": "integer"
+        },
+        "output_height": {
+          "default": 2160,
+          "exclusiveMinimum": 0,
+          "title": "Output Height",
+          "type": "integer"
+        },
+        "slow_motion_allowed": {
+          "default": false,
+          "title": "Slow Motion Allowed",
+          "type": "boolean"
+        },
+        "max_shots_per_asset": {
+          "anyOf": [
+            {
+              "maximum": 20,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Shots Per Asset"
+        },
+        "visual_style": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Visual Style",
+          "type": "string"
+        },
+        "pace": {
+          "enum": [
+            "slow",
+            "balanced",
+            "energetic"
+          ],
+          "title": "Pace",
+          "type": "string"
+        },
+        "narrative_preferences": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Narrative Preferences",
+          "type": "array"
+        },
+        "constraints": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Constraints",
+          "type": "array"
+        },
+        "required_candidate_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Candidate Ids",
+          "type": "array"
+        },
+        "music_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Music Path"
+        },
+        "model_id": {
+          "enum": [
+            "qwen3-vl-8b-instruct",
+            "gemma3-12b"
+          ],
+          "title": "Model Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "project_type",
+        "objective",
+        "target_seconds",
+        "aspect_ratio",
+        "fps",
+        "visual_style",
+        "pace",
+        "model_id"
+      ],
+      "title": "CreativeBrief",
+      "type": "object"
+    },
+    "EditDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "segment_id": {
+          "title": "Segment Id",
+          "type": "string"
+        },
+        "source_in_frame": {
+          "minimum": 0,
+          "title": "Source In Frame",
+          "type": "integer"
+        },
+        "source_out_frame": {
+          "exclusiveMinimum": 0,
+          "title": "Source Out Frame",
+          "type": "integer"
+        },
+        "timeline_start_frame": {
+          "minimum": 0,
+          "title": "Timeline Start Frame",
+          "type": "integer"
+        },
+        "duration_frames": {
+          "exclusiveMinimum": 0,
+          "title": "Duration Frames",
+          "type": "integer"
+        },
+        "fps": {
+          "title": "Fps",
+          "type": "string"
+        },
+        "source_fps": {
+          "title": "Source Fps",
+          "type": "string"
+        },
+        "speed": {
+          "enum": [
+            "1",
+            "1/2"
+          ],
+          "title": "Speed",
+          "type": "string"
+        },
+        "audio_policy": {
+          "enum": [
+            "preserve",
+            "mute_slow_motion"
+          ],
+          "title": "Audio Policy",
+          "type": "string"
+        },
+        "source_in_seconds": {
+          "title": "Source In Seconds",
+          "type": "string"
+        },
+        "source_out_seconds": {
+          "title": "Source Out Seconds",
+          "type": "string"
+        },
+        "timeline_start_seconds": {
+          "title": "Timeline Start Seconds",
+          "type": "string"
+        },
+        "duration_seconds": {
+          "title": "Duration Seconds",
+          "type": "string"
+        },
+        "role": {
+          "title": "Role",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "brief_relation": {
+          "title": "Brief Relation",
+          "type": "string"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "score_components": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Score Components",
+          "type": "object"
+        },
+        "refinement": {
+          "additionalProperties": true,
+          "title": "Refinement",
+          "type": "object"
+        },
+        "music_sync": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Music Sync"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "asset_id",
+        "segment_id",
+        "source_in_frame",
+        "source_out_frame",
+        "timeline_start_frame",
+        "duration_frames",
+        "fps",
+        "source_fps",
+        "speed",
+        "audio_policy",
+        "source_in_seconds",
+        "source_out_seconds",
+        "timeline_start_seconds",
+        "duration_seconds",
+        "role",
+        "rationale",
+        "brief_relation",
+        "confidence",
+        "score_components",
+        "refinement"
+      ],
+      "title": "EditDecision",
+      "type": "object"
+    },
+    "EditDecisionList": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": "0.3.0",
+          "default": "0.3.0",
+          "title": "Version",
+          "type": "string"
+        },
+        "brief": {
+          "$ref": "#/$defs/CreativeBrief"
+        },
+        "media": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "minItems": 1,
+          "title": "Media",
+          "type": "array"
+        },
+        "decisions": {
+          "items": {
+            "$ref": "#/$defs/EditDecision"
+          },
+          "minItems": 1,
+          "title": "Decisions",
+          "type": "array"
+        },
+        "total_frames": {
+          "exclusiveMinimum": 0,
+          "title": "Total Frames",
+          "type": "integer"
+        },
+        "music": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Music"
+        },
+        "planning": {
+          "additionalProperties": true,
+          "title": "Planning",
+          "type": "object"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "brief",
+        "media",
+        "decisions",
+        "total_frames",
+        "planning",
+        "warnings"
+      ],
+      "title": "EditDecisionList",
+      "type": "object"
+    },
+    "EditingSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": "0.4.0",
+          "default": "0.4.0",
+          "title": "Version",
+          "type": "string"
+        },
+        "project_name": {
+          "default": "Final Editor Pro — Intelligent Editing 0.4",
+          "maxLength": 256,
+          "minLength": 1,
+          "title": "Project Name",
+          "type": "string"
+        },
+        "continuity_weight": {
+          "default": 0.7,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Continuity Weight",
+          "type": "number"
+        },
+        "allow_reorder": {
+          "default": true,
+          "title": "Allow Reorder",
+          "type": "boolean"
+        },
+        "intentional_break_after": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Intentional Break After",
+          "type": "array"
+        },
+        "action_strategy": {
+          "default": "preserve_complete_action",
+          "enum": [
+            "cut_on_action",
+            "preserve_complete_action",
+            "cut_before_action",
+            "cut_after_action"
+          ],
+          "title": "Action Strategy",
+          "type": "string"
+        },
+        "search_radius_seconds": {
+          "default": "2/5",
+          "title": "Search Radius Seconds",
+          "type": "string"
+        },
+        "music_tolerance_seconds": {
+          "default": "6/25",
+          "title": "Music Tolerance Seconds",
+          "type": "string"
+        },
+        "min_shot_seconds": {
+          "default": "1",
+          "title": "Min Shot Seconds",
+          "type": "string"
+        },
+        "music_gain_db": {
+          "default": -16,
+          "maximum": 0,
+          "minimum": -60,
+          "title": "Music Gain Db",
+          "type": "number"
+        },
+        "original_gain_db": {
+          "default": -6,
+          "maximum": 0,
+          "minimum": -60,
+          "title": "Original Gain Db",
+          "type": "number"
+        },
+        "fade_seconds": {
+          "default": "1/5",
+          "title": "Fade Seconds",
+          "type": "string"
+        },
+        "ducking": {
+          "default": false,
+          "title": "Ducking",
+          "type": "boolean"
+        },
+        "duck_db": {
+          "default": -8,
+          "maximum": 0,
+          "minimum": -40,
+          "title": "Duck Db",
+          "type": "number"
+        },
+        "priority_ranges": {
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "type": "array"
+          },
+          "title": "Priority Ranges",
+          "type": "array"
+        }
+      },
+      "title": "EditingSettings",
+      "type": "object"
+    },
+    "MixPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "music_gain_db": {
+          "title": "Music Gain Db",
+          "type": "number"
+        },
+        "original_gain_db": {
+          "title": "Original Gain Db",
+          "type": "number"
+        },
+        "music_envelope": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AudioEnvelope"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_envelopes": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/AudioEnvelope"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Original Envelopes",
+          "type": "array"
+        },
+        "estimated_peak_bound_dbfs": {
+          "title": "Estimated Peak Bound Dbfs",
+          "type": "number"
+        },
+        "peak_measurements": {
+          "additionalProperties": true,
+          "title": "Peak Measurements",
+          "type": "object"
+        },
+        "ducking_applied": {
+          "title": "Ducking Applied",
+          "type": "boolean"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "music_gain_db",
+        "original_gain_db",
+        "music_envelope",
+        "original_envelopes",
+        "estimated_peak_bound_dbfs",
+        "peak_measurements",
+        "ducking_applied",
+        "warnings"
+      ],
+      "title": "MixPlan",
+      "type": "object"
+    },
+    "ReframeDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "decision_index": {
+          "minimum": 0,
+          "title": "Decision Index",
+          "type": "integer"
+        },
+        "method": {
+          "enum": [
+            "verified_detector_union",
+            "central_fallback"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "crop": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Crop",
+          "type": "array"
+        },
+        "transform_position": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Transform Position",
+          "type": "array"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence_frames": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Evidence Frames",
+          "type": "array"
+        },
+        "subject_box": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subject Box"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "decision_index",
+        "method",
+        "crop",
+        "transform_position",
+        "confidence",
+        "evidence_frames",
+        "warnings"
+      ],
+      "title": "ReframeDecision",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "0.4.0",
+      "default": "0.4.0",
+      "title": "Version",
+      "type": "string"
+    },
+    "base_edl": {
+      "$ref": "#/$defs/EditDecisionList"
+    },
+    "settings": {
+      "$ref": "#/$defs/EditingSettings"
+    },
+    "source_edl_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Source Edl Sha256",
+      "type": "string"
+    },
+    "order": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Order",
+      "type": "array"
+    },
+    "action_refinements": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Action Refinements",
+      "type": "array"
+    },
+    "reframing": {
+      "items": {
+        "$ref": "#/$defs/ReframeDecision"
+      },
+      "title": "Reframing",
+      "type": "array"
+    },
+    "continuity": {
+      "additionalProperties": true,
+      "title": "Continuity",
+      "type": "object"
+    },
+    "music": {
+      "additionalProperties": true,
+      "title": "Music",
+      "type": "object"
+    },
+    "mix": {
+      "$ref": "#/$defs/MixPlan"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "title": "Provenance",
+      "type": "object"
+    }
+  },
+  "required": [
+    "base_edl",
+    "settings",
+    "source_edl_sha256",
+    "order",
+    "action_refinements",
+    "reframing",
+    "continuity",
+    "music",
+    "mix",
+    "provenance"
+  ],
+  "title": "EditingPackage",
+  "type": "object"
+}

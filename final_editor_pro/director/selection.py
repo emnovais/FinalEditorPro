@@ -21,10 +21,10 @@ def candidates_from_reports(reports,brief,proposal_dir=None):
                 if row.get('source_sha256')==asset.sha256 and row.get('status')=='success': proposals.append(row)
         for segment in report.segments:
             # Bounded candidate windows, independent of model event-span boundaries.
-            size=round(Fraction(brief.fps)*{'slow':6,'balanced':5,'energetic':3}[brief.pace])
+            size=round(Fraction(asset.fps)*{'slow':6,'balanced':5,'energetic':3}[brief.pace])
             for start in range(segment.start_frame,segment.end_frame,size):
                 end=min(start+size,segment.end_frame)
-                if end-start<min(size,round(Fraction(brief.fps))): continue
+                if end-start<min(size,round(Fraction(asset.fps))): continue
                 interpretations=[]
                 if segment.visual:
                     interpretations.append(dict(model=segment.model,description=segment.visual.description,confidence=segment.visual.confidence))
@@ -77,7 +77,10 @@ def complete_duration(request,narrative):
     target=Fraction(request.brief.target_seconds);added=[]
     while available()<target:
         used={ch.candidate_id for ch in choices};sources={candidates[ch.candidate_id].asset_id for ch in choices}
-        options=[c for c in request.candidates if c.candidate_id not in used]
+        counts={}
+        for ch in choices:
+            asset=candidates[ch.candidate_id].asset_id;counts[asset]=counts.get(asset,0)+1
+        options=[c for c in request.candidates if c.candidate_id not in used and (request.brief.max_shots_per_asset is None or counts.get(c.asset_id,0)<request.brief.max_shots_per_asset)]
         if not options or len(choices)>=20:raise ValueError('Not enough unique footage for requested duration')
         # Prefer a new source, then more available footage; no single opaque quality score.
         c=max(options,key=lambda c:(c.asset_id not in sources,c.end_frame-c.start_frame,c.confidence))
@@ -87,3 +90,33 @@ def complete_duration(request,narrative):
         choices.insert(max(0,len(choices)-1),choice);added.append(c.candidate_id)
     result=narrative.model_copy(update={'choices':choices,'warnings':narrative.warnings+(['Deterministic engine supplemented model ranking for duration: '+', '.join(added)] if added else [])})
     return validate_direction(request,result,check_duration=True)
+
+
+def unique_source_shortlist(candidates,required=()):
+    """Structural diversity: one explicit candidate per file, not only a prompt request."""
+    groups={}
+    for c in candidates:groups.setdefault(c.asset_id,[]).append(c)
+    chosen=[]
+    for group in groups.values():
+        mandated=[c for c in group if c.candidate_id in required]
+        if len(mandated)>1:raise ValueError('Required candidates conflict with single-use source policy')
+        def evidence(c):
+            events=set(e.casefold() for row in c.interpretations for e in row.get('events',[]))
+            blurred=sum('blur' in e or 'out of focus' in e for e in events)
+            return (c.end_frame-c.start_frame,-blurred,len(events),-c.start_frame)
+        selected=mandated[0] if mandated else max(group,key=evidence)
+        selected=selected.model_copy(update={'warnings':selected.warnings+['One candidate per source selected by available duration, blur-event warnings and evidence variety; no aesthetic quality guarantee.']})
+        chosen.append(selected)
+    if set(required)-{c.candidate_id for c in chosen}:raise ValueError('Required candidate absent')
+    return chosen
+
+
+def assign_boundary_roles(narrative):
+    """Deterministic role labels only; preserve model order, choices and speeds."""
+    if len(narrative.choices)<2:return narrative
+    choices=list(narrative.choices);changes=[]
+    for index,role in ((0,'opening'),(len(choices)-1,'ending')):
+        if choices[index].role!=role:
+            changes.append(f'{index+1}: {choices[index].role}->{role}')
+            choices[index]=choices[index].model_copy(update={'role':role})
+    return narrative.model_copy(update={'choices':choices,'warnings':narrative.warnings+(['Deterministic boundary role labels: '+', '.join(changes)+'; narrative closure still requires review.'] if changes else [])})

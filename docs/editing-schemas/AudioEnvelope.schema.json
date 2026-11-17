@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "points": {
+      "items": {
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "title": "Points",
+      "type": "array"
+    }
+  },
+  "required": [
+    "points"
+  ],
+  "title": "AudioEnvelope",
+  "type": "object"
+}

@@ -26,6 +26,21 @@ com feedback humano, melhorar onsets/tempo e mix, testar round-trip de retime/m�
 validar planejamento Gemma no fluxo real e só então ampliar formatos/efeitos.
 Máscaras, tracking, transições automatizadas e VFX permanecem no roadmap.
 
+## MVP 0.4 — Intelligent Editing & Continuity (revisão de seis takes validada)
+
+Continuidade explicável, reframing estático, refinamento de cortes, eventos
+musicais e ganho/fades editáveis implementados, com montagem real e preview.
+Gemma 3 12B exercitado como planejador; sem novo benchmark ou vencedor.
+[Relatório](docs/INTELLIGENT_EDITING_VALIDATION.md). Recebidos round-trip nativo,
+importação sem erros e feedback visual positivo para a revisão de seis takes.
+A reconciliação BWF eliminou a espera inicial no teste manual e está incorporada.
+Commit e push da branch de desenvolvimento autorizados em 17/11/2026; sem merge
+automático na main.
+
+Depois: validar feedback de enquadramento/mix, melhorar ações semânticas e
+continuidade, decidir prioridade de tracking e crossfades com handles. Máscaras,
+transições automáticas, speed ramps e VFX seguem graduais, com testes de round-trip.
+
 ## Etapa 1 — concluída nesta inicialização
 
 - MVP determinístico preservado: metadados, JSON, timeline e exportador FCPXML.
@@ -74,3 +89,14 @@ Efeitos externos usam recursos derivados e registram perda de editabilidade inte
 Persistência transacional, reconciliação de custos/faturas, logs também de
 preflight/probe, sandbox de arquivos mais restrito e auditoria de providers.
 MCP opcional com allowlist mínima, sem importação automática em bibliotecas reais.
+
+### Validação posterior da revisão de seis takes
+
+Recebidos: importação sem erros, melhora visual e keyframes funcionando; o teste A
+resolveu a demora inicial, e a correção BWF está incorporada. Consolidado em
+`workspace/director-0.4/revision-unique/final-bwf/`. Não executar commit/push sem
+nova autorização. Relatório: [investigação de startup](docs/FCPXML_STARTUP_INVESTIGATION.md).
+
+Autorização atual em 17/11/2026: registrar e publicar as alterações acumuladas
+na branch `develop/mvp-0.4-intelligent-editing`. As notas anteriores de espera por
+autorização são históricas; não impedem este commit/push solicitado.

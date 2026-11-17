@@ -1,0 +1,111 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decision_index": {
+      "minimum": 0,
+      "title": "Decision Index",
+      "type": "integer"
+    },
+    "method": {
+      "enum": [
+        "verified_detector_union",
+        "central_fallback"
+      ],
+      "title": "Method",
+      "type": "string"
+    },
+    "crop": {
+      "maxItems": 4,
+      "minItems": 4,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Crop",
+      "type": "array"
+    },
+    "transform_position": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Transform Position",
+      "type": "array"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "evidence_frames": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Evidence Frames",
+      "type": "array"
+    },
+    "subject_box": {
+      "anyOf": [
+        {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subject Box"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "decision_index",
+    "method",
+    "crop",
+    "transform_position",
+    "confidence",
+    "evidence_frames",
+    "warnings"
+  ],
+  "title": "ReframeDecision",
+  "type": "object"
+}

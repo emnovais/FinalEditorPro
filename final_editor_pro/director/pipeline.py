@@ -59,7 +59,10 @@ def build_edl(brief,reports,candidates,narrative,media,*,refiner=refine,folder=N
         c=byid[choice.candidate_id]; m=sources[c.asset_id]
         consumed=Fraction(duration)/fps*Fraction(c.fps)*Fraction(choice.speed)
         if consumed.denominator!=1: raise ValueError('Retime is not source-frame aligned')
-        start,details=refiner(m,c,int(consumed),folder)
+        if refiner is refine:
+            alignment=int(Fraction(c.fps)/fps) if choice.speed=='1' else 1
+            start,details=refiner(m,c,int(consumed),folder,alignment=alignment)
+        else:start,details=refiner(m,c,int(consumed),folder)
         end=start+int(consumed)
         if not c.start_frame<=start<end<=c.end_frame: raise ValueError('Refinement escaped candidate')
         decisions.append(EditDecision(candidate_id=c.candidate_id,asset_id=c.asset_id,segment_id=c.segment_id,
@@ -90,7 +93,9 @@ def review_html(edl):
 
 
 def run_director(brief,report_paths,output,router,*,proposal_dir=None,consent=None,ffprobe='/opt/homebrew/bin/ffprobe',ffmpeg='/opt/homebrew/bin/ffmpeg'):
-    brief=CreativeBrief.model_validate(brief);out=within_project(output)
+    brief=CreativeBrief.model_validate(brief)
+    if brief.max_shots_per_asset is None:brief=brief.model_copy(update={'max_shots_per_asset':1})
+    out=within_project(output)
     if out.exists(): raise FileExistsError('Director output must be new')
     out.mkdir(parents=True,mode=0o700)
     def save(name,value):
@@ -110,7 +115,10 @@ def run_director(brief,report_paths,output,router,*,proposal_dir=None,consent=No
         music=None
         if brief.music_path:
             music=analyze_music(brief.music_path,ffmpeg)
-            stream=next(s for s in probe(within_project(brief.music_path),ffprobe)['streams'] if s['codec_type']=='audio')
+            music_probe=probe(within_project(brief.music_path),ffprobe)
+            stream=next(s for s in music_probe['streams'] if s['codec_type']=='audio')
+            from .music import source_clock_metadata
+            music.update(source_clock_metadata(music_probe))
             if Fraction(stream.get('start_time','0'))!=0:raise ValueError('Music source PTS requires explicit reconciliation')
             exact_duration=Fraction(int(stream['duration_ts']))*Fraction(stream['time_base']) if 'duration_ts' in stream and 'time_base' in stream else Fraction(stream['duration'])
             music.update(channels=int(stream['channels']),sample_rate=int(stream['sample_rate']),duration_seconds=str(exact_duration))
@@ -120,7 +128,10 @@ def run_director(brief,report_paths,output,router,*,proposal_dir=None,consent=No
             save('music-analysis.json',music)
         candidates=candidates_from_reports(reports,brief,proposal_dir)
         save('all-candidates.json',[c.model_dump(mode='json') for c in candidates])
-        candidates=shortlist(candidates,brief.required_candidate_ids)
+        if brief.max_shots_per_asset==1:
+            from .selection import unique_source_shortlist
+            candidates=unique_source_shortlist(candidates,brief.required_candidate_ids)
+        else:candidates=shortlist(candidates,brief.required_candidate_ids)
         request=DirectionRequest(brief=brief,candidates=candidates)
         selected=router.select(Task.DIRECTION)
         if not selected.model.startswith(brief.model_id) and brief.model_id not in selected.id: raise ValueError('Selected provider differs from brief model')

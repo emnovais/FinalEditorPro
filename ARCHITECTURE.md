@@ -1,5 +1,26 @@
 # Final Editor Pro — arquitetura
 
+## Incremento MVP 0.4 — Intelligent Editing (revisão validada no Final Cut)
+
+`final_editor_pro/editing/` refina EDLs do Director com continuidade explicável,
+reframing estático por evidências, cortes por movimento aparente, eventos musicais,
+ganhos e envelopes editáveis. `EditingPackage` v0.4 mantém o contrato executável
+EDL v0.3 embutido. `ave/core.py` permanece intacto; o adaptador do Director recebe
+a preservação da origem BWF. Uma camada XML adicional aplica transform/gain,
+com verificações semânticas correspondentes. Caches e observações são
+vinculados a hashes. O Vision nativo opcional usa helper Swift próprio auditado,
+sem instalação/download, com rede negada; caixas inválidas são rejeitadas.
+
+Gemma 3 12B executou planejamento narrativo real pelo pipeline existente. A revisão
+de seis takes recebeu importação manual sem erros, round-trip nativo
+e feedback visual positivo. O teste A resolveu a espera inicial; a origem BWF
+agora é preservada no asset, no clip musical e nos keyframes, sem mudar o tempo
+relativo da montagem. A validação cobre esta amostra, não todos os formatos.
+Não há novo benchmark, vencedor de modelos, tracking completo,
+reconhecimento de diálogo, crossfade com handles ou garantia de estética.
+Arquitetura: [docs/INTELLIGENT_EDITING.md](docs/INTELLIGENT_EDITING.md).
+Validação: [docs/INTELLIGENT_EDITING_VALIDATION.md](docs/INTELLIGENT_EDITING_VALIDATION.md).
+
 ## Incremento MVP 0.3 — AI Creative Director
 
 `final_editor_pro/director/` acrescenta briefing, seleção por candidatos,
