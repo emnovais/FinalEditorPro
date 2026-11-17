@@ -13,6 +13,8 @@ class Task(StrEnum):
     VISUAL = 'visual_analysis'
     TEMPORAL_VISUAL = 'temporal_visual_analysis'
     PLANNING = 'planning'
+    DIRECTION = 'creative_direction'
+    BRIEF = 'creative_brief'
     SEGMENTATION = 'segmentation'
     EFFECTS = 'effect_generation'
     PROBE = 'media_probe'
@@ -107,6 +109,13 @@ CONTRACTS[Task.TEMPORAL_VISUAL] = (TemporalInput, VisualAnalysis)
 
 def validate_output(task, request, output):
     result = CONTRACTS[task][1].model_validate(output)
+    if task == Task.BRIEF and result.brief is not None:
+        essential={'project_type','objective','target_seconds','aspect_ratio','fps','output_width','output_height','visual_style','pace','model_id'}
+        if not essential<=set(result.field_evidence) or any(not q or q not in request.instruction for q in result.field_evidence.values()):
+            raise ValueError('Brief extraction requires verbatim evidence for essential fields')
+    if task == Task.DIRECTION:
+        from ..director.schemas import validate_direction
+        validate_direction(request, result)
     if task == Task.PLANNING:
         assets = {a.asset_id: a.total_frames for a in request.assets}
         if len(assets) != len(request.assets):
@@ -128,3 +137,7 @@ def validate_output(task, request, output):
         if result.actions and len(set(result.evidence_frame_indices)) < 2:
             raise ValueError('Action claims require evidence from multiple frames')
     return result
+
+from ..director.schemas import BriefRequest, BriefInterpretation, CreativeBrief, DirectionRequest, NarrativePlan
+CONTRACTS[Task.BRIEF] = (BriefRequest, BriefInterpretation)
+CONTRACTS[Task.DIRECTION] = (DirectionRequest, NarrativePlan)

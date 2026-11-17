@@ -33,7 +33,7 @@ class ProviderSettings(Contract):
 
     @model_validator(mode='after')
     def supported(self):
-        allowed = ({Task.TEMPORAL_VISUAL} if self.adapter in ('ollama', 'llama-server') else {Task.PLANNING}) if self.kind == 'local' else {Task.PLANNING, Task.VISUAL, Task.TEMPORAL_VISUAL}
+        allowed = (({Task.TEMPORAL_VISUAL, Task.DIRECTION, Task.BRIEF} if self.adapter == 'llama-server' else {Task.TEMPORAL_VISUAL}) if self.adapter in ('ollama', 'llama-server') else {Task.PLANNING}) if self.kind == 'local' else {Task.PLANNING, Task.VISUAL, Task.TEMPORAL_VISUAL, Task.DIRECTION, Task.BRIEF}
         if self.adapter in ('ollama', 'llama-server') and self.kind != 'local':
             raise ValueError('Ollama adapter must be local')
         if not set(self.capabilities) <= allowed:

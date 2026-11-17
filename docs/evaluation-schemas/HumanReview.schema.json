@@ -1,0 +1,81 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "blind_id": {
+      "title": "Blind Id",
+      "type": "string"
+    },
+    "reviewer": {
+      "minLength": 1,
+      "title": "Reviewer",
+      "type": "string"
+    },
+    "reviewed_at": {
+      "title": "Reviewed At",
+      "type": "string"
+    },
+    "response_sha256": {
+      "title": "Response Sha256",
+      "type": "string"
+    },
+    "visual_precision": {
+      "maximum": 4,
+      "minimum": 0,
+      "title": "Visual Precision",
+      "type": "integer"
+    },
+    "temporal_understanding": {
+      "maximum": 4,
+      "minimum": 0,
+      "title": "Temporal Understanding",
+      "type": "integer"
+    },
+    "reliability": {
+      "maximum": 4,
+      "minimum": 0,
+      "title": "Reliability",
+      "type": "integer"
+    },
+    "creative_utility": {
+      "maximum": 4,
+      "minimum": 0,
+      "title": "Creative Utility",
+      "type": "integer"
+    },
+    "unsupported_claims": {
+      "minimum": 0,
+      "title": "Unsupported Claims",
+      "type": "integer"
+    },
+    "checked_claims": {
+      "exclusiveMinimum": 0,
+      "title": "Checked Claims",
+      "type": "integer"
+    },
+    "uncertainty_notes": {
+      "title": "Uncertainty Notes",
+      "type": "string"
+    },
+    "notes": {
+      "minLength": 1,
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "blind_id",
+    "reviewer",
+    "reviewed_at",
+    "response_sha256",
+    "visual_precision",
+    "temporal_understanding",
+    "reliability",
+    "creative_utility",
+    "unsupported_claims",
+    "checked_claims",
+    "uncertainty_notes",
+    "notes"
+  ],
+  "title": "HumanReview",
+  "type": "object"
+}

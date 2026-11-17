@@ -21,9 +21,10 @@ def sandbox_profile(writable):
 
 
 @contextmanager
-def local_server(manifest_path, port=11435):
+def local_server(manifest_path, port=11435, metrics=None, content_only=False):
     """Manifest lists approved file paths/hashes; preparation is explicitly separate."""
     if not 1024<=port<=65535: raise ValueError('Invalid local port')
+    verification_start=time.perf_counter()
     manifest=json.loads(within_project(manifest_path).read_text())
     paths={}
     for role in ('binary','model','projector'):
@@ -33,6 +34,7 @@ def local_server(manifest_path, port=11435):
     for spec in manifest.get('libraries',[]):
         if sha256(within_project(spec['path']))!=spec['sha256']:
             raise PermissionError('Runtime library changed since approval')
+    if metrics is not None: metrics['integrity_seconds']=time.perf_counter()-verification_start
     work=within_project('temp/analyzer-runtime'); work.mkdir(parents=True,exist_ok=True)
     endpoint=f'http://127.0.0.1:{port}'
     opener=build_opener(ProxyHandler({}),_NoRedirect())
@@ -44,7 +46,9 @@ def local_server(manifest_path, port=11435):
              '--offline','-m',str(paths['model']),'--mmproj',str(paths['projector']),
              '--host','127.0.0.1','--port',str(port),'--ctx-size','8192','--parallel','1',
              '--alias',manifest['model_name'],'--no-webui','--log-verbosity','1']
+    if content_only: command.append('--skip-chat-parsing')
     log=work/'managed-server.log'
+    startup_start=time.perf_counter()
     with log.open('ab') as output:
         process=subprocess.Popen(command,cwd=within_project('.'),stdout=output,stderr=output,
             env={'PATH':'/usr/bin:/bin','LANG':'en_US.UTF-8','TMPDIR':str(work)})
@@ -58,6 +62,7 @@ def local_server(manifest_path, port=11435):
             except OSError: pass
             time.sleep(.25)
         else: raise TimeoutError('Local model load timed out')
+        if metrics is not None: metrics['load_ready_seconds']=time.perf_counter()-startup_start
         yield process
     finally:
         if process.poll() is None:

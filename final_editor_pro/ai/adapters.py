@@ -41,7 +41,7 @@ class LlamaCppPlanner:
 
 
 def openai_payload(task, request, model):
-    if task not in (Task.PLANNING, Task.VISUAL, Task.TEMPORAL_VISUAL):
+    if task not in (Task.PLANNING, Task.VISUAL, Task.TEMPORAL_VISUAL, Task.DIRECTION, Task.BRIEF):
         raise ValueError('This adapter implements planning and visual analysis only')
     content = [{'type': 'text', 'text': request.model_dump_json()}]
     if task in (Task.VISUAL, Task.TEMPORAL_VISUAL):
@@ -103,8 +103,13 @@ def build_providers(config, policy, keychain=None):
                 from ..analysis.ollama import OllamaTemporal, LlamaServerTemporal
                 adapter = OllamaTemporal if spec.adapter == 'ollama' else LlamaServerTemporal
                 runner = adapter(spec.model, spec.local_endpoint, spec.model_digest)
+                handlers={Task.TEMPORAL_VISUAL: runner}
+                if spec.adapter == 'llama-server':
+                    from ..director.planning import LocalDirectorAdapter
+                    director=LocalDirectorAdapter(spec.model,spec.local_endpoint,spec.model_digest)
+                    handlers.update({Task.DIRECTION:director.plan,Task.BRIEF:director.brief})
                 providers.append(LocalProvider(provider_id, spec.model + '@' + (spec.model_digest or ''),
-                                               {Task.TEMPORAL_VISUAL: runner}))
+                                               {task:handler for task,handler in handlers.items() if task in spec.capabilities}))
                 continue
             if not all((spec.executable, spec.model_path, spec.executable_sha256, spec.model_sha256)):
                 raise ValueError('Local adapter requires approved binary/model paths and hashes')

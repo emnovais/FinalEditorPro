@@ -1,0 +1,8 @@
+{
+  "visual_precision": 0.25,
+  "temporal_understanding": 0.25,
+  "reliability": 0.20,
+  "creative_utility": 0.15,
+  "speed": 0.10,
+  "memory_efficiency": 0.05
+}

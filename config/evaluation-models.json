@@ -1,0 +1,58 @@
+[
+  {
+    "model_id": "qwen3-vl-4b",
+    "display_name": "Qwen3-VL 4B Instruct",
+    "runtime_manifest": "workspace/approved-local-runtime.json",
+    "model_digest": "84f7ed8042fa7cdbd902f7dcb7d0370e032095047cc3244179f263b77b5bc318",
+    "quantization": "Q4_K - Medium",
+    "license": "Apache-2.0",
+    "status": "ready",
+    "limitations": [
+      "Runtime loaded images locally; readiness is not a quality verdict.",
+      "Ordered timestamped frames; not native video input.",
+      "Pilot protocol v3 only; human scoring and held-out evaluation pending."
+    ]
+  },
+  {
+    "model_id": "qwen3-vl-8b-instruct",
+    "display_name": "qwen3-vl:8b-instruct",
+    "runtime_manifest": "workspace/evaluation/qwen3-vl-8b-instruct.runtime.json",
+    "model_digest": "70e58e37beb15464e19aa903dedb2cba828b89c0fb186f75ff2738c7347b96eb",
+    "quantization": "Q4_K - Medium",
+    "license": "Apache-2.0",
+    "status": "ready",
+    "limitations": [
+      "Runtime loaded images locally; readiness is not a quality verdict.",
+      "Ordered timestamped frames; not native video input.",
+      "Pilot protocol v3 only; human scoring and held-out evaluation pending."
+    ]
+  },
+  {
+    "model_id": "gemma3-4b",
+    "display_name": "gemma3:4b",
+    "runtime_manifest": "workspace/evaluation/gemma3-4b.runtime.json",
+    "model_digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+    "quantization": "Q4_K - Medium",
+    "license": "Gemma Terms of Use",
+    "status": "ready",
+    "limitations": [
+      "Runtime loaded images locally; readiness is not a quality verdict.",
+      "Ordered timestamped frames; not native video input.",
+      "Pilot protocol v3 only; human scoring and held-out evaluation pending."
+    ]
+  },
+  {
+    "model_id": "gemma3-12b",
+    "display_name": "gemma3:12b",
+    "runtime_manifest": "workspace/evaluation/gemma3-12b.runtime.json",
+    "model_digest": "b92b218582c521ba287f38f1d6057dcd3c6cbff036f13cac97b5d861f5e58ec3",
+    "quantization": "Q4_K - Medium",
+    "license": "Gemma Terms of Use",
+    "status": "ready",
+    "limitations": [
+      "Runtime loaded images locally; readiness is not a quality verdict.",
+      "Ordered timestamped frames; not native video input.",
+      "Pilot protocol v3 only; human scoring and held-out evaluation pending."
+    ]
+  }
+]

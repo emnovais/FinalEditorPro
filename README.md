@@ -14,7 +14,20 @@ análise multimodal local. Uma execução real foi demonstrada com Qwen3-VL 4B;
 [resultados e benchmark](docs/ANALYZER_VALIDATION.md). Nenhuma decisão do Analyzer
 é aplicada automaticamente ao FCPXML.
 
-**Estado:** testes offline e análise multimodal local real aprovados nesta amostra.
+O incremento [0.2.1 — Model Benchmark & Evaluation](docs/EVALUATION.md) acrescenta
+entradas congeladas, repetições cold/warm, revisão cega e pesos configuráveis
+25/25/20/15/10/5. [Resultados do piloto](docs/EVALUATION_VALIDATION.md): a comparação
+de qualidade permanece inconclusiva até completar referências/revisão humanas.
+
+O [MVP 0.3 — AI Creative Director](docs/CREATIVE_DIRECTOR.md) acrescenta briefing,
+seleção, planejamento local, análise musical inicial, EDL e montagem editável.
+[Validação real e aprovação manual](docs/CREATIVE_DIRECTOR_VALIDATION.md).
+Por decisão do usuário, não haverá nova rodada de benchmark/revisão cega agora;
+Qwen3-VL 8B e Gemma 3 12B permanecem disponíveis sem vencedor declarado.
+
+**Estado:** MVP 0.3 aprovado manualmente no Final Cut Pro em 17/11/2026: cortes,
+slow motion 50%, música, 20 segundos e 3840×2880/4:3/25 fps confirmados.
+Testes offline e análise multimodal local real aprovados nesta amostra.
 Providers são opcionais e desativados por padrão; APIs remotas não foram validadas
 em execução real. Não há VFX, segmentação de objetos,
 tracking, correção de cor ou importação automática no Final Cut implementados.

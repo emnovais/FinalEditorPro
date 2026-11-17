@@ -9,14 +9,22 @@ A prioridade foi definida: AI Video Analyzer. Pipeline determinístico e uma
 análise multimodal local real foram demonstrados; detalhes e limites em
 [docs/ANALYZER_VALIDATION.md](docs/ANALYZER_VALIDATION.md). Sem commit/push automático.
 
-## MVP 0.3 — AI Creative Director (próximo)
+## MVP 0.3 — AI Creative Director (concluído e aprovado manualmente)
 
-Consumir AnalysisReport como evidência, receber briefing/duração-alvo e gerar
-CreativePlan com justificativas que referenciem assets/segmentos. Validar limites
-de fonte e exigir revisão antes de compilar nova timeline. Priorizar avaliação de
-seleção/ritmo e comparação com montagem humana. Não tratar scores do Analyzer
-como verdades nem inferir diálogos a partir de frames. Batidas/transcrição e
-detecção de cortes mais precisa exigem validação própria antes de sincronização.
+[Arquitetura/uso](docs/CREATIVE_DIRECTOR.md) e
+[validação real](docs/CREATIVE_DIRECTOR_VALIDATION.md). Briefing, seleção,
+planejamento, música local, EDL, retime linear, crop central e FCPXML integrado.
+Aprovação manual do usuário em 17/11/2026: importação, cortes, slow motion 50%,
+música, 20 s e 3840×2880/4:3/25 fps confirmados. Commit local autorizado;
+push depende de autorização separada. Por decisão explícita
+do produto, sem novo benchmark ou revisão cega agora; Qwen3-VL 8B e Gemma 3 12B
+permanecem disponíveis, sem vencedor. A comparação quantitativa anterior não é
+reinterpretada como conclusiva.
+
+Próximo incremento: revisar continuidade/framing, refinar ações completas e cortes
+com feedback humano, melhorar onsets/tempo e mix, testar round-trip de retime/música,
+validar planejamento Gemma no fluxo real e só então ampliar formatos/efeitos.
+Máscaras, tracking, transições automatizadas e VFX permanecem no roadmap.
 
 ## Etapa 1 — concluída nesta inicialização
 

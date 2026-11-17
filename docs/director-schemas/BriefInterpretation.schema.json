@@ -1,0 +1,170 @@
+{
+  "$defs": {
+    "CreativeBrief": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": "0.3.0",
+          "default": "0.3.0",
+          "title": "Version",
+          "type": "string"
+        },
+        "project_type": {
+          "enum": [
+            "wedding",
+            "restaurant",
+            "event",
+            "travel",
+            "social",
+            "couple"
+          ],
+          "title": "Project Type",
+          "type": "string"
+        },
+        "objective": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Objective",
+          "type": "string"
+        },
+        "target_seconds": {
+          "title": "Target Seconds",
+          "type": "string"
+        },
+        "aspect_ratio": {
+          "enum": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3"
+          ],
+          "title": "Aspect Ratio",
+          "type": "string"
+        },
+        "fps": {
+          "title": "Fps",
+          "type": "string"
+        },
+        "output_width": {
+          "default": 3840,
+          "exclusiveMinimum": 0,
+          "title": "Output Width",
+          "type": "integer"
+        },
+        "output_height": {
+          "default": 2160,
+          "exclusiveMinimum": 0,
+          "title": "Output Height",
+          "type": "integer"
+        },
+        "slow_motion_allowed": {
+          "default": false,
+          "title": "Slow Motion Allowed",
+          "type": "boolean"
+        },
+        "visual_style": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Visual Style",
+          "type": "string"
+        },
+        "pace": {
+          "enum": [
+            "slow",
+            "balanced",
+            "energetic"
+          ],
+          "title": "Pace",
+          "type": "string"
+        },
+        "narrative_preferences": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Narrative Preferences",
+          "type": "array"
+        },
+        "constraints": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Constraints",
+          "type": "array"
+        },
+        "required_candidate_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Candidate Ids",
+          "type": "array"
+        },
+        "music_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Music Path"
+        },
+        "model_id": {
+          "enum": [
+            "qwen3-vl-8b-instruct",
+            "gemma3-12b"
+          ],
+          "title": "Model Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "project_type",
+        "objective",
+        "target_seconds",
+        "aspect_ratio",
+        "fps",
+        "visual_style",
+        "pace",
+        "model_id"
+      ],
+      "title": "CreativeBrief",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "brief": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CreativeBrief"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "missing_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Fields",
+      "type": "array"
+    },
+    "field_evidence": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Field Evidence",
+      "type": "object"
+    }
+  },
+  "required": [
+    "brief",
+    "missing_fields",
+    "field_evidence"
+  ],
+  "title": "BriefInterpretation",
+  "type": "object"
+}

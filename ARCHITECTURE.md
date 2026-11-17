@@ -1,5 +1,22 @@
 # Final Editor Pro — arquitetura
 
+## Incremento MVP 0.3 — AI Creative Director
+
+`final_editor_pro/director/` acrescenta briefing, seleção por candidatos,
+planejamento narrativo, análise de música, refinamento temporal, EDL v0.3.0 e
+adaptador de exportação. Evidências, interpretações, decisões e instruções
+executáveis permanecem separadas. `ave/core.py` e o caminho do MVP 0.1 continuam
+inalterados. Novas tarefas `creative_brief` e `creative_direction` usam o roteador,
+configuração e política de privacidade existentes. Dependências não aumentaram.
+
+A saída nova admite conversão explícita 50→25 fps, crop central 4:3, upscale,
+retime linear 50% e música conectada editável. O áudio da câmera é desativado
+somente nos trechos lentos, preservando-o nos demais. Não há speed ramp ou VFX.
+O caminho novo foi aprovado manualmente pelo usuário no Final Cut em 17/11/2026:
+importação, cortes, slow motion 50%, música, 20 s e 3840×2880/4:3/25 fps.
+Essa aprovação cobre a montagem validada, sem presumir outros formatos/mídias.
+Detalhes: [docs/CREATIVE_DIRECTOR.md](docs/CREATIVE_DIRECTOR.md).
+
 ## Incremento MVP 0.2 — AI Video Analyzer
 
 `final_editor_pro/analysis/` acrescenta ingestão reutilizada, extração proxy,

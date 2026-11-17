@@ -1,0 +1,58 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "model_id": {
+      "pattern": "^[A-Za-z0-9_-]+$",
+      "title": "Model Id",
+      "type": "string"
+    },
+    "display_name": {
+      "title": "Display Name",
+      "type": "string"
+    },
+    "runtime_manifest": {
+      "title": "Runtime Manifest",
+      "type": "string"
+    },
+    "model_digest": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Model Digest",
+      "type": "string"
+    },
+    "quantization": {
+      "title": "Quantization",
+      "type": "string"
+    },
+    "license": {
+      "title": "License",
+      "type": "string"
+    },
+    "status": {
+      "default": "candidate",
+      "enum": [
+        "candidate",
+        "ready",
+        "incompatible"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "model_id",
+    "display_name",
+    "runtime_manifest",
+    "model_digest",
+    "quantization",
+    "license"
+  ],
+  "title": "ModelSpec",
+  "type": "object"
+}

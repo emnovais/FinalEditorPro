@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "visual_precision": {
+      "default": 0.25,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Visual Precision",
+      "type": "number"
+    },
+    "temporal_understanding": {
+      "default": 0.25,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Temporal Understanding",
+      "type": "number"
+    },
+    "reliability": {
+      "default": 0.2,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Reliability",
+      "type": "number"
+    },
+    "creative_utility": {
+      "default": 0.15,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Creative Utility",
+      "type": "number"
+    },
+    "speed": {
+      "default": 0.1,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Speed",
+      "type": "number"
+    },
+    "memory_efficiency": {
+      "default": 0.05,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Memory Efficiency",
+      "type": "number"
+    }
+  },
+  "title": "EvaluationWeights",
+  "type": "object"
+}

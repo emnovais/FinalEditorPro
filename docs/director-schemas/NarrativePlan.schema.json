@@ -1,0 +1,91 @@
+{
+  "$defs": {
+    "NarrativeChoice": {
+      "additionalProperties": false,
+      "properties": {
+        "speed": {
+          "default": "1",
+          "enum": [
+            "1",
+            "1/2"
+          ],
+          "title": "Speed",
+          "type": "string"
+        },
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "opening",
+            "development",
+            "highlight",
+            "ending"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "reason": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "brief_relation": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Brief Relation",
+          "type": "string"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "role",
+        "reason",
+        "brief_relation",
+        "confidence"
+      ],
+      "title": "NarrativeChoice",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "choices": {
+      "items": {
+        "$ref": "#/$defs/NarrativeChoice"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "title": "Choices",
+      "type": "array"
+    },
+    "rationale": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Rationale",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "choices",
+    "rationale",
+    "warnings"
+  ],
+  "title": "NarrativePlan",
+  "type": "object"
+}

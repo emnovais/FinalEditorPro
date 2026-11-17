@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "final-editor-pro"
-version = "0.2.0"
+version = "0.3.0"
 description = "Non-destructive video timeline planning and FCPXML export"
 requires-python = ">=3.11"
 dependencies = ["pydantic==2.14.1"]
@@ -16,6 +16,8 @@ test = ["pytest==9.2.0"]
 final-editor-pro = "ave.cli:main"
 final-editor-analyze = "final_editor_pro.analysis.cli:main"
 final-editor-benchmark = "final_editor_pro.analysis.benchmark:main"
+final-editor-evaluate = "final_editor_pro.evaluation.cli:main"
+final-editor-director = "final_editor_pro.director.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["ave*", "final_editor_pro*"]

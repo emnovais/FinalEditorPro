@@ -1,0 +1,141 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.3.0",
+      "default": "0.3.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "method": {
+      "const": "log-energy-novelty-autocorrelation-v1",
+      "title": "Method",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Sha256",
+      "type": "string"
+    },
+    "duration_seconds": {
+      "title": "Duration Seconds",
+      "type": "string"
+    },
+    "decoded_duration_seconds": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Decoded Duration Seconds"
+    },
+    "decoded_limit_seconds": {
+      "exclusiveMinimum": 0,
+      "title": "Decoded Limit Seconds",
+      "type": "integer"
+    },
+    "estimated_bpm": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Estimated Bpm"
+    },
+    "stable_tempo_supported": {
+      "title": "Stable Tempo Supported",
+      "type": "boolean"
+    },
+    "tempo_windows": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Tempo Windows",
+      "type": "array"
+    },
+    "onsets_seconds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Onsets Seconds",
+      "type": "array"
+    },
+    "estimated_beats_seconds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Estimated Beats Seconds",
+      "type": "array"
+    },
+    "intensity_peaks_seconds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Intensity Peaks Seconds",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "channels": {
+      "anyOf": [
+        {
+          "maximum": 2,
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Channels"
+    },
+    "sample_rate": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sample Rate"
+    }
+  },
+  "required": [
+    "method",
+    "path",
+    "sha256",
+    "duration_seconds",
+    "decoded_limit_seconds",
+    "stable_tempo_supported",
+    "tempo_windows",
+    "onsets_seconds",
+    "estimated_beats_seconds",
+    "intensity_peaks_seconds",
+    "warnings"
+  ],
+  "title": "MusicAnalysis",
+  "type": "object"
+}
