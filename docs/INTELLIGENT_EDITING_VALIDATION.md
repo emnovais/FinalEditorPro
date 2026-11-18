@@ -1,8 +1,13 @@
 # MVP 0.4 — validação local e comparação
 
-17/11/2026 (Australia/Brisbane). Estado: nova montagem real pronta para revisão.
-**Importação e round-trip do MVP 0.4 ainda não foram validados no Final Cut Pro.**
-A aprovação manual do MVP 0.3 não foi transferida para a versão nova.
+17/11/2026 (Australia/Brisbane). **Estado atual: MVP 0.4 aprovado visualmente pelo
+usuário; encerramento técnico registrado em [MVP_0_4_CLOSEOUT.md](MVP_0_4_CLOSEOUT.md).**
+Importação sem erros, curvas e reprodução inicial têm confirmação manual.
+
+O texto abaixo preserva o histórico dos experimentos (inclusive a primeira montagem
+de nove segmentos e os estados então pendentes). Esses estados não representam o
+aceite atual da revisão de seis takes. O relatório de encerramento distingue os
+resultados, diferenças semânticas e limitações do round-trip.
 
 Base `165e2cb`, `main` preservada. Branch `develop/mvp-0.4-intelligent-editing`.
 Sem commit/push, downloads, instalações, upload de mídias ou alteração de bibliotecas.
@@ -172,3 +177,10 @@ Em 17/11/2026, o usuário autorizou commit e push das alterações acumuladas.
 Verificação final: 133 testes locais aprovados; índices e ignores conferidos.
 Publicação na branch de desenvolvimento, preservando a main. Testes, mídias,
 modelos, renders, caches e dados privados do workspace permanecem fora do commit.
+
+## Encerramento técnico solicitado
+
+O aceite explícito do usuário e as conferências finais estão em
+[MVP_0_4_CLOSEOUT.md](MVP_0_4_CLOSEOUT.md). Em 18/11/2026, o usuário autorizou
+somente o commit documental local de encerramento; push, merge e alterações na
+main continuam sem autorização. Nenhum código ou exportador foi alterado.

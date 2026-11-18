@@ -32,7 +32,8 @@ A revisão de seis takes foi importada sem erros e considerada melhor pelo usuá
 A correção BWF resolveu a espera ao reproduzir desde o início e foi incorporada.
 [Validação e correção](docs/FCPXML_STARTUP_INVESTIGATION.md).
 
-**Estado:** revisão MVP 0.4 validada no fluxo descrito acima; 133 testes locais
+**Estado:** MVP 0.4 aprovado visualmente pelo usuário; encerramento técnico
+registrado em [MVP_0_4_CLOSEOUT.md](docs/MVP_0_4_CLOSEOUT.md). 133 testes locais
 aprovados. MVP 0.3 aprovado manualmente no Final Cut Pro em 17/11/2026: cortes,
 slow motion 50%, música, 20 segundos e 3840×2880/4:3/25 fps confirmados.
 Testes offline e análise multimodal local real aprovados nesta amostra.

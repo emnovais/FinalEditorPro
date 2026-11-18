@@ -26,7 +26,7 @@ com feedback humano, melhorar onsets/tempo e mix, testar round-trip de retime/m�
 validar planejamento Gemma no fluxo real e só então ampliar formatos/efeitos.
 Máscaras, tracking, transições automatizadas e VFX permanecem no roadmap.
 
-## MVP 0.4 — Intelligent Editing & Continuity (revisão de seis takes validada)
+## MVP 0.4 — Intelligent Editing & Continuity (encerramento técnico)
 
 Continuidade explicável, reframing estático, refinamento de cortes, eventos
 musicais e ganho/fades editáveis implementados, com montagem real e preview.
@@ -34,8 +34,12 @@ Gemma 3 12B exercitado como planejador; sem novo benchmark ou vencedor.
 [Relatório](docs/INTELLIGENT_EDITING_VALIDATION.md). Recebidos round-trip nativo,
 importação sem erros e feedback visual positivo para a revisão de seis takes.
 A reconciliação BWF eliminou a espera inicial no teste manual e está incorporada.
-Commit e push da branch de desenvolvimento autorizados em 17/11/2026; sem merge
-automático na main.
+O usuário aprovou visualmente o marco. [Encerramento técnico](docs/MVP_0_4_CLOSEOUT.md):
+BWF em produção, consolidado equivalente ao teste A exceto pelo nome, 133 testes
+aprovados e limites do round-trip explícitos. Nenhum bloqueador técnico real
+identificado para esta montagem. O commit/push anterior foi executado em `f4dca7c`;
+o commit documental local de encerramento foi autorizado em 18/11/2026.
+Não há autorização de push, merge ou alterações na main nesta tarefa.
 
 Depois: validar feedback de enquadramento/mix, melhorar ações semânticas e
 continuidade, decidir prioridade de tracking e crossfades com handles. Máscaras,
@@ -100,3 +104,10 @@ nova autorização. Relatório: [investigação de startup](docs/FCPXML_STARTUP_
 Autorização atual em 17/11/2026: registrar e publicar as alterações acumuladas
 na branch `develop/mvp-0.4-intelligent-editing`. As notas anteriores de espera por
 autorização são históricas; não impedem este commit/push solicitado.
+
+### Estado do encerramento atual
+
+A autorização de publicação registrada anteriormente já foi executada. Em
+18/11/2026, o usuário aprovou o encerramento e autorizou somente o commit local
+da documentação na branch de desenvolvimento. Não realizar push, merge ou
+alterações na main. Nenhuma funcionalidade adicional implementada.

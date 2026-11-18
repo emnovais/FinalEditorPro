@@ -1,5 +1,10 @@
 # Investigação de demora ao iniciar reprodução em zero
 
+**Estado atual: espera resolvida operacionalmente no teste A pelo usuário e
+correção incorporada.** As hipóteses e instruções abaixo preservam a cronologia
+da investigação. Encerramento e classificação das diferenças do round-trip:
+[MVP_0_4_CLOSEOUT.md](MVP_0_4_CLOSEOUT.md).
+
 ## Retorno do usuário
 
 A revisão de seis takes foi importada sem erros. O usuário considerou o vídeo
@@ -93,7 +98,8 @@ reexportado, vídeos e WAV preservados. Sem instalação, download de modelos,
 commit ou push.
 
 Dados: `report.json` e `roundtrip-differences.json` na pasta de diagnóstico.
-Causa de performance **ainda não confirmada**; aguardar testes no aplicativo.
+Naquele estágio, a causa de performance ainda não estava confirmada; o teste A
+foi depois validado pelo usuário, conforme a seção de resolução abaixo.
 
 ## Fontes oficiais
 
